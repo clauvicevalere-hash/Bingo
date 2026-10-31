@@ -10,6 +10,9 @@
     "db:seed": "node scripts/import-catalog.mjs"
   },
   "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/cli": "^8.6.0",
+    "@capacitor/core": "^8.6.0",
     "@prisma/client": "^6.19.3",
     "@types/node": "^22.10.5",
     "@types/react": "^19.0.3",

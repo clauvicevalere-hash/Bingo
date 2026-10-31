@@ -3,7 +3,7 @@ import type { CapacitorConfig } from "@capacitor/cli";
 const config: CapacitorConfig = {
   appId: "com.bingo.shop",
   appName: "Bingo",
-  webDir: "public",
+  webDir: "capacitor-shell",
   server: {
     url: process.env.CAPACITOR_SERVER_URL || "https://votre-domaine.com",
     cleartext: false,
