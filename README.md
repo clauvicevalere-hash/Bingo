@@ -85,6 +85,9 @@ puis déclarer le webhook `https://…/api/payments/orange/webhook` chez Orange.
 - Commandes : recherche, filtre par statut, changement de statut, **marquer payé**
 - **Bon de livraison imprimable** (`/admin/bon/:id`) pour les livraisons COD
 - Produits : prix, ancien prix, catégorie, état, visibilité, mise en avant
+- **Création de produit** (`/admin/produits/nouveau`) : photo, description, fiche technique,
+  stock initial dans les 4 pays
+- **Création de catégories** (`/admin/categories`) : rayons et sous-rayons
 - Stocks : quantités par variante et par pays, alertes stock faible
 
 ## Qualité & exploitation
@@ -98,6 +101,8 @@ puis déclarer le webhook `https://…/api/payments/orange/webhook` chez Orange.
 - **Santé** : `GET /api/health` (statut + nombre de produits), healthcheck Docker.
 - **WhatsApp** : bouton de confirmation de commande pré-rempli.
 - **Sécurité admin** : cookie HMAC signé, routes `/admin` en `noindex`, API admin protégée.
+- **Préflight production** : `node scripts/preflight.mjs` vérifie secrets, APP_URL, clés Orange,
+  build, images, catalogue et stock avant mise en ligne.
 
 
 ## Déploiement
