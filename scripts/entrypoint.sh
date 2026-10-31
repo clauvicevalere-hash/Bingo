@@ -6,6 +6,9 @@ export DATA_DIR="${DATA_DIR:-/app/data}"
 export DATABASE_URL="${DATABASE_URL:-file:$DATA_DIR/dev.db}"
 export APP_URL="${APP_URL:-${RENDER_EXTERNAL_URL:-http://localhost:3000}}"
 
+# Le disque persistant peut ne pas être monté (plan gratuit) : on crée le dossier.
+mkdir -p "$DATA_DIR"
+
 if [ -z "${SESSION_SECRET:-}" ]; then
   SESSION_SECRET=$(node -e "console.log(require('crypto').randomBytes(32).toString('hex'))")
   export SESSION_SECRET
