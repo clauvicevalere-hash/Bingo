@@ -13,7 +13,7 @@ const db = new PrismaClient();
 const env = fs.readFileSync(".env", "utf8");
 const secret = (env.match(/SESSION_SECRET="([^"]+)"/) || [])[1];
 const payload = `admin:${Date.now() + 86400000}`;
-const cookie = `bingo_admin=${Buffer.from(payload).toString("base64url")}.${crypto
+const cookie = `te_admin=${Buffer.from(payload).toString("base64url")}.${crypto
   .createHmac("sha256", secret)
   .update(payload)
   .digest("base64url")}`;

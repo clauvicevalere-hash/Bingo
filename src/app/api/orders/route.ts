@@ -120,7 +120,7 @@ export async function POST(req: Request) {
   const deliveryFee = city.freeAbove && subtotal >= city.freeAbove ? 0 : city.deliveryFee;
   const total = subtotal + deliveryFee;
 
-  const number = `BNG-${new Date().toISOString().slice(2, 10).replace(/-/g, "")}-${Math.floor(1000 + Math.random() * 9000)}`;
+  const number = `TE-${new Date().toISOString().slice(2, 10).replace(/-/g, "")}-${Math.floor(1000 + Math.random() * 9000)}`;
 
   try {
     const order = await db.$transaction(async (tx) => {

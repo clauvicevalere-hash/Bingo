@@ -2,7 +2,7 @@ export const metadata = { title: "Contact" };
 
 const PHONE = process.env.SITE_PHONE || "+226 00 00 00 00";
 const WHATSAPP = process.env.SITE_WHATSAPP || "22600000000";
-const EMAIL = process.env.SITE_EMAIL || "contact@bingo.africa";
+const EMAIL = process.env.SITE_EMAIL || "contact@tresorempire.com";
 const ADDRESS = process.env.SITE_ADDRESS || "Ouagadougou, Burkina Faso";
 
 export default function ContactPage() {
@@ -31,7 +31,7 @@ export default function ContactPage() {
       <div className="panel" style={{ marginTop: 14 }}>
         <h3 style={{ margin: "0 0 8px", fontSize: 16 }}>Coordonnées</h3>
         <p className="small" style={{ lineHeight: 1.8, margin: 0 }}>
-          <b>Bingo</b>
+          <b>Tresor Empire</b>
           <br />
           {ADDRESS}
           <br />

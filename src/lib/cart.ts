@@ -10,7 +10,7 @@ export type CartLine = {
   stock: number;
 };
 
-const KEY = "bingo_cart_v1";
+const KEY = "te_cart_v1";
 
 export function readCart(): CartLine[] {
   if (typeof window === "undefined") return [];

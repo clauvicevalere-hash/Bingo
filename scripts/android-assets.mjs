@@ -4,7 +4,7 @@ import sharp from "sharp";
 
 const root = process.cwd();
 const res = path.join(root, "android", "app", "src", "main", "res");
-const svg = fs.readFileSync(path.join(root, "public", "icons", "icon.svg"));
+const logoPath = path.join(root, "public", "brand", "logo.png");
 
 const densities = {
   mdpi: { launcher: 48, foreground: 108 },
@@ -14,33 +14,36 @@ const densities = {
   xxxhdpi: { launcher: 192, foreground: 432 },
 };
 
-for (const [density, sizes] of Object.entries(densities)) {
-  const dir = path.join(res, `mipmap-${density}`);
-
-  const launcher = await sharp(svg).resize(sizes.launcher, sizes.launcher).png().toBuffer();
-  fs.writeFileSync(path.join(dir, "ic_launcher.png"), launcher);
-  fs.writeFileSync(path.join(dir, "ic_launcher_round.png"), launcher);
-
-  const inner = Math.round(sizes.foreground * 0.6);
-  const logo = await sharp(svg).resize(inner, inner).png().toBuffer();
-  const foreground = await sharp({
-    create: { width: sizes.foreground, height: sizes.foreground, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } },
+async function canvas(size, ratio, background) {
+  const inner = Math.round(size * ratio);
+  const logo = await sharp(logoPath).resize(inner, inner, { fit: "contain", background: { r: 255, g: 255, b: 255, alpha: 0 } }).png().toBuffer();
+  return sharp({
+    create: { width: size, height: size, channels: 4, background },
   })
     .composite([{ input: logo, gravity: "center" }])
     .png()
     .toBuffer();
+}
+
+for (const [density, sizes] of Object.entries(densities)) {
+  const dir = path.join(res, `mipmap-${density}`);
+
+  const launcher = await canvas(sizes.launcher, 0.82, "#ffffff");
+  fs.writeFileSync(path.join(dir, "ic_launcher.png"), launcher);
+  fs.writeFileSync(path.join(dir, "ic_launcher_round.png"), launcher);
+
+  const foreground = await canvas(sizes.foreground, 0.62, { r: 255, g: 255, b: 255, alpha: 0 });
   fs.writeFileSync(path.join(dir, "ic_launcher_foreground.png"), foreground);
 
   console.log(`mipmap-${density} ok`);
 }
 
-// fond adaptatif orange
 fs.writeFileSync(
   path.join(res, "values", "ic_launcher_background.xml"),
-  `<?xml version="1.0" encoding="utf-8"?>\n<resources>\n    <color name="ic_launcher_background">#F26A1B</color>\n</resources>\n`
+  `<?xml version="1.0" encoding="utf-8"?>\n<resources>\n    <color name="ic_launcher_background">#FFFFFF</color>\n</resources>\n`
 );
 
-// splashes : fond orange + logo centré, mêmes dimensions que l'existant
+// Splash : fond blanc + logo centré
 const splashDirs = fs
   .readdirSync(res, { withFileTypes: true })
   .filter((d) => d.isDirectory() && d.name.startsWith("drawable"))
@@ -52,10 +55,10 @@ for (const dir of splashDirs) {
   const meta = await sharp(file).metadata();
   const width = meta.width ?? 480;
   const height = meta.height ?? 800;
-  const inner = Math.round(Math.min(width, height) * 0.32);
-  const logo = await sharp(svg).resize(inner, inner).png().toBuffer();
+  const inner = Math.round(Math.min(width, height) * 0.34);
+  const logo = await sharp(logoPath).resize(inner, inner, { fit: "contain" }).png().toBuffer();
   await sharp({
-    create: { width, height, channels: 4, background: "#F26A1B" },
+    create: { width, height, channels: 4, background: "#ffffff" },
   })
     .composite([{ input: logo, gravity: "center" }])
     .png()

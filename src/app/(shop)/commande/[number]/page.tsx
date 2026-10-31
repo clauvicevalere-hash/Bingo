@@ -163,7 +163,7 @@ export default async function OrderPage({ params }: { params: Promise<{ number: 
         </Link>
         <a
           href={`https://wa.me/${(process.env.SITE_WHATSAPP || "22600000000").replace(/\D/g, "")}?text=${encodeURIComponent(
-            `Bonjour Bingo, je confirme ma commande ${order.number} (${order.items.reduce((n, i) => n + i.qty, 0)} article(s), total ${money(order.total)}).`
+            `Bonjour Tresor Empire, je confirme ma commande ${order.number} (${order.items.reduce((n, i) => n + i.qty, 0)} article(s), total ${money(order.total)}).`
           )}`}
           target="_blank"
           rel="noreferrer"

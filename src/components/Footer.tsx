@@ -6,11 +6,14 @@ export function Footer() {
     <footer className="footer">
       <div className="container">
         <div>
-          <div className="logo" style={{ color: "#fff", marginBottom: 10 }}>
-            <span className="logo-mark">B</span>
-            Bingo<span style={{ color: "#ffb27a" }}>.</span>
+          <div className="logo" style={{ marginBottom: 12 }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/brand/logo.png" alt="Tresor Empire" className="logo-img" />
+            <span className="brand-word" style={{ color: "#fff" }}>
+              Tresor <em>Empire</em>
+            </span>
           </div>
-          <p style={{ fontSize: 13.5, lineHeight: 1.6, color: "#a99f97", maxWidth: "34ch" }}>
+          <p style={{ fontSize: 13.5, lineHeight: 1.6, color: "#aeb5d0", maxWidth: "34ch" }}>
             Téléphones, ordinateurs et gadgets authentiques, livrés au Burkina Faso, au Mali,
             au Niger et en Côte d&apos;Ivoire. Vous payez à la réception.
           </p>
@@ -39,7 +42,7 @@ export function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        © {new Date().getFullYear()} Bingo — Tous droits réservés · Prix en FCFA (XOF)
+        © {new Date().getFullYear()} Tresor Empire — Tous droits réservés · Prix en FCFA (XOF)
       </div>
     </footer>
   );

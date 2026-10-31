@@ -1,18 +1,18 @@
 {
-  "name": "Bingo — Téléphones & high-tech",
-  "short_name": "Bingo",
+  "name": "Tresor Empire — Téléphones & high-tech",
+  "short_name": "Tresor Empire",
   "description": "Téléphones, ordinateurs et gadgets livrés au Burkina Faso, Mali, Niger et Côte d'Ivoire. Paiement à la livraison.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#faf7f4",
-  "theme_color": "#f26a1b",
+  "background_color": "#f7f8fb",
+  "theme_color": "#d90b1c",
   "lang": "fr",
   "icons": [
-    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    { "src": "/brand/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/brand/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ],
   "categories": ["shopping", "electronics"]
 }

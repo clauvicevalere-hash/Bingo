@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const label = productLabel(product.name);
   const description =
     stripHtml(product.description).slice(0, 155) ||
-    `Achetez ${label} chez Bingo. Livraison au Burkina Faso, Mali, Niger et Côte d'Ivoire, paiement à la livraison.`;
+    `Achetez ${label} chez Tresor Empire. Livraison au Burkina Faso, Mali, Niger et Côte d'Ivoire, paiement à la livraison.`;
   const image = product.images[0] ? `${base}${product.images[0].url}` : `${base}/icons/icon-512.png`;
 
   return {
@@ -248,7 +248,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
           <a
             href={`https://wa.me/${(process.env.SITE_WHATSAPP || "22600000000").replace(/\D/g, "")}?text=${encodeURIComponent(
-              `Bonjour Bingo, je suis intéressé par : ${label} — ${money(product.price)}. Est-il disponible au ${info.name} ?`
+              `Bonjour Tresor Empire, je suis intéressé par : ${label} — ${money(product.price)}. Est-il disponible au ${info.name} ?`
             )}`}
             target="_blank"
             rel="noreferrer"

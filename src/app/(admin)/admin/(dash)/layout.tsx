@@ -14,9 +14,13 @@ export default async function AdminDashLayout({ children }: { children: React.Re
   return (
     <div className="admin-shell">
       <aside className="admin-side">
-        <div style={{ fontWeight: 800, fontSize: 20, color: "#fff", padding: "0 12px 18px" }}>
-          Bingo<span style={{ color: "#ffb27a" }}>.</span>
-          <div style={{ fontSize: 11, fontWeight: 500, color: "#8e837b", letterSpacing: "0.08em" }}>ADMIN</div>
+        <div className="admin-brand">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/brand/logo.png" alt="Tresor Empire" />
+          <div>
+            <b>TRESOR EMPIRE</b>
+            <span>ADMIN</span>
+          </div>
         </div>
         <Link href="/admin">Tableau de bord</Link>
         <Link href="/admin/commandes">Commandes</Link>

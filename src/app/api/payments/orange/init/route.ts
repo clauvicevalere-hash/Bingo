@@ -51,7 +51,7 @@ export async function POST(req: Request) {
       returnUrl: `${publicBase}/commande/${order.number}`,
       cancelUrl: `${publicBase}/paiement/${order.number}?annule=1`,
       notifUrl: `${publicBase}/api/payments/orange/webhook`,
-      reference: "Bingo",
+      reference: "Tresor Empire",
     });
 
     await db.order.update({

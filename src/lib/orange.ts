@@ -94,7 +94,7 @@ export async function createWebPayment(
       cancel_url: input.cancelUrl,
       notif_url: input.notifUrl,
       lang: "fr",
-      reference: input.reference || "Bingo",
+      reference: input.reference || "Tresor Empire",
     }),
   });
 

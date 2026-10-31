@@ -13,7 +13,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "unknown country" }, { status: 400 });
   }
   const res = NextResponse.json({ ok: true, code });
-  res.cookies.set("bingo_country", code, {
+  res.cookies.set("te_country", code, {
     path: "/",
     maxAge: 60 * 60 * 24 * 365,
     sameSite: "lax",

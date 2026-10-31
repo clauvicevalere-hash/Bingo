@@ -15,7 +15,7 @@ const token = `${Buffer.from(payload).toString("base64url")}.${crypto
   .createHmac("sha256", SECRET)
   .update(payload)
   .digest("base64url")}`;
-const cookie = `bingo_admin=${token}`;
+const cookie = `te_admin=${token}`;
 
 const catRes = await fetch(`${BASE}/api/admin/categories`, {
   method: "POST",

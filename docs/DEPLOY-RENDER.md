@@ -8,11 +8,11 @@ survivent aux redéploiements. C'est la cible la plus simple pour cette applicat
 
 ## 1. Pousser le code sur GitHub
 
-Le dépôt `clauvicevalere-hash/Bingo` est vide. Depuis le dossier du projet :
+Le dépôt `clauvicevalere-hash/Tresor Empire` est vide. Depuis le dossier du projet :
 
 ```bash
-cd C:\Users\Tresor\Documents\ecommerce\Bingo
-git remote set-url origin https://github.com/clauvicevalere-hash/Bingo.git
+cd C:\Users\Tresor\Documents\ecommerce\Tresor Empire
+git remote set-url origin https://github.com/clauvicevalere-hash/Tresor Empire.git
 git push -u origin master:main
 ```
 
@@ -23,7 +23,7 @@ et autorisez. Vérifiez ensuite que les fichiers apparaissent sur GitHub (≈ 1 
 ## 2. Créer le service Render
 
 1. Ouvrez <https://dashboard.render.com> → **New** → **Blueprint**.
-2. Connectez GitHub et sélectionnez le dépôt `Bingo`.
+2. Connectez GitHub et sélectionnez le dépôt `Tresor Empire`.
 3. Render détecte `render.yaml` → **Apply**.
 4. Renseignez les variables demandées :
    - `ADMIN_PASSWORD` : un mot de passe fort

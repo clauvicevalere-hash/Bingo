@@ -2,7 +2,7 @@ import crypto from "crypto";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
-const COOKIE = "bingo_admin";
+const COOKIE = "te_admin";
 const SECRET = process.env.SESSION_SECRET || "dev-secret";
 
 export function signToken(payload: string) {

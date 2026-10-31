@@ -6,7 +6,7 @@ export default function LegalPage() {
       <h1 className="page-title">Mentions légales</h1>
       <div className="panel prose" style={{ lineHeight: 1.8 }}>
         <p>
-          <b>Bingo</b> — boutique de téléphonie et de high-tech. Les informations d&apos;immatriculation
+          <b>Tresor Empire</b> — boutique de téléphonie et de high-tech. Les informations d&apos;immatriculation
           (RCCM, IFU, adresse du siège) seront complétées avant la mise en ligne publique.
         </p>
         <h3>Données personnelles</h3>

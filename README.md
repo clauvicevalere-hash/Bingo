@@ -1,4 +1,4 @@
-# Bingo — boutique high-tech Afrique de l'Ouest
+# Tresor Empire — boutique high-tech Afrique de l'Ouest
 
 Application e-commerce multi-pays (Burkina Faso, Mali, Niger, Côte d'Ivoire) :
 catalogue high-tech, stock par pays, paiement à la livraison et Orange Money.

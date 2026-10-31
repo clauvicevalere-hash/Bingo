@@ -1,7 +1,7 @@
 import { cookies } from "next/headers";
 import { DEFAULT_COUNTRY, isCountry } from "./site";
 
-export const COUNTRY_COOKIE = "bingo_country";
+export const COUNTRY_COOKIE = "te_country";
 
 export async function getCountryCode() {
   const store = await cookies();

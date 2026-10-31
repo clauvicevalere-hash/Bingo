@@ -31,9 +31,10 @@ export async function Header() {
         </div>
       </div>
       <div className="container header-main">
-        <Link href="/" className="logo" aria-label="Bingo, accueil">
-          <span className="logo-mark">B</span>
-          Bingo<span className="dot">.</span>
+        <Link href="/" className="logo" aria-label="Tresor Empire, accueil">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/brand/logo.png" alt="Tresor Empire" className="logo-img" />
+          <span className="brand-word">Tresor <em>Empire</em></span>
         </Link>
         <form className="search" action="/recherche" role="search">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8d827a" strokeWidth="2">

@@ -1,11 +1,11 @@
-const CACHE = "bingo-static-v2";
+﻿const CACHE = "tresor-empire-v3";
 const OFFLINE = "/offline.html";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches
       .open(CACHE)
-      .then((cache) => cache.addAll([OFFLINE, "/icons/icon-192.png", "/manifest.webmanifest"]))
+      .then((cache) => cache.addAll([OFFLINE, "/brand/icon-192.png", "/manifest.webmanifest"]))
       .then(() => self.skipWaiting())
   );
 });
@@ -57,3 +57,4 @@ self.addEventListener("fetch", (event) => {
     );
   }
 });
+

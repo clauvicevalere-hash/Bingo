@@ -1,4 +1,4 @@
-package com.bingo.shop;
+package com.tresorempire.app;
 
 import com.getcapacitor.BridgeActivity;
 

@@ -13,7 +13,7 @@ const SECRET = process.env.SESSION_SECRET || "change-me-in-production-8f3a9c2e5b
 const db = new PrismaClient();
 
 const payload = `admin:${Date.now() + 86400000}`;
-const cookie = `bingo_admin=${Buffer.from(payload).toString("base64url")}.${crypto
+const cookie = `te_admin=${Buffer.from(payload).toString("base64url")}.${crypto
   .createHmac("sha256", SECRET)
   .update(payload)
   .digest("base64url")}`;

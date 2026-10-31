@@ -3,8 +3,8 @@
 ## Résultat
 
 - Fichier : `dist/bingo-debug.apk` — **4 Mo**, signé en debug, installable par sideload.
-- Package : `com.bingo.shop` · label `Bingo` · minSdk 24 · targetSdk 36.
-- Icône et splash personnalisés (orange Bingo) via `scripts/android-assets.mjs`.
+- Package : `com.bingo.shop` · label `Tresor Empire` · minSdk 24 · targetSdk 36.
+- Icône et splash personnalisés (orange Tresor Empire) via `scripts/android-assets.mjs`.
 - L'APK charge `server.url` : actuellement l'URL du tunnel de démonstration.
 
 ## Rebuild pour un domaine définitif

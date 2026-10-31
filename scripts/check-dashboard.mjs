@@ -9,7 +9,7 @@ const token = `${Buffer.from(payload).toString("base64url")}.${crypto
   .update(payload)
   .digest("base64url")}`;
 
-const res = await fetch("http://localhost:3000/admin", { headers: { cookie: `bingo_admin=${token}` } });
+const res = await fetch("http://localhost:3000/admin", { headers: { cookie: `te_admin=${token}` } });
 const html = await res.text();
 console.log("status", res.status);
 for (const marker of ["Ventes par pays", "Meilleures ventes", "CA 30 derniers jours", "Stock total"]) {

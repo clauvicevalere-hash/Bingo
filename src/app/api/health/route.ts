@@ -6,7 +6,7 @@ export async function GET() {
     const products = await db.product.count();
     return NextResponse.json({
       ok: true,
-      service: "bingo",
+      service: "tresor-empire",
       products,
       time: new Date().toISOString(),
     });

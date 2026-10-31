@@ -71,7 +71,8 @@ export default async function HomePage() {
             </div>
           </div>
           <div className="hero-art" aria-hidden>
-            📱
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/brand/logo.png" alt="" />
           </div>
         </div>
       </section>

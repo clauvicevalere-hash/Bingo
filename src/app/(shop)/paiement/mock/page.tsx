@@ -42,7 +42,7 @@ export default async function MockPaymentPage({
           {valid ? (
             <>
               <p className="small" style={{ lineHeight: 1.6 }}>
-                Paiement demandé par <b>Bingo</b> pour <b>{order.customerName}</b> ({order.phone}).
+                Paiement demandé par <b>Tresor Empire</b> pour <b>{order.customerName}</b> ({order.phone}).
                 <br />
                 Ville de livraison : {order.city}, {order.countryCode}.
               </p>

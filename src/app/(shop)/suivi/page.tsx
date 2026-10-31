@@ -35,7 +35,7 @@ export default async function TrackingPage({
     <div className="container" style={{ maxWidth: 760 }}>
       <h1 className="page-title">Suivre ma commande</h1>
       <p className="muted" style={{ marginTop: 0 }}>
-        Entrez votre numéro de commande (ex. BNG-261031-4821) ou votre numéro de téléphone.
+        Entrez votre numéro de commande (ex. TE-261031-4821) ou votre numéro de téléphone.
       </p>
 
       <form action="/suivi" className="search" style={{ margin: "14px 0 26px" }}>

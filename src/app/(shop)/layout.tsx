@@ -7,23 +7,23 @@ import { PwaRegister } from "@/components/PwaRegister";
 
 export const metadata: Metadata = {
   title: {
-    default: "Bingo — Téléphones & high-tech livrés en Afrique de l'Ouest",
-    template: "%s · Bingo",
+    default: "Tresor Empire — Téléphones & high-tech livrés en Afrique de l'Ouest",
+    template: "%s · Tresor Empire",
   },
   description:
     "Achetez téléphones neufs et d'occasion, ordinateurs, tablettes et gadgets. Livraison au Burkina Faso, Mali, Niger et Côte d'Ivoire. Paiement à la livraison et Orange Money.",
   manifest: "/manifest.webmanifest",
-  applicationName: "Bingo",
-  appleWebApp: { capable: true, title: "Bingo", statusBarStyle: "default" },
+  applicationName: "Tresor Empire",
+  appleWebApp: { capable: true, title: "Tresor Empire", statusBarStyle: "default" },
   openGraph: {
-    title: "Bingo — High-tech livré chez vous",
+    title: "Tresor Empire — High-tech livré chez vous",
     description: "Téléphones, ordinateurs et gadgets authentiques. Paiement à la réception.",
     type: "website",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#f26a1b",
+  themeColor: "#d90b1c",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,

@@ -24,12 +24,16 @@ export default async function PackingSlip({ params }: { params: Promise<{ id: st
           <PrintButton />
         </div>
 
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "start", borderBottom: "2px solid #171310", paddingBottom: 14 }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "start", borderBottom: "2px solid #0a1240", paddingBottom: 14 }}>
           <div>
-            <div style={{ fontSize: 26, fontWeight: 800, letterSpacing: "-0.03em" }}>
-              Bingo<span style={{ color: "#f26a1b" }}>.</span>
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/brand/logo.png" alt="Tresor Empire" style={{ width: 42, height: 42, objectFit: "contain" }} />
+              <div style={{ fontSize: 24, fontWeight: 800, letterSpacing: "-0.03em" }}>
+                Tresor <span style={{ color: "#d90b1c" }}>Empire</span>
+              </div>
             </div>
-            <div className="small muted">Bon de livraison</div>
+            <div className="small muted" style={{ marginTop: 4 }}>Bon de livraison</div>
           </div>
           <div style={{ textAlign: "right" }}>
             <div style={{ fontFamily: "ui-monospace, monospace", fontWeight: 700 }}>{order.number}</div>

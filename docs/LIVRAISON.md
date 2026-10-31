@@ -1,4 +1,4 @@
-# Bingo — dossier de livraison
+# Tresor Empire — dossier de livraison
 
 ## 1. En résumé
 

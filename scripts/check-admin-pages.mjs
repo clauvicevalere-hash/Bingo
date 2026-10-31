@@ -10,7 +10,7 @@ const token = `${Buffer.from(payload).toString("base64url")}.${crypto
   .update(payload)
   .digest("base64url")}`;
 
-const headers = { cookie: `bingo_admin=${token}` };
+const headers = { cookie: `te_admin=${token}` };
 for (const path of ["/admin", "/admin/produits", "/admin/produits/1", "/admin/categories", "/admin/commandes", "/admin/stocks"]) {
   const res = await fetch(base + path, { headers });
   const html = await res.text();
