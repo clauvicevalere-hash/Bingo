@@ -6,7 +6,7 @@ import { db } from "@/lib/db";
 import { money } from "@/lib/site";
 import { VariantManager } from "@/components/admin/VariantManager";
 import { ImageManager } from "@/components/admin/ImageManager";
-import { computePrice } from "@/lib/pricing";
+import { computePrice, defaultsFor, type ProfitMode } from "@/lib/pricing";
 import { computeOldPrice, type OldPriceMode } from "@/lib/marketing";
 
 export const dynamic = "force-dynamic";
@@ -44,11 +44,19 @@ export default async function AdminProductEdit({
     const pricingMode = formData.get("pricingMode") === "manual" ? "manual" : "auto";
     const supplierPriceAed = Number(formData.get("supplierPriceAed")) || 0;
     const logisticsCost = Math.round(Number(formData.get("logisticsCost")) || 0);
-    const profitMode = formData.get("profitMode") === "fixed" ? "fixed" : "percent";
-    const profitValue = Number(formData.get("profitValue")) || 0;
-    const minProfit = Math.round(Number(formData.get("minProfit")) || 0);
-    const maxProfit = Math.round(Number(formData.get("maxProfit")) || 0);
+    const profitModeRaw = String(formData.get("profitMode") || "percent");
+    const profitMode: ProfitMode =
+      profitModeRaw === "fixed" ? "fixed" : profitModeRaw === "tiered" ? "tiered" : "percent";
+    const tiered = profitMode === "tiered";
+    const profitValue = tiered ? 0 : Number(formData.get("profitValue")) || 0;
+    const minProfit = tiered ? 0 : Math.round(Number(formData.get("minProfit")) || 0);
+    const maxProfit = tiered ? 0 : Math.round(Number(formData.get("maxProfit")) || 0);
     const roundTo = Math.round(Number(formData.get("roundTo")) || 500);
+
+    const category = categoryId
+      ? await db.category.findUnique({ where: { id: categoryId }, include: { parent: true } })
+      : null;
+    const tiers = defaultsFor(category?.parent?.slug ?? category?.slug ?? "").tiers;
 
     let price = Math.max(0, Math.round(Number(formData.get("price")) || 0));
     if (pricingMode === "auto" && supplierPriceAed > 0) {
@@ -60,6 +68,7 @@ export default async function AdminProductEdit({
         minProfit,
         maxProfit,
         roundTo,
+        tiers,
       }).price;
     }
 
@@ -154,6 +163,7 @@ export default async function AdminProductEdit({
               <select name="profitMode" defaultValue={product.profitMode}>
                 <option value="percent">Pourcentage</option>
                 <option value="fixed">Montant fixe</option>
+                <option value="tiered">Par tranche (téléphones)</option>
               </select>
             </div>
             <div className="field">

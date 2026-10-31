@@ -1,6 +1,8 @@
 import rawDefaults from "./pricing-defaults.json";
 
-export type ProfitMode = "percent" | "fixed";
+export type ProfitMode = "percent" | "fixed" | "tiered";
+
+export type PricingTier = { max: number; margin: number };
 
 export type PricingDefaults = {
   logistics: number;
@@ -9,11 +11,13 @@ export type PricingDefaults = {
   min: number;
   max: number;
   roundTo: number;
+  tiers?: PricingTier[];
 };
 
 /**
  * Politique de prix par rayon, définie dans pricing-defaults.json.
- * - téléphones : 10 000 F de fret/douane, marge 10 % encadrée entre 15 000 et 25 000 F
+ * - téléphones : fret 10 000 F, marge par tranche de coût rendu
+ *   (< 100 000 F → 10 000 ; 100 000–250 000 → 15 000 ; > 250 000 → 20 000)
  * - ordinateurs : 15 000 F de logistique, 12 % de marge (mini 25 000 F)
  * - accessoires : pas de fret unitaire, 25 % de marge
  */
@@ -46,6 +50,7 @@ export type PricingInput = {
   minProfit: number;
   maxProfit: number;
   roundTo: number;
+  tiers?: PricingTier[];
 };
 
 export type PricingResult = {
@@ -60,17 +65,25 @@ export function computePrice(input: PricingInput): PricingResult {
   const costXof = Math.max(0, input.costAed) * rate;
   // Le fret forfaitaire ne peut pas dépasser 20 % de la valeur du produit :
   // les petits articles ne portent pas 10 000 F de transport.
-  const logistics =
-    input.logistics > 0 ? Math.min(input.logistics, costXof * 0.2) : 0;
+  const logistics = input.logistics > 0 ? Math.min(input.logistics, costXof * 0.2) : 0;
   const landed = costXof + logistics;
 
-  let profit =
-    input.mode === "fixed" ? Math.max(0, input.value) : (landed * Math.max(0, input.value)) / 100;
+  let profit: number;
 
-  // La marge minimale est plafonnée à 40 % du coût rendu pour éviter
-  // des prix absurdes sur les articles à faible valeur.
-  const floor = input.minProfit > 0 ? Math.min(input.minProfit, landed * 0.4) : 0;
-  if (floor > 0) profit = Math.max(profit, floor);
+  if (input.mode === "tiered") {
+    const tiers = input.tiers ?? [];
+    const tier = tiers.find((t) => t.max <= 0 || landed <= t.max) ?? tiers[tiers.length - 1];
+    profit = tier ? Math.max(0, tier.margin) : 0;
+  } else {
+    profit =
+      input.mode === "fixed" ? Math.max(0, input.value) : (landed * Math.max(0, input.value)) / 100;
+
+    // La marge minimale est plafonnée à 40 % du coût rendu pour éviter
+    // des prix absurdes sur les articles à faible valeur.
+    const floor = input.minProfit > 0 ? Math.min(input.minProfit, landed * 0.4) : 0;
+    if (floor > 0) profit = Math.max(profit, floor);
+  }
+
   if (input.maxProfit > 0) profit = Math.min(profit, input.maxProfit);
 
   const raw = landed + profit;

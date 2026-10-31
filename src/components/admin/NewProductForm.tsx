@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
-import { computePrice, type PricingDefaults } from "@/lib/pricing";
+import { computePrice, type PricingDefaults, type ProfitMode } from "@/lib/pricing";
 import { computeOldPrice, type OldPriceMode } from "@/lib/marketing";
 
 type Option = { id: number; name: string; parent?: string };
@@ -24,7 +24,7 @@ export function NewProductForm({
   const [categoryId, setCategoryId] = useState<number | "">("");
   const [supplierPriceAed, setSupplierPriceAed] = useState("");
   const [logisticsCost, setLogisticsCost] = useState("0");
-  const [profitMode, setProfitMode] = useState<"percent" | "fixed">("percent");
+  const [profitMode, setProfitMode] = useState<ProfitMode>("percent");
   const [profitValue, setProfitValue] = useState("0");
   const [minProfit, setMinProfit] = useState("0");
   const [maxProfit, setMaxProfit] = useState("0");
@@ -62,8 +62,9 @@ export function NewProductForm({
       minProfit: Number(minProfit) || 0,
       maxProfit: Number(maxProfit) || 0,
       roundTo: Number(roundTo) || 500,
+      tiers: defaults?.tiers,
     });
-  }, [supplierPriceAed, rate, logisticsCost, profitMode, profitValue, minProfit, maxProfit, roundTo]);
+  }, [supplierPriceAed, rate, logisticsCost, profitMode, profitValue, minProfit, maxProfit, roundTo, defaults]);
 
   const finalPrice = manual ? Number(manualPrice) || 0 : result?.price || 0;
   const oldPreview = computeOldPrice(
@@ -215,10 +216,11 @@ export function NewProductForm({
               id="p-mode"
               name="profitMode"
               value={profitMode}
-              onChange={(e) => setProfitMode(e.target.value as "percent" | "fixed")}
+              onChange={(e) => setProfitMode(e.target.value as ProfitMode)}
             >
               <option value="percent">Pourcentage du coût rendu</option>
               <option value="fixed">Montant fixe (FCFA)</option>
+              <option value="tiered">Par tranche (téléphones)</option>
             </select>
           </div>
           <div className="field">
@@ -231,9 +233,18 @@ export function NewProductForm({
               step={profitMode === "percent" ? 1 : 500}
               value={profitValue}
               onChange={(e) => setProfitValue(e.target.value)}
+              disabled={profitMode === "tiered"}
             />
           </div>
         </div>
+
+        {profitMode === "tiered" && defaults?.tiers ? (
+          <p className="muted tiny" style={{ marginTop: 0 }}>
+            Tranches : {defaults.tiers
+              .map((t) => (t.max > 0 ? `≤ ${money(t.max)} → ${money(t.margin)}` : `> ${money(defaults.tiers![defaults.tiers!.length - 2]?.max ?? 0)} → ${money(t.margin)}`))
+              .join(" · ")}
+          </p>
+        ) : null}
 
         <input type="hidden" name="minProfit" value={minProfit} />
         <input type="hidden" name="maxProfit" value={maxProfit} />

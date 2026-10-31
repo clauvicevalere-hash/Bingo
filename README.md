@@ -44,7 +44,9 @@ docs/APK.md             génération de l'APK Android
 - **Prix intelligent** : `prix = coût rendu + bénéfice`, avec
   `coût rendu = prix fournisseur AED × PRICE_RATE + fret/douane`.
   Le bénéfice vient de la politique du rayon (`src/lib/pricing-defaults.json`) :
-  pourcentage du coût rendu, encadré par un mini et un maxi. Le fret forfaitaire est
+  pourcentage du coût rendu, encadré par un mini et un maxi, ou **marge par tranche**
+  pour les téléphones (< 100 000 F de coût rendu → 10 000 F ; 100 000–250 000 → 15 000 F ;
+  > 250 000 → 20 000 F). Le fret forfaitaire est
   plafonné à 20 % de la valeur du produit et la marge minimale à 40 % du coût rendu,
   pour éviter les prix absurdes sur les petits articles.
   L'admin saisit le prix fournisseur, le fret et la marge : le prix de vente est calculé

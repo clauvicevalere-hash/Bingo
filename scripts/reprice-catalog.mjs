@@ -27,10 +27,16 @@ function compute(costAed, d) {
   const costXof = Math.max(0, Number(costAed) || 0) * rate;
   const logistics = d.logistics > 0 ? Math.min(d.logistics, costXof * 0.2) : 0;
   const landed = costXof + logistics;
-  let profit = d.mode === "fixed" ? d.value : (landed * d.value) / 100;
-  const floor = d.min > 0 ? Math.min(d.min, landed * 0.4) : 0;
-  if (floor > 0) profit = Math.max(profit, floor);
-  if (d.max > 0) profit = Math.min(profit, d.max);
+  let profit;
+  if (d.mode === "tiered") {
+    const tier = (d.tiers || []).find((t) => t.max <= 0 || landed <= t.max);
+    profit = tier ? tier.margin : 0;
+  } else {
+    profit = d.mode === "fixed" ? d.value : (landed * d.value) / 100;
+    const floor = d.min > 0 ? Math.min(d.min, landed * 0.4) : 0;
+    if (floor > 0) profit = Math.max(profit, floor);
+    if (d.max > 0) profit = Math.min(profit, d.max);
+  }
   const raw = landed + profit;
   const step = Math.max(1, d.roundTo);
   return Math.max(500, Math.round(raw / step) * step);

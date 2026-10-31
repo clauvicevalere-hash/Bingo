@@ -5,7 +5,7 @@ import sharp from "sharp";
 import { isAdmin } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { slugify } from "@/lib/site";
-import { computePrice, defaultsFor } from "@/lib/pricing";
+import { computePrice, defaultsFor, type ProfitMode } from "@/lib/pricing";
 import { computeOldPrice, type OldPriceMode } from "@/lib/marketing";
 
 const COUNTRIES = ["BF", "ML", "NE", "CI"];
@@ -62,10 +62,13 @@ export async function POST(req: Request) {
   const defaults = defaultsFor(category.parent?.slug ?? category.slug);
   const supplierPriceAed = Number(form.get("supplierPriceAed")) || 0;
   const logisticsCost = Math.round(Number(form.get("logisticsCost")) || defaults.logistics);
-  const profitMode = form.get("profitMode") === "fixed" ? "fixed" : "percent";
-  const profitValue = Number(form.get("profitValue")) || defaults.value;
-  const minProfit = Math.round(Number(form.get("minProfit")) || defaults.min);
-  const maxProfit = Math.round(Number(form.get("maxProfit")) || defaults.max);
+  const modeRaw = String(form.get("profitMode") || defaults.mode);
+  const profitMode: ProfitMode =
+    modeRaw === "fixed" ? "fixed" : modeRaw === "tiered" ? "tiered" : "percent";
+  const tiered = profitMode === "tiered";
+  const profitValue = tiered ? 0 : Number(form.get("profitValue")) || defaults.value;
+  const minProfit = tiered ? 0 : Math.round(Number(form.get("minProfit")) || defaults.min);
+  const maxProfit = tiered ? 0 : Math.round(Number(form.get("maxProfit")) || defaults.max);
   const roundTo = Math.round(Number(form.get("roundTo")) || defaults.roundTo);
   const pricingMode = form.get("pricingMode") === "manual" ? "manual" : "auto";
 
@@ -79,6 +82,7 @@ export async function POST(req: Request) {
       minProfit,
       maxProfit,
       roundTo,
+      tiers: defaults.tiers,
     }).price;
   }
 
