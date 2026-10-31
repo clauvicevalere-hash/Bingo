@@ -45,6 +45,28 @@ Import initial du catalogue…
 Le premier build prend ~5–8 minutes (installation + build Next + import).
 Le healthcheck `/api/health` doit passer au vert.
 
+## 3 bis. Déploiement manuel
+
+Si Render ne redéploie pas après un `git push` (auto-deploy désactivé) :
+service → **Manual Deploy** → **Deploy latest commit**.
+
+Variables d'environnement recommandées (Environment) :
+
+| Clé | Valeur |
+|---|---|
+| `ADMIN_PASSWORD` | mot de passe admin de votre choix |
+| `SESSION_SECRET` | chaîne aléatoire de 64 caractères |
+| `APP_URL` | `https://bingo-xxxx.onrender.com` (ou votre domaine) |
+| `ORANGE_MODE` | `mock` pour tester, `live` avec les clés |
+| `SITE_*` | téléphone, WhatsApp, e-mail, adresse |
+
+Sans ces variables, l'entrypoint génère automatiquement `SESSION_SECRET` et
+`ADMIN_PASSWORD` ; le mot de passe admin est alors affiché **une seule fois dans les logs**
+et conservé dans `/app/data/admin-password.txt` sur le disque.
+
+L'URL publique est aussi déduite des en-têtes de requête (`x-forwarded-host`) : le sitemap,
+les images Open Graph et les retours de paiement utilisent donc automatiquement le bon domaine.
+
 ## 4. Corriger l'URL publique
 
 Une fois le service en ligne, copiez son URL (`https://bingo-xxxx.onrender.com`),
