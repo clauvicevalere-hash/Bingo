@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
 import { money } from "@/lib/site";
 import { VariantManager } from "@/components/admin/VariantManager";
+import { ImageManager } from "@/components/admin/ImageManager";
 
 export const dynamic = "force-dynamic";
 
@@ -168,19 +169,7 @@ export default async function AdminProductEdit({
 
       <VariantManager productId={product.id} variants={variantData} />
 
-      <div className="panel" style={{ marginTop: 16 }}>
-        <h3 style={{ margin: "0 0 10px", fontSize: 15 }}>Images</h3>
-        <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-          {product.images.map((img) => (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img key={img.id} src={img.url} alt="" style={{ width: 72, height: 72, objectFit: "contain", border: "1px solid var(--line)", borderRadius: 8 }} />
-          ))}
-          {product.images.length === 0 && <span className="muted tiny">Aucune image.</span>}
-        </div>
-        <p className="muted tiny" style={{ marginBottom: 0 }}>
-          Prix actuel : <b>{money(product.price)}</b>
-        </p>
-      </div>
+      <ImageManager productId={product.id} images={product.images.map((i) => ({ id: i.id, url: i.url }))} />
     </div>
   );
 }
