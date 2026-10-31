@@ -1,5 +1,21 @@
 # Déploiement
 
+## Démo temporaire (sans serveur)
+
+Pour montrer la boutique ou tester l'installation PWA sur un téléphone avant
+d'avoir un hébergement :
+
+```bash
+node scripts/download-cloudflared.mjs   # une seule fois
+node scripts/tunnel.mjs                 # affiche une URL https://…trycloudflare.com
+```
+
+Le lien ne fonctionne que tant que le processus tourne et que l'application est lancée.
+Mettre `APP_URL` à cette URL puis redémarrer l'app pour des liens absolus corrects
+(images Open Graph, retour de paiement). Ce n'est **pas** un hébergement de production.
+
+## Déploiement permanent
+
 ## Option 1 — VPS avec Docker (recommandé)
 
 Prérequis : un VPS Ubuntu 22.04+ (2 Go RAM), un nom de domaine pointant vers son IP.
