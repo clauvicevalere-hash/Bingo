@@ -81,7 +81,8 @@ puis déclarer le webhook `https://…/api/payments/orange/webhook` chez Orange.
 
 ## Admin
 
-- Tableau de bord (commandes, CA livré, stock total)
+- Tableau de bord : CA sur 30 jours, **ventes par pays**, meilleures ventes, alertes
+  (avis en attente, commandes Orange impayées), stock total
 - Commandes : recherche, filtre par statut, changement de statut, **marquer payé**
 - **Bon de livraison imprimable** (`/admin/bon/:id`) pour les livraisons COD
 - Produits : prix, ancien prix, catégorie, état, visibilité, mise en avant
