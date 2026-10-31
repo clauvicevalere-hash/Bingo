@@ -4,6 +4,24 @@ set -e
 # Valeurs par défaut si la plateforme ne les fournit pas.
 export DATA_DIR="${DATA_DIR:-/app/data}"
 export DATABASE_URL="${DATABASE_URL:-file:$DATA_DIR/dev.db}"
+export APP_URL="${APP_URL:-${RENDER_EXTERNAL_URL:-http://localhost:3000}}"
+
+if [ -z "${SESSION_SECRET:-}" ]; then
+  SESSION_SECRET=$(node -e "console.log(require('crypto').randomBytes(32).toString('hex'))")
+  export SESSION_SECRET
+  echo "SESSION_SECRET généré pour cette instance."
+fi
+
+if [ -z "${ADMIN_PASSWORD:-}" ]; then
+  if [ -f "$DATA_DIR/admin-password.txt" ]; then
+    ADMIN_PASSWORD=$(cat "$DATA_DIR/admin-password.txt")
+  else
+    ADMIN_PASSWORD=$(node -e "console.log('Bingo-'+require('crypto').randomBytes(6).toString('base64url'))")
+    echo "$ADMIN_PASSWORD" > "$DATA_DIR/admin-password.txt"
+    echo "Mot de passe admin généré (à conserver) : $ADMIN_PASSWORD"
+  fi
+  export ADMIN_PASSWORD
+fi
 
 # Un seul disque persistant : base + images, exposées via public/uploads.
 mkdir -p "$DATA_DIR/uploads"
