@@ -1,7 +1,9 @@
 #!/bin/sh
 set -e
 
-DATA_DIR="${DATA_DIR:-/app/data}"
+# Valeurs par défaut si la plateforme ne les fournit pas.
+export DATA_DIR="${DATA_DIR:-/app/data}"
+export DATABASE_URL="${DATABASE_URL:-file:$DATA_DIR/dev.db}"
 
 # Un seul disque persistant : base + images, exposées via public/uploads.
 mkdir -p "$DATA_DIR/uploads"
@@ -14,7 +16,7 @@ fi
 npx prisma db push --skip-generate
 
 # Premier démarrage : import du catalogue (images déjà copiées sur le disque)
-if [ "${SEED_ON_START:-0}" = "1" ] && [ ! -f "$DATA_DIR/.seeded" ]; then
+if [ "${SEED_ON_START:-1}" = "1" ] && [ ! -f "$DATA_DIR/.seeded" ]; then
   echo "Import initial du catalogue…"
   SKIP_IMAGES=1 node scripts/import-catalog.mjs
   touch "$DATA_DIR/.seeded"
