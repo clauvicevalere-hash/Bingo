@@ -189,3 +189,41 @@ model Setting {
   key   String @id
   value String
 }
+
+model Notification {
+  id        Int      @id @default(autoincrement())
+  type      String
+  title     String
+  body      String   @default("")
+  link      String   @default("")
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([read, createdAt])
+}
+
+model ContactMessage {
+  id        Int      @id @default(autoincrement())
+  name      String
+  phone     String
+  email     String   @default("")
+  message   String
+  status    String   @default("new")
+  createdAt DateTime @default(now())
+
+  @@index([status, createdAt])
+}
+
+model Event {
+  id        Int      @id @default(autoincrement())
+  type      String
+  path      String   @default("")
+  productId Int?
+  session   String   @default("")
+  country   String   @default("")
+  value     Int      @default(0)
+  createdAt DateTime @default(now())
+
+  @@index([type, createdAt])
+  @@index([createdAt])
+}

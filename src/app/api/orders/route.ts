@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
+import { notifyOrder } from "@/lib/notify";
 import { COUNTRY_CODES } from "@/lib/constants";
 import { orangeConfig } from "@/lib/orange";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
@@ -161,6 +162,9 @@ export async function POST(req: Request) {
         },
       });
     });
+
+    await notifyOrder(order.number, order.total, order.customerName, order.id);
+    await db.event.create({ data: { type: "order", value: order.total, country: countryCode } }).catch(() => null);
 
     return NextResponse.json({ ok: true, number: order.number, total: order.total });
   } catch (e: any) {

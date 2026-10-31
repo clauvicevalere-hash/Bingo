@@ -1,4 +1,5 @@
 import { getSiteSettings, telHref, waDigits } from "@/lib/settings";
+import { ContactForm } from "@/components/ContactForm";
 
 export const metadata = { title: "Contact" };
 export const dynamic = "force-dynamic";
@@ -40,6 +41,8 @@ export default async function ContactPage() {
           Horaires : lundi – samedi, 8 h – 20 h
         </p>
       </div>
+
+      <ContactForm />
     </div>
   );
 }

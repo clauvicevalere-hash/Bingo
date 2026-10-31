@@ -1,9 +1,15 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { requireAdmin, clearAdminCookie } from "@/lib/auth";
+import { db } from "@/lib/db";
 
 export default async function AdminDashLayout({ children }: { children: React.ReactNode }) {
   await requireAdmin();
+
+  const [unread, messages] = await Promise.all([
+    db.notification.count({ where: { read: false } }),
+    db.contactMessage.count({ where: { status: "new" } }),
+  ]);
 
   async function logout() {
     "use server";
@@ -27,7 +33,10 @@ export default async function AdminDashLayout({ children }: { children: React.Re
         <Link href="/admin/produits">Produits</Link>
         <Link href="/admin/categories">Catégories</Link>
         <Link href="/admin/avis">Avis clients</Link>
+        <Link href="/admin/messages">Messages{messages > 0 ? ` (${messages})` : ""}</Link>
+        <Link href="/admin/notifications">Notifications{unread > 0 ? ` (${unread})` : ""}</Link>
         <Link href="/admin/stocks">Stocks</Link>
+        <Link href="/admin/statistiques">Statistiques</Link>
         <Link href="/admin/parametres">Paramètres</Link>
         <Link href="/" target="_blank">Voir la boutique ↗</Link>
         <form action={logout} style={{ marginTop: 18, padding: "0 4px" }}>

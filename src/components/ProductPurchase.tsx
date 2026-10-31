@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import { addLine } from "@/lib/cart";
+import { addLine, trackAddToCart } from "@/lib/cart";
 import { money } from "@/lib/site";
 
 type Variant = {
@@ -59,6 +59,7 @@ export function ProductPurchase({
       stock,
       qty,
     });
+    trackAddToCart(product.id, price * qty);
     if (thenCheckout) {
       router.push("/commande");
       return;

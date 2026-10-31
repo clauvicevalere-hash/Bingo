@@ -5,6 +5,7 @@ import { db } from "@/lib/db";
 import { getCountryCode } from "@/lib/country";
 import { countryByCode, discountPercent, money, stripHtml } from "@/lib/site";
 import { getSiteSettings, waDigits } from "@/lib/settings";
+import { ProductTracker } from "@/components/Tracker";
 import { categoryLabel, productLabel } from "@/lib/fr";
 import { baseUrl } from "@/lib/base-url";
 import { Gallery } from "@/components/Gallery";
@@ -155,6 +156,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
   return (
     <div className="container">
+      <ProductTracker productId={product.id} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

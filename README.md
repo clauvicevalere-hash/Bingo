@@ -107,6 +107,11 @@ puis déclarer le webhook `https://…/api/payments/orange/webhook` chez Orange.
   stock par pays pour chaque option (stockage, couleur…)
 - **Images** : ajout et suppression depuis la fiche produit, conversion WebP automatique
 - **Avis clients** (`/admin/avis`) : modération (publier, refuser, supprimer)
+- **Messages clients** (`/admin/messages`) : formulaire de contact, réponse WhatsApp/appel
+- **Notifications** (`/admin/notifications`) : nouvelles commandes, changements de statut, messages
+- **Statistiques** (`/admin/statistiques`) : visites, visiteurs uniques, vues produit, ajouts
+  panier, commandes, chiffre d'affaires, taux de conversion, produits les plus consultés
+- **Sauvegarde** : téléchargement de la base depuis `/admin/parametres`
 - Stocks : quantités par variante et par pays, alertes stock faible
 - **Paramètres** (`/admin/parametres`) : numéro WhatsApp, numéro d'appel, e-mail et adresse
   utilisés sur la boutique, la page contact, les fiches produit et le pied de page

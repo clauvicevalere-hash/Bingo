@@ -71,6 +71,14 @@ export default async function SettingsPage({
       </form>
 
       <div className="panel" style={{ marginTop: 14 }}>
+        <h3 style={{ margin: "0 0 8px", fontSize: 16 }}>Sauvegarde</h3>
+        <p className="muted small" style={{ marginTop: 0 }}>
+          Téléchargez une copie complète de la base (produits, commandes, réglages).
+        </p>
+        <a className="btn" href="/api/admin/backup">Télécharger la sauvegarde</a>
+      </div>
+
+      <div className="panel" style={{ marginTop: 14 }}>
         <h3 style={{ margin: "0 0 8px", fontSize: 16 }}>Aperçu des liens</h3>
         <p className="small" style={{ margin: 0 }}>
           WhatsApp : <b>https://wa.me/{settings.whatsapp.replace(/\D/g, "")}</b>

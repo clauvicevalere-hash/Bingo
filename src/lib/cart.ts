@@ -66,3 +66,27 @@ export function removeLine(productId: number, variantId: number | null | undefin
 export function clearCart() {
   writeCart([]);
 }
+
+export function trackAddToCart(productId: number, value: number) {
+  if (typeof window === "undefined") return;
+  try {
+    const body = JSON.stringify({
+      type: "add_to_cart",
+      productId,
+      value,
+      session: window.localStorage.getItem("te_session") || "",
+    });
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon("/api/track", new Blob([body], { type: "application/json" }));
+    } else {
+      fetch("/api/track", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body,
+        keepalive: true,
+      });
+    }
+  } catch {
+    // silencieux
+  }
+}

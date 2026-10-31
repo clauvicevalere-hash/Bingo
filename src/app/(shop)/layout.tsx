@@ -4,6 +4,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { BottomNav } from "@/components/BottomNav";
 import { PwaRegister } from "@/components/PwaRegister";
+import { PageTracker } from "@/components/Tracker";
 
 export const metadata: Metadata = {
   title: {
@@ -38,6 +39,7 @@ export default function ShopLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <BottomNav />
         <PwaRegister />
+        <PageTracker />
       </body>
     </html>
   );
