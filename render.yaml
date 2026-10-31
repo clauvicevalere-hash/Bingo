@@ -1,0 +1,37 @@
+services:
+  - type: web
+    name: bingo
+    runtime: docker
+    plan: starter
+    region: frankfurt
+    healthCheckPath: /api/health
+    autoDeploy: true
+    disk:
+      name: bingo-data
+      mountPath: /app/data
+      sizeGB: 1
+    envVars:
+      - key: DATABASE_URL
+        value: file:/app/data/dev.db
+      - key: DATA_DIR
+        value: /app/data
+      - key: SEED_ON_START
+        value: "1"
+      - key: NODE_ENV
+        value: production
+      - key: ORANGE_MODE
+        value: mock
+      - key: APP_URL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: SITE_WHATSAPP
+        sync: false
+      - key: SITE_PHONE
+        sync: false
+      - key: SITE_EMAIL
+        sync: false
+      - key: SITE_ADDRESS
+        sync: false

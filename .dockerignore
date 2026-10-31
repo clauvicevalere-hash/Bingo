@@ -4,5 +4,16 @@ node_modules
 shots
 analyse/reports
 *.log
+.env
 .env.local
+.env.production
 .DS_Store
+tools
+dist
+backups
+android
+.venv
+py-libs
+capacitor-shell
+render-disks.md
+render-spec.md

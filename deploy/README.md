@@ -1,5 +1,10 @@
 # Déploiement
 
+Guides dédiés :
+
+- **Render** (le plus simple, disque persistant) : [docs/DEPLOY-RENDER.md](../docs/DEPLOY-RENDER.md)
+- **Vercel** : [docs/DEPLOY-VERCEL.md](../docs/DEPLOY-VERCEL.md) — nécessite PostgreSQL + stockage externe
+
 ## Démo temporaire (sans serveur)
 
 Pour montrer la boutique ou tester l'installation PWA sur un téléphone avant
@@ -52,7 +57,8 @@ docker compose logs -f bingo
 ```
 
 Le premier démarrage crée la base et importe le catalogue (`SEED_ON_START=1`).
-Les images sont servies depuis le volume `bingo-uploads`.
+Un seul volume `bingo-data` est monté sur `/app/data` : il contient la base `dev.db`
+et les images (`uploads/`), exposées via `public/uploads`.
 
 ## Option 2 — Sans Docker
 
@@ -115,14 +121,14 @@ En mode `live`, chaque notification est revérifiée auprès de l'API Orange
 
 ## Sauvegardes
 
-La base SQLite vit dans le volume `bingo-db` (`/app/prisma/dev.db`) :
+Le volume `bingo-data` contient la base (`dev.db`) et les images (`uploads/`) :
 
 ```bash
-docker run --rm -v bingo_bingo-db:/data -v $(pwd):/backup alpine \
-  tar czf /backup/bingo-db-$(date +%F).tar.gz -C /data .
+docker run --rm -v bingo_bingo-data:/data -v $(pwd):/backup alpine \
+  tar czf /backup/bingo-data-$(date +%F).tar.gz -C /data .
 ```
 
-Sauvegarder également le volume `bingo-uploads` (photos produits).
+Ou, depuis le conteneur, `npm run backup` (copie cohérente SQLite + images).
 
 ## Passage à PostgreSQL (au-delà de ~50 commandes/jour)
 

@@ -1,15 +1,23 @@
 #!/bin/sh
 set -e
 
-# Base SQLite persistée dans le volume /app/prisma
+DATA_DIR="${DATA_DIR:-/app/data}"
+
+# Un seul disque persistant : base + images, exposées via public/uploads.
+mkdir -p "$DATA_DIR/uploads"
+if [ -d /app/public/uploads ] && [ ! -L /app/public/uploads ]; then
+  cp -a /app/public/uploads/. "$DATA_DIR/uploads/" 2>/dev/null || true
+  rm -rf /app/public/uploads
+  ln -s "$DATA_DIR/uploads" /app/public/uploads
+fi
+
 npx prisma db push --skip-generate
 
-# Premier démarrage : importer le catalogue (sans retélécharger les images,
-# elles sont déjà dans /app/public/uploads)
-if [ "${SEED_ON_START:-0}" = "1" ] && [ ! -f /app/prisma/.seeded ]; then
+# Premier démarrage : import du catalogue (images déjà copiées sur le disque)
+if [ "${SEED_ON_START:-0}" = "1" ] && [ ! -f "$DATA_DIR/.seeded" ]; then
   echo "Import initial du catalogue…"
   SKIP_IMAGES=1 node scripts/import-catalog.mjs
-  touch /app/prisma/.seeded
+  touch "$DATA_DIR/.seeded"
 fi
 
 exec npm run start
