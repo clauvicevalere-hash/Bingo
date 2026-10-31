@@ -22,6 +22,7 @@ export default async function AdminDashLayout({ children }: { children: React.Re
         <Link href="/admin/commandes">Commandes</Link>
         <Link href="/admin/produits">Produits</Link>
         <Link href="/admin/categories">Catégories</Link>
+        <Link href="/admin/avis">Avis clients</Link>
         <Link href="/admin/stocks">Stocks</Link>
         <Link href="/" target="_blank">Voir la boutique ↗</Link>
         <form action={logout} style={{ marginTop: 18, padding: "0 4px" }}>

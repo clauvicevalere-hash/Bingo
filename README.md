@@ -91,6 +91,7 @@ puis déclarer le webhook `https://…/api/payments/orange/webhook` chez Orange.
 - **Options / variantes** : ajout et suppression depuis la fiche produit, prix propre et
   stock par pays pour chaque option (stockage, couleur…)
 - **Images** : ajout et suppression depuis la fiche produit, conversion WebP automatique
+- **Avis clients** (`/admin/avis`) : modération (publier, refuser, supprimer)
 - Stocks : quantités par variante et par pays, alertes stock faible
 
 ## Qualité & exploitation
@@ -107,6 +108,8 @@ puis déclarer le webhook `https://…/api/payments/orange/webhook` chez Orange.
 - **WhatsApp** : bouton de confirmation de commande et bouton « Commander sur WhatsApp »
   pré-rempli sur chaque fiche produit.
 - **Sécurité admin** : cookie HMAC signé, routes `/admin` en `noindex`, API admin protégée.
+- **Avis clients** : dépôt sans compte, publication après modération, note moyenne affichée,
+  `aggregateRating` dans le JSON-LD, anti-spam (5 avis/h par IP, 2 par téléphone et par jour).
 - **Anti-spam** : limite de 20 commandes/heure par IP et 5 par numéro de téléphone (HTTP 429).
 - **En-têtes de sécurité** : nosniff, X-Frame-Options, Referrer-Policy, Permissions-Policy, HSTS.
 - **Sauvegarde** : `npm run backup` (copie SQLite cohérente via `VACUUM INTO` + images,

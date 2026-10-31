@@ -8,6 +8,7 @@ import { categoryLabel, productLabel } from "@/lib/fr";
 import { Gallery } from "@/components/Gallery";
 import { ProductPurchase } from "@/components/ProductPurchase";
 import { ProductCard } from "@/components/ProductCard";
+import { ReviewForm } from "@/components/ReviewForm";
 import { orangeConfig } from "@/lib/orange";
 
 export const dynamic = "force-dynamic";
@@ -62,7 +63,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   });
   if (!product) notFound();
 
-  const [related, cheapestCity] = await Promise.all([
+  const [related, cheapestCity, reviews, ratingAgg] = await Promise.all([
     db.product.findMany({
       where: { active: true, categoryId: product.categoryId ?? undefined, id: { not: product.id } },
       include: {
@@ -76,7 +77,20 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       where: { countryCode: country, active: true },
       orderBy: { deliveryFee: "asc" },
     }),
+    db.review.findMany({
+      where: { productId: product.id, status: "approved" },
+      orderBy: { createdAt: "desc" },
+      take: 10,
+    }),
+    db.review.aggregate({
+      where: { productId: product.id, status: "approved" },
+      _avg: { rating: true },
+      _count: { _all: true },
+    }),
   ]);
+
+  const reviewCount = ratingAgg._count._all;
+  const averageRating = ratingAgg._avg.rating ? Math.round(ratingAgg._avg.rating * 10) / 10 : 0;
 
   const stockByVariant = new Map<number, number>();
   let baseStock = 0;
@@ -121,6 +135,15 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       availability:
         totalStock > 0 ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
     },
+    ...(reviewCount > 0
+      ? {
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: averageRating,
+            reviewCount,
+          },
+        }
+      : {}),
   };
 
   return (
@@ -176,6 +199,11 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <span className={`chip ${totalStock > 0 ? "ok" : "out"}`}>
               {totalStock > 0 ? "En stock" : "Rupture"}
             </span>
+            {reviewCount > 0 ? (
+              <span className="chip" style={{ background: "#fff6e5", color: "#b7791f" }}>
+                ★ {averageRating} ({reviewCount})
+              </span>
+            ) : null}
           </div>
           <h1 className="p-title">{label}</h1>
 
@@ -245,6 +273,55 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           </div>
         </div>
       </div>
+
+      <section className="section" id="avis">
+        <div className="section-head">
+          <div>
+            <h2>Avis clients</h2>
+            <p>
+              {reviewCount > 0
+                ? `${averageRating} / 5 · ${reviewCount} avis vérifié${reviewCount > 1 ? "s" : ""}`
+                : "Soyez le premier à donner votre avis"}
+            </p>
+          </div>
+        </div>
+
+        <div className="grid-2" style={{ alignItems: "start" }}>
+          <div>
+            {reviews.length > 0 ? (
+              <div style={{ display: "grid", gap: 10 }}>
+                {reviews.map((r) => (
+                  <div key={r.id} className="panel">
+                    <div style={{ display: "flex", justifyContent: "space-between", gap: 10 }}>
+                      <b>{r.name}</b>
+                      <span style={{ color: "#f5a623", letterSpacing: 1 }}>
+                        {"★".repeat(r.rating)}
+                        <span style={{ color: "#ddd3c8" }}>{"★".repeat(5 - r.rating)}</span>
+                      </span>
+                    </div>
+                    <p className="small" style={{ margin: "6px 0 4px", lineHeight: 1.6 }}>{r.comment}</p>
+                    <span className="muted tiny">{r.createdAt.toLocaleDateString("fr-FR")}</span>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="panel">
+                <p className="muted small" style={{ margin: 0 }}>
+                  Aucun avis publié pour ce produit. Votre retour aidera les autres clients.
+                </p>
+              </div>
+            )}
+          </div>
+
+          <div className="panel">
+            <h3 style={{ margin: "0 0 4px", fontSize: 16 }}>Laisser un avis</h3>
+            <p className="muted tiny" style={{ marginTop: 0 }}>
+              Réservé aux clients — publication après vérification.
+            </p>
+            <ReviewForm productId={product.id} />
+          </div>
+        </div>
+      </section>
 
       {related.length > 0 && (
         <section className="section">
