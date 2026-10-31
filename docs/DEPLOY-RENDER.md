@@ -27,7 +27,7 @@ et autorisez. Vérifiez ensuite que les fichiers apparaissent sur GitHub (≈ 1 
 3. Render détecte `render.yaml` → **Apply**.
 4. Renseignez les variables demandées :
    - `ADMIN_PASSWORD` : un mot de passe fort
-   - `APP_URL` : laissez pour l'instant `https://bingo.onrender.com`, vous le corrigerez
+   - `APP_URL` : laissez pour l'instant `https://tresor-empire.onrender.com`, vous le corrigerez
    - `SITE_WHATSAPP`, `SITE_PHONE`, `SITE_EMAIL`, `SITE_ADDRESS` : vos coordonnées
    - `SESSION_SECRET` est généré automatiquement
 5. Lancez le déploiement.
@@ -56,7 +56,7 @@ Variables d'environnement recommandées (Environment) :
 |---|---|
 | `ADMIN_PASSWORD` | mot de passe admin de votre choix |
 | `SESSION_SECRET` | chaîne aléatoire de 64 caractères |
-| `APP_URL` | `https://bingo-xxxx.onrender.com` (ou votre domaine) |
+| `APP_URL` | `https://tresor-empire-xxxx.onrender.com` (ou votre domaine) |
 | `ORANGE_MODE` | `mock` pour tester, `live` avec les clés |
 | `SITE_*` | téléphone, WhatsApp, e-mail, adresse |
 
@@ -69,7 +69,7 @@ les images Open Graph et les retours de paiement utilisent donc automatiquement 
 
 ## 4. Corriger l'URL publique
 
-Une fois le service en ligne, copiez son URL (`https://bingo-xxxx.onrender.com`),
+Une fois le service en ligne, copiez son URL (`https://tresor-empire-xxxx.onrender.com`),
 puis **Environment** → `APP_URL` → collez-la → **Save** (redéploiement automatique).
 
 Cela corrige les images Open Graph, le sitemap et les retours de paiement.
@@ -84,7 +84,7 @@ Cela corrige les images Open Graph, le sitemap et les retours de paiement.
 
 ## 6. Domaine personnalisé
 
-Render → **Settings** → **Custom Domains** → ajoutez `bingo.votredomaine.com`,
+Render → **Settings** → **Custom Domains** → ajoutez `tresor-empire.votredomaine.com`,
 puis créez le CNAME chez votre registrar. Render fournit le certificat TLS.
 Mettez ensuite `APP_URL` à jour.
 

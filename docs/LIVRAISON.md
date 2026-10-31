@@ -21,7 +21,7 @@ Boutique e-commerce multi-pays (Burkina Faso, Mali, Niger, Côte d'Ivoire) avec 
 | Boutique (démo) | voir l'URL `trycloudflare.com` fournie dans la conversation |
 | Admin | `/admin` |
 | Mot de passe admin | dans `.env` (`ADMIN_PASSWORD`), à changer |
-| APK | `dist/bingo-debug.apk` |
+| APK | `dist/tresor-empire-debug.apk` |
 | Code source | dépôt Git local (branche `master`) |
 
 > Le tunnel est temporaire : il ne vit que tant que l'application et `cloudflared`

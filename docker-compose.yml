@@ -1,7 +1,7 @@
-services:
-  bingo:
+﻿services:
+  tresor-empire:
     build: .
-    container_name: bingo
+    container_name: tresor-empire
     restart: unless-stopped
     ports:
       - "3000:3000"
@@ -13,7 +13,7 @@ services:
       APP_URL: "https://votre-domaine.com"
       SEED_ON_START: "1"
     volumes:
-      - bingo-data:/app/data
+      - tresor-empire-data:/app/data
     healthcheck:
       test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
       interval: 30s
@@ -22,4 +22,5 @@ services:
       start_period: 40s
 
 volumes:
-  bingo-data:
+  tresor-empire-data:
+

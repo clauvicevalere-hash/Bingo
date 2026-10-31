@@ -39,12 +39,12 @@ Dans Android Studio : `Build > Generate Signed Bundle / APK`.
 Créer un keystore une seule fois et le conserver :
 
 ```bash
-keytool -genkey -v -keystore bingo.keystore -alias bingo \
+keytool -genkey -v -keystore tresor-empire.keystore -alias tresor-empire \
   -keyalg RSA -keysize 2048 -validity 10000
 ```
 
 Configurer la signature dans `android/app/build.gradle` (ou via l'assistant Android Studio),
-puis conserver `bingo.keystore` et les mots de passe hors du dépôt.
+puis conserver `tresor-empire.keystore` et les mots de passe hors du dépôt.
 
 ## Play Store — éléments à préparer
 

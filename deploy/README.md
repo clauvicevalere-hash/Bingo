@@ -30,7 +30,7 @@ Prérequis : un VPS Ubuntu 22.04+ (2 Go RAM), un nom de domaine pointant vers so
 curl -fsSL https://get.docker.com | sh
 
 # 2. Copier le projet sur le serveur (git clone ou rsync)
-cd /opt/bingo
+cd /opt/tresor-empire
 
 # 3. Configuration
 cp .env .env.production
@@ -53,11 +53,11 @@ Puis :
 
 ```bash
 docker compose up -d --build
-docker compose logs -f bingo
+docker compose logs -f tresor-empire
 ```
 
 Le premier démarrage crée la base et importe le catalogue (`SEED_ON_START=1`).
-Un seul volume `bingo-data` est monté sur `/app/data` : il contient la base `dev.db`
+Un seul volume `tresor-empire-data` est monté sur `/app/data` : il contient la base `dev.db`
 et les images (`uploads/`), exposées via `public/uploads`.
 
 ## Option 2 — Sans Docker
@@ -78,25 +78,25 @@ Un gestionnaire de processus (systemd, pm2) doit maintenir `npm run start`.
 Les commandes Orange Money non payées bloquent du stock. Les libérer chaque heure :
 
 ```cron
-0 * * * * cd /opt/bingo && docker compose exec -T bingo node scripts/release-stale-orders.mjs 24 >> /var/log/bingo-orders.log 2>&1
+0 * * * * cd /opt/tresor-empire && docker compose exec -T tresor-empire node scripts/release-stale-orders.mjs 24 >> /var/log/tresor-empire-orders.log 2>&1
 ```
 
 Sans Docker :
 
 ```cron
-0 * * * * cd /opt/bingo && node scripts/release-stale-orders.mjs 24 >> /var/log/bingo-orders.log 2>&1
+0 * * * * cd /opt/tresor-empire && node scripts/release-stale-orders.mjs 24 >> /var/log/tresor-empire-orders.log 2>&1
 ```
 
 Sauvegarde quotidienne (copie SQLite cohérente + images, 5 dernières conservées) :
 
 ```cron
-30 2 * * * cd /opt/bingo && docker compose exec -T bingo npm run backup >> /var/log/bingo-backup.log 2>&1
+30 2 * * * cd /opt/tresor-empire && docker compose exec -T tresor-empire npm run backup >> /var/log/tresor-empire-backup.log 2>&1
 ```
 
 Sans Docker :
 
 ```cron
-30 2 * * * cd /opt/bingo && npm run backup >> /var/log/bingo-backup.log 2>&1
+30 2 * * * cd /opt/tresor-empire && npm run backup >> /var/log/tresor-empire-backup.log 2>&1
 ```
 
 
@@ -121,11 +121,11 @@ En mode `live`, chaque notification est revérifiée auprès de l'API Orange
 
 ## Sauvegardes
 
-Le volume `bingo-data` contient la base (`dev.db`) et les images (`uploads/`) :
+Le volume `tresor-empire-data` contient la base (`dev.db`) et les images (`uploads/`) :
 
 ```bash
-docker run --rm -v bingo_bingo-data:/data -v $(pwd):/backup alpine \
-  tar czf /backup/bingo-data-$(date +%F).tar.gz -C /data .
+docker run --rm -v tresor-empire_tresor-empire-data:/data -v $(pwd):/backup alpine \
+  tar czf /backup/tresor-empire-data-$(date +%F).tar.gz -C /data .
 ```
 
 Ou, depuis le conteneur, `npm run backup` (copie cohérente SQLite + images).
