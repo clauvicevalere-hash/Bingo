@@ -6,6 +6,7 @@ import { db } from "@/lib/db";
 import { money } from "@/lib/site";
 import { VariantManager } from "@/components/admin/VariantManager";
 import { ImageManager } from "@/components/admin/ImageManager";
+import { computePrice } from "@/lib/pricing";
 
 export const dynamic = "force-dynamic";
 
@@ -37,16 +38,45 @@ export default async function AdminProductEdit({
   async function save(formData: FormData) {
     "use server";
     const pid = Number(formData.get("id"));
-    const price = Math.max(0, Math.round(Number(formData.get("price")) || 0));
+    const categoryId = Number(formData.get("categoryId")) || null;
+
+    const pricingMode = formData.get("pricingMode") === "manual" ? "manual" : "auto";
+    const supplierPriceAed = Number(formData.get("supplierPriceAed")) || 0;
+    const logisticsCost = Math.round(Number(formData.get("logisticsCost")) || 0);
+    const profitMode = formData.get("profitMode") === "fixed" ? "fixed" : "percent";
+    const profitValue = Number(formData.get("profitValue")) || 0;
+    const minProfit = Math.round(Number(formData.get("minProfit")) || 0);
+    const maxProfit = Math.round(Number(formData.get("maxProfit")) || 0);
+    const roundTo = Math.round(Number(formData.get("roundTo")) || 500);
+
+    let price = Math.max(0, Math.round(Number(formData.get("price")) || 0));
+    if (pricingMode === "auto" && supplierPriceAed > 0) {
+      price = computePrice({
+        costAed: supplierPriceAed,
+        logistics: logisticsCost,
+        mode: profitMode,
+        value: profitValue,
+        minProfit,
+        maxProfit,
+        roundTo,
+      }).price;
+    }
+
     const oldPriceRaw = Number(formData.get("oldPrice"));
     const oldPrice = oldPriceRaw > price ? Math.round(oldPriceRaw) : null;
-    const categoryId = Number(formData.get("categoryId")) || null;
 
     await db.product.update({
       where: { id: pid },
       data: {
         price,
         oldPrice,
+        supplierPriceAed: supplierPriceAed || null,
+        logisticsCost,
+        profitMode,
+        profitValue,
+        minProfit,
+        maxProfit,
+        pricingMode,
         categoryId,
         condition: String(formData.get("condition") ?? "Neuf"),
         active: formData.get("active") === "on",
@@ -102,6 +132,32 @@ export default async function AdminProductEdit({
           <h3 style={{ margin: "0 0 12px", fontSize: 16 }}>Informations</h3>
           <div className="grid-2">
             <div className="field">
+              <label>Prix fournisseur (AED)</label>
+              <input name="supplierPriceAed" type="number" defaultValue={product.supplierPriceAed ?? ""} min={0} step="0.01" />
+            </div>
+            <div className="field">
+              <label>Fret + douane (FCFA)</label>
+              <input name="logisticsCost" type="number" defaultValue={product.logisticsCost} min={0} step={500} />
+            </div>
+            <div className="field">
+              <label>Bénéfice</label>
+              <select name="profitMode" defaultValue={product.profitMode}>
+                <option value="percent">Pourcentage</option>
+                <option value="fixed">Montant fixe</option>
+              </select>
+            </div>
+            <div className="field">
+              <label>Valeur du bénéfice</label>
+              <input name="profitValue" type="number" defaultValue={product.profitValue} min={0} step="0.1" />
+            </div>
+            <div className="field">
+              <label>Mode de prix</label>
+              <select name="pricingMode" defaultValue={product.pricingMode}>
+                <option value="auto">Automatique</option>
+                <option value="manual">Manuel</option>
+              </select>
+            </div>
+            <div className="field">
               <label>Prix de vente (FCFA)</label>
               <input name="price" type="number" defaultValue={product.price} min={0} step={50} />
             </div>
@@ -109,6 +165,13 @@ export default async function AdminProductEdit({
               <label>Ancien prix (barré, optionnel)</label>
               <input name="oldPrice" type="number" defaultValue={product.oldPrice ?? 0} min={0} step={50} />
             </div>
+          <input type="hidden" name="minProfit" value={product.minProfit} />
+          <input type="hidden" name="maxProfit" value={product.maxProfit} />
+          <input type="hidden" name="roundTo" value={product.roundTo || 500} />
+          <p className="muted tiny" style={{ marginTop: 0, gridColumn: "1 / -1" }}>
+            En mode automatique, le prix est recalculé à l&apos;enregistrement à partir du prix
+            fournisseur, du fret et du bénéfice. En manuel, le prix saisi est conservé.
+          </p>
             <div className="field">
               <label>Catégorie</label>
               <select name="categoryId" defaultValue={product.categoryId ?? ""}>

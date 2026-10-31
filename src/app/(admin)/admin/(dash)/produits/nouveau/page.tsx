@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { db } from "@/lib/db";
 import { NewProductForm } from "@/components/admin/NewProductForm";
+import { defaultsFor, priceRate } from "@/lib/pricing";
 
 export const dynamic = "force-dynamic";
 
@@ -10,6 +11,10 @@ export default async function NewProductPage() {
     orderBy: [{ parentId: "asc" }, { name: "asc" }],
   });
 
+  const pricing = Object.fromEntries(
+    categories.map((c) => [c.id, defaultsFor(c.parent?.slug ?? c.slug)])
+  );
+
   return (
     <div style={{ maxWidth: 900 }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
@@ -17,10 +22,12 @@ export default async function NewProductPage() {
         <Link href="/admin/produits" className="tab">← Produits</Link>
       </div>
       <p className="muted small" style={{ marginTop: 0 }}>
-        Le produit sera visible immédiatement si vous le laissez actif.
+        Prix calculé automatiquement à partir du prix fournisseur, du fret et de la marge du rayon.
       </p>
 
       <NewProductForm
+        rate={priceRate()}
+        pricing={pricing}
         categories={categories.map((c) => ({
           id: c.id,
           name: c.name,

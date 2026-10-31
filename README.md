@@ -41,8 +41,15 @@ docs/APK.md             génération de l'APK Android
 
 ## Modèle commercial
 
-- **Prix** : conversion AED → XOF à l'import (`PRICE_RATE=165`, `PRICE_MARGIN=1.30`),
-  arrondi à 500 FCFA. Modifiable dans `.env` puis réimport, ou produit par produit dans l'admin.
+- **Prix intelligent** : `prix = coût rendu + bénéfice`, avec
+  `coût rendu = prix fournisseur AED × PRICE_RATE + fret/douane`.
+  Le bénéfice vient de la politique du rayon (`src/lib/pricing-defaults.json`) :
+  pourcentage du coût rendu, encadré par un mini et un maxi. Le fret forfaitaire est
+  plafonné à 20 % de la valeur du produit et la marge minimale à 40 % du coût rendu,
+  pour éviter les prix absurdes sur les petits articles.
+  L'admin saisit le prix fournisseur, le fret et la marge : le prix de vente est calculé
+  automatiquement (mode manuel possible). `scripts/reprice-catalog.mjs` permet de
+  recalculer tout le catalogue (simulation par défaut, `--apply` pour écrire).
 - **Stock** : une ligne par produit/variante **et par pays** (`BF`, `ML`, `NE`, `CI`),
   décrémenté à la commande dans une transaction.
 - **Livraison** : frais par ville (`City.deliveryFee`), modifiables en base.

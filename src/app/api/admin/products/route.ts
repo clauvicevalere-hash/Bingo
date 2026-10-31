@@ -5,6 +5,7 @@ import sharp from "sharp";
 import { isAdmin } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { slugify } from "@/lib/site";
+import { computePrice, defaultsFor } from "@/lib/pricing";
 
 const COUNTRIES = ["BF", "ML", "NE", "CI"];
 const UPLOAD_DIR = path.join(process.cwd(), "public", "uploads", "products");
@@ -32,7 +33,7 @@ export async function POST(req: Request) {
   }
 
   const name = String(form.get("name") || "").trim();
-  const price = Math.round(Number(form.get("price")) || 0);
+  const manualPrice = Math.round(Number(form.get("price")) || 0);
   const oldPriceRaw = Math.round(Number(form.get("oldPrice")) || 0);
   const categoryId = Number(form.get("categoryId")) || null;
   const brandName = String(form.get("brand") || "").trim();
@@ -43,11 +44,43 @@ export async function POST(req: Request) {
   const featured = form.get("featured") === "on" || form.get("featured") === "true";
 
   if (name.length < 2) return NextResponse.json({ error: "Nom du produit trop court." }, { status: 400 });
-  if (price <= 0) return NextResponse.json({ error: "Prix invalide." }, { status: 400 });
   if (!categoryId) return NextResponse.json({ error: "Choisissez une catégorie." }, { status: 400 });
 
-  const category = await db.category.findUnique({ where: { id: categoryId } });
+  const category = await db.category.findUnique({
+    where: { id: categoryId },
+    include: { parent: true },
+  });
   if (!category) return NextResponse.json({ error: "Catégorie introuvable." }, { status: 400 });
+
+  const defaults = defaultsFor(category.parent?.slug ?? category.slug);
+  const supplierPriceAed = Number(form.get("supplierPriceAed")) || 0;
+  const logisticsCost = Math.round(Number(form.get("logisticsCost")) || defaults.logistics);
+  const profitMode = form.get("profitMode") === "fixed" ? "fixed" : "percent";
+  const profitValue = Number(form.get("profitValue")) || defaults.value;
+  const minProfit = Math.round(Number(form.get("minProfit")) || defaults.min);
+  const maxProfit = Math.round(Number(form.get("maxProfit")) || defaults.max);
+  const roundTo = Math.round(Number(form.get("roundTo")) || defaults.roundTo);
+  const pricingMode = form.get("pricingMode") === "manual" ? "manual" : "auto";
+
+  let price = manualPrice;
+  if (pricingMode === "auto" && supplierPriceAed > 0) {
+    price = computePrice({
+      costAed: supplierPriceAed,
+      logistics: logisticsCost,
+      mode: profitMode,
+      value: profitValue,
+      minProfit,
+      maxProfit,
+      roundTo,
+    }).price;
+  }
+
+  if (price <= 0) {
+    return NextResponse.json(
+      { error: "Prix invalide : renseignez le prix fournisseur ou un prix manuel." },
+      { status: 400 }
+    );
+  }
 
   let brandId: number | null = null;
   if (brandName) {
@@ -73,6 +106,13 @@ export async function POST(req: Request) {
       slug: candidate,
       price,
       oldPrice: oldPriceRaw > price ? oldPriceRaw : null,
+      supplierPriceAed: supplierPriceAed || null,
+      logisticsCost,
+      profitMode,
+      profitValue,
+      minProfit,
+      maxProfit,
+      pricingMode,
       condition,
       description: toParagraphs(description),
       specs: toParagraphs(specs),

@@ -1,0 +1,16 @@
+{
+  "new-mobile": { "logistics": 10000, "mode": "percent", "value": 10, "min": 15000, "max": 25000, "roundTo": 500 },
+  "used-mobile": { "logistics": 10000, "mode": "percent", "value": 10, "min": 15000, "max": 25000, "roundTo": 500 },
+  "laptop": { "logistics": 15000, "mode": "percent", "value": 12, "min": 25000, "max": 0, "roundTo": 1000 },
+  "tablet": { "logistics": 8000, "mode": "percent", "value": 12, "min": 12000, "max": 0, "roundTo": 500 },
+  "ipad": { "logistics": 8000, "mode": "percent", "value": 12, "min": 12000, "max": 0, "roundTo": 500 },
+  "watches": { "logistics": 1000, "mode": "percent", "value": 20, "min": 3000, "max": 0, "roundTo": 500 },
+  "gadget": { "logistics": 500, "mode": "percent", "value": 25, "min": 1000, "max": 0, "roundTo": 500 },
+  "accessories": { "logistics": 0, "mode": "percent", "value": 25, "min": 500, "max": 0, "roundTo": 500 },
+  "fashion-beauty": { "logistics": 1000, "mode": "percent", "value": 35, "min": 1500, "max": 0, "roundTo": 500 },
+  "bags": { "logistics": 1000, "mode": "percent", "value": 35, "min": 1500, "max": 0, "roundTo": 500 },
+  "apple-imac": { "logistics": 25000, "mode": "percent", "value": 10, "min": 40000, "max": 0, "roundTo": 1000 },
+  "crystal-whale-lamp": { "logistics": 1000, "mode": "percent", "value": 30, "min": 1500, "max": 0, "roundTo": 500 },
+  "lucky-box": { "logistics": 1000, "mode": "percent", "value": 25, "min": 2000, "max": 0, "roundTo": 500 },
+  "combo-offer": { "logistics": 5000, "mode": "percent", "value": 15, "min": 5000, "max": 0, "roundTo": 500 }
+}

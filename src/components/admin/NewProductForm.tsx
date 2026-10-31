@@ -1,21 +1,73 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useMemo, useState } from "react";
+import { computePrice, type PricingDefaults } from "@/lib/pricing";
 
 type Option = { id: number; name: string; parent?: string };
 
-export function NewProductForm({ categories }: { categories: Option[] }) {
+export function NewProductForm({
+  categories,
+  pricing,
+  rate,
+}: {
+  categories: Option[];
+  pricing: Record<number, PricingDefaults>;
+  rate: number;
+}) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [preview, setPreview] = useState("");
+
+  const [categoryId, setCategoryId] = useState<number | "">("");
+  const [supplierPriceAed, setSupplierPriceAed] = useState("");
+  const [logisticsCost, setLogisticsCost] = useState("0");
+  const [profitMode, setProfitMode] = useState<"percent" | "fixed">("percent");
+  const [profitValue, setProfitValue] = useState("0");
+  const [minProfit, setMinProfit] = useState("0");
+  const [maxProfit, setMaxProfit] = useState("0");
+  const [roundTo, setRoundTo] = useState("500");
+  const [manual, setManual] = useState(false);
+  const [manualPrice, setManualPrice] = useState("");
+
+  const defaults = categoryId ? pricing[Number(categoryId)] : undefined;
+
+  function applyCategory(id: number) {
+    setCategoryId(id);
+    const d = pricing[id];
+    if (!d) return;
+    setLogisticsCost(String(d.logistics));
+    setProfitMode(d.mode);
+    setProfitValue(String(d.value));
+    setMinProfit(String(d.min));
+    setMaxProfit(String(d.max));
+    setRoundTo(String(d.roundTo));
+  }
+
+  const result = useMemo(() => {
+    const cost = Number(supplierPriceAed);
+    if (!cost || cost <= 0) return null;
+    return computePrice({
+      costAed: cost,
+      rate,
+      logistics: Number(logisticsCost) || 0,
+      mode: profitMode,
+      value: Number(profitValue) || 0,
+      minProfit: Number(minProfit) || 0,
+      maxProfit: Number(maxProfit) || 0,
+      roundTo: Number(roundTo) || 500,
+    });
+  }, [supplierPriceAed, rate, logisticsCost, profitMode, profitValue, minProfit, maxProfit, roundTo]);
 
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setError("");
     setBusy(true);
     const form = new FormData(e.currentTarget);
+    if (manual) form.set("pricingMode", "manual");
+    else form.set("pricingMode", "auto");
+    if (manual) form.set("price", manualPrice);
     try {
       const res = await fetch("/api/admin/products", { method: "POST", body: form });
       const data = await res.json();
@@ -32,6 +84,8 @@ export function NewProductForm({ categories }: { categories: Option[] }) {
     }
   }
 
+  const money = (n: number) => new Intl.NumberFormat("fr-FR").format(Math.round(n)) + " F";
+
   return (
     <form onSubmit={submit} encType="multipart/form-data">
       <div className="panel" style={{ marginBottom: 14 }}>
@@ -43,7 +97,13 @@ export function NewProductForm({ categories }: { categories: Option[] }) {
           </div>
           <div className="field">
             <label htmlFor="p-cat">Catégorie *</label>
-            <select id="p-cat" name="categoryId" required defaultValue="">
+            <select
+              id="p-cat"
+              name="categoryId"
+              required
+              value={categoryId}
+              onChange={(e) => applyCategory(Number(e.target.value))}
+            >
               <option value="" disabled>Choisir…</option>
               {categories.map((c) => (
                 <option key={c.id} value={c.id}>
@@ -63,14 +123,6 @@ export function NewProductForm({ categories }: { categories: Option[] }) {
               <option>Occasion</option>
               <option>Reconditionné</option>
             </select>
-          </div>
-          <div className="field">
-            <label htmlFor="p-price">Prix de vente (FCFA) *</label>
-            <input id="p-price" name="price" type="number" min={100} step={50} required placeholder="150000" />
-          </div>
-          <div className="field">
-            <label htmlFor="p-old">Ancien prix (barré)</label>
-            <input id="p-old" name="oldPrice" type="number" min={0} step={50} placeholder="0" />
           </div>
         </div>
 
@@ -109,6 +161,106 @@ export function NewProductForm({ categories }: { categories: Option[] }) {
             <input type="checkbox" name="featured" /> Mettre en avant
           </label>
         </div>
+      </div>
+
+      <div className="panel" style={{ marginBottom: 14 }}>
+        <h3 style={{ margin: "0 0 4px", fontSize: 16 }}>Prix intelligent</h3>
+        <p className="muted tiny" style={{ marginTop: 0 }}>
+          Saisissez le prix fournisseur en AED et la logistique : le prix de vente est calculé
+          selon la politique du rayon. Vous pouvez forcer un prix manuel.
+        </p>
+
+        <div className="grid-2">
+          <div className="field">
+            <label htmlFor="p-supplier">Prix fournisseur (AED) *</label>
+            <input
+              id="p-supplier"
+              name="supplierPriceAed"
+              type="number"
+              min={0}
+              step="0.01"
+              value={supplierPriceAed}
+              onChange={(e) => setSupplierPriceAed(e.target.value)}
+              placeholder="Ex. 499"
+            />
+          </div>
+          <div className="field">
+            <label htmlFor="p-logistics">Fret + douane (FCFA)</label>
+            <input
+              id="p-logistics"
+              name="logisticsCost"
+              type="number"
+              min={0}
+              step={500}
+              value={logisticsCost}
+              onChange={(e) => setLogisticsCost(e.target.value)}
+            />
+          </div>
+          <div className="field">
+            <label htmlFor="p-mode">Bénéfice</label>
+            <select
+              id="p-mode"
+              name="profitMode"
+              value={profitMode}
+              onChange={(e) => setProfitMode(e.target.value as "percent" | "fixed")}
+            >
+              <option value="percent">Pourcentage du coût rendu</option>
+              <option value="fixed">Montant fixe (FCFA)</option>
+            </select>
+          </div>
+          <div className="field">
+            <label htmlFor="p-profit">Valeur du bénéfice</label>
+            <input
+              id="p-profit"
+              name="profitValue"
+              type="number"
+              min={0}
+              step={profitMode === "percent" ? 1 : 500}
+              value={profitValue}
+              onChange={(e) => setProfitValue(e.target.value)}
+            />
+          </div>
+        </div>
+
+        <input type="hidden" name="minProfit" value={minProfit} />
+        <input type="hidden" name="maxProfit" value={maxProfit} />
+        <input type="hidden" name="roundTo" value={roundTo} />
+
+        {defaults ? (
+          <p className="muted tiny" style={{ marginTop: 0 }}>
+            Politique du rayon : logistique {money(defaults.logistics)} · bénéfice{" "}
+            {defaults.mode === "percent" ? `${defaults.value} %` : money(defaults.value)}
+            {defaults.min ? ` · mini ${money(defaults.min)}` : ""}
+            {defaults.max ? ` · maxi ${money(defaults.max)}` : ""}
+          </p>
+        ) : null}
+
+        {result ? (
+          <div className="notice" style={{ marginBottom: 12 }}>
+            Coût rendu <b>{money(result.landed)}</b> · bénéfice <b>{money(result.profit)}</b> ·{" "}
+            <b style={{ fontSize: 18 }}>prix conseillé {money(result.price)}</b>
+          </div>
+        ) : null}
+
+        <label className="small" style={{ display: "flex", gap: 7, alignItems: "center", marginBottom: 8 }}>
+          <input type="checkbox" checked={manual} onChange={(e) => setManual(e.target.checked)} />
+          Forcer un prix manuel
+        </label>
+        {manual ? (
+          <div className="field" style={{ maxWidth: 260 }}>
+            <label htmlFor="p-price">Prix de vente (FCFA) *</label>
+            <input
+              id="p-price"
+              name="price"
+              type="number"
+              min={100}
+              step={50}
+              value={manualPrice}
+              onChange={(e) => setManualPrice(e.target.value)}
+              required
+            />
+          </div>
+        ) : null}
       </div>
 
       <div className="panel" style={{ marginBottom: 14 }}>

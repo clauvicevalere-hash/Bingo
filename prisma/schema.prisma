@@ -64,6 +64,14 @@ model Product {
   featured     Boolean        @default(false)
   active       Boolean        @default(true)
   views        Int            @default(0)
+  supplierPriceAed Float?
+  logisticsCost    Int      @default(0)
+  profitMode       String   @default("percent")
+  profitValue      Float    @default(0)
+  minProfit        Int      @default(0)
+  maxProfit        Int      @default(0)
+  roundTo          Int      @default(500)
+  pricingMode      String   @default("manual")
   categoryId   Int?
   category     Category?      @relation(fields: [categoryId], references: [id])
   brandId      Int?
