@@ -107,6 +107,10 @@ puis déclarer le webhook `https://…/api/payments/orange/webhook` chez Orange.
 - **WhatsApp** : bouton de confirmation de commande et bouton « Commander sur WhatsApp »
   pré-rempli sur chaque fiche produit.
 - **Sécurité admin** : cookie HMAC signé, routes `/admin` en `noindex`, API admin protégée.
+- **Anti-spam** : limite de 20 commandes/heure par IP et 5 par numéro de téléphone (HTTP 429).
+- **En-têtes de sécurité** : nosniff, X-Frame-Options, Referrer-Policy, Permissions-Policy, HSTS.
+- **Sauvegarde** : `npm run backup` (copie SQLite cohérente via `VACUUM INTO` + images,
+  conservation des 5 dernières) dans `backups/`.
 - **Préflight production** : `node scripts/preflight.mjs` vérifie secrets, APP_URL, clés Orange,
   build, images, catalogue et stock avant mise en ligne.
 

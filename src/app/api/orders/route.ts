@@ -2,8 +2,17 @@ import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import { COUNTRY_CODES } from "@/lib/constants";
 import { orangeConfig } from "@/lib/orange";
+import { clientIp, rateLimit } from "@/lib/rate-limit";
 
 export async function POST(req: Request) {
+  const perIp = rateLimit(`order-ip:${clientIp(req)}`, 20, 60 * 60 * 1000);
+  if (!perIp.ok) {
+    return NextResponse.json(
+      { error: "Trop de commandes depuis cette connexion. Réessayez dans une heure." },
+      { status: 429, headers: { "Retry-After": String(perIp.retryAfter) } }
+    );
+  }
+
   let body: any;
   try {
     body = await req.json();
@@ -39,6 +48,14 @@ export async function POST(req: Request) {
   if (customerName.length < 2) return NextResponse.json({ error: "Nom invalide." }, { status: 400 });
   if (!/^[0-9 +().-]{8,20}$/.test(phone)) return NextResponse.json({ error: "Téléphone invalide." }, { status: 400 });
   if (address.length < 6) return NextResponse.json({ error: "Adresse trop courte." }, { status: 400 });
+
+  const perPhone = rateLimit(`order-phone:${phone}`, 5, 60 * 60 * 1000);
+  if (!perPhone.ok) {
+    return NextResponse.json(
+      { error: "Trop de commandes pour ce numéro. Contactez-nous sur WhatsApp." },
+      { status: 429 }
+    );
+  }
 
   const city = await db.city.findFirst({ where: { countryCode, name: cityName, active: true } });
   if (!city) return NextResponse.json({ error: "Ville de livraison inconnue." }, { status: 400 });

@@ -17,3 +17,5 @@ prisma/*.db
 tools/
 dist/
 .venv/
+backups/
+py-libs/

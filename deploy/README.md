@@ -81,11 +81,18 @@ Sans Docker :
 0 * * * * cd /opt/bingo && node scripts/release-stale-orders.mjs 24 >> /var/log/bingo-orders.log 2>&1
 ```
 
-Sauvegarde quotidienne de la base et des images :
+Sauvegarde quotidienne (copie SQLite cohérente + images, 5 dernières conservées) :
 
 ```cron
-30 2 * * * cd /opt/bingo && tar czf /backup/bingo-$(date +\%F).tar.gz prisma/dev.db public/uploads
+30 2 * * * cd /opt/bingo && docker compose exec -T bingo npm run backup >> /var/log/bingo-backup.log 2>&1
 ```
+
+Sans Docker :
+
+```cron
+30 2 * * * cd /opt/bingo && npm run backup >> /var/log/bingo-backup.log 2>&1
+```
+
 
 
 ## HTTPS avec Caddy

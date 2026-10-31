@@ -9,6 +9,7 @@
     "db:push": "prisma db push",
     "db:seed": "node scripts/import-catalog.mjs",
     "preflight": "node scripts/preflight.mjs",
+    "backup": "node scripts/backup.mjs",
     "orders:release": "node scripts/release-stale-orders.mjs",
     "tunnel": "node scripts/tunnel.mjs"
   },
