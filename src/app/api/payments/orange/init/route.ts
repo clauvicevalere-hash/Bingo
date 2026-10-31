@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
-import { orangeConfig, createWebPayment, mockToken, notifUrl } from "@/lib/orange";
+import { orangeConfig, createWebPayment, mockToken } from "@/lib/orange";
 
 export async function POST(req: Request) {
   let body: { number?: string } = {};
@@ -43,12 +43,14 @@ export async function POST(req: Request) {
   }
 
   try {
+    const origin = new URL(req.url).origin;
+    const publicBase = cfg.appUrl.includes("localhost") ? origin : cfg.appUrl;
     const payment = await createWebPayment(cfg, {
       orderNumber: order.number,
       amount: order.total,
-      returnUrl: `${cfg.appUrl}/commande/${order.number}`,
-      cancelUrl: `${cfg.appUrl}/paiement/${order.number}?annule=1`,
-      notifUrl: notifUrl(cfg),
+      returnUrl: `${publicBase}/commande/${order.number}`,
+      cancelUrl: `${publicBase}/paiement/${order.number}?annule=1`,
+      notifUrl: `${publicBase}/api/payments/orange/webhook`,
       reference: "Bingo",
     });
 

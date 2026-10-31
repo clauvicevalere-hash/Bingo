@@ -5,6 +5,7 @@ import { db } from "@/lib/db";
 import { getCountryCode } from "@/lib/country";
 import { countryByCode, discountPercent, money, stripHtml } from "@/lib/site";
 import { categoryLabel, productLabel } from "@/lib/fr";
+import { baseUrl } from "@/lib/base-url";
 import { Gallery } from "@/components/Gallery";
 import { ProductPurchase } from "@/components/ProductPurchase";
 import { ProductCard } from "@/components/ProductCard";
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   });
   if (!product) return { title: "Produit introuvable" };
 
-  const base = (process.env.APP_URL || "http://localhost:3000").replace(/\/+$/, "");
+  const base = (await baseUrl()).replace(/\/+$/, "");
   const label = productLabel(product.name);
   const description =
     stripHtml(product.description).slice(0, 155) ||
@@ -118,7 +119,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const off = discountPercent(product.price, product.oldPrice);
   const label = productLabel(product.name);
 
-  const siteBase = (process.env.APP_URL || "http://localhost:3000").replace(/\/+$/, "");
+  const siteBase = (await baseUrl()).replace(/\/+$/, "");
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",

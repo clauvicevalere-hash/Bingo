@@ -1,10 +1,11 @@
 import type { MetadataRoute } from "next";
 import { db } from "@/lib/db";
+import { baseUrl } from "@/lib/base-url";
 
 export const dynamic = "force-dynamic";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const base = (process.env.APP_URL || "http://localhost:3000").replace(/\/+$/, "");
+  const base = (await baseUrl()).replace(/\/+$/, "");
 
   const [products, categories] = await Promise.all([
     db.product.findMany({
