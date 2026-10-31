@@ -1,0 +1,24 @@
+{
+  "name": "bingo-shop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "db:push": "prisma db push",
+    "db:seed": "node scripts/import-catalog.mjs"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.3",
+    "@types/react-dom": "^19.0.2",
+    "next": "^15.5.28",
+    "prisma": "^6.19.3",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "sharp": "^0.35.5",
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,26 @@
+services:
+  bingo:
+    build: .
+    container_name: bingo
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: "file:/app/prisma/dev.db"
+      APP_URL: "https://votre-domaine.com"
+      SEED_ON_START: "1"
+    volumes:
+      - bingo-db:/app/prisma
+      - bingo-uploads:/app/public/uploads
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 6s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  bingo-db:
+  bingo-uploads:

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hors ligne · Bingo</title>
+    <style>
+      :root { --brand: #f26a1b; --ink: #171310; --muted: #776d66; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0; min-height: 100vh; display: grid; place-items: center;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        background: #faf7f4; color: var(--ink); padding: 24px; text-align: center;
+      }
+      .card { max-width: 420px; }
+      .logo {
+        width: 64px; height: 64px; border-radius: 18px; margin: 0 auto 18px;
+        background: linear-gradient(145deg, var(--brand), #ff9448);
+        display: grid; place-items: center; color: #fff; font-size: 32px; font-weight: 800;
+      }
+      h1 { font-size: 24px; letter-spacing: -0.02em; margin: 0 0 8px; }
+      p { color: var(--muted); line-height: 1.6; margin: 0 0 22px; }
+      a {
+        display: inline-block; background: var(--brand); color: #fff; text-decoration: none;
+        padding: 13px 22px; border-radius: 12px; font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="logo">B</div>
+      <h1>Vous êtes hors ligne</h1>
+      <p>
+        Pas de connexion internet pour le moment. Vos pages déjà consultées restent
+        accessibles ; réessayez dès que le réseau revient.
+      </p>
+      <a href="/">Recharger la boutique</a>
+    </div>
+  </body>
+</html>

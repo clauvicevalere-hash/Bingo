@@ -1,0 +1,16 @@
+export const GROUP_SLUGS = [
+  "new-mobile",
+  "used-mobile",
+  "watches",
+  "laptop",
+  "tablet",
+  "ipad",
+  "gadget",
+  "accessories",
+  "fashion-beauty",
+  "bags",
+  "apple-imac",
+  "crystal-whale-lamp",
+  "lucky-box",
+  "combo-offer",
+];

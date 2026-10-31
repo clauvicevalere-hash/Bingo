@@ -1,0 +1,54 @@
+{
+  "status_code": 100,
+  "status_message": "Data Successfully Found",
+  "data": [
+    {
+      "id": 20,
+      "sl": 1,
+      "title": "iphone 18 series",
+      "description": null,
+      "link": null,
+      "image": "/slider/1196928949.jpeg",
+      "status": 1,
+      "create_by": 1,
+      "created_at": "2026-04-13T12:29:04.000000Z",
+      "updated_at": "2026-09-10T11:38:09.000000Z"
+    },
+    {
+      "id": 16,
+      "sl": 2,
+      "title": "iPhone Duo | Two Screens. Endless Possibilities",
+      "description": null,
+      "link": "#",
+      "image": "/slider/1589826520.jpeg",
+      "status": 1,
+      "create_by": 1,
+      "created_at": "2026-03-12T06:10:18.000000Z",
+      "updated_at": "2026-09-15T11:50:31.000000Z"
+    },
+    {
+      "id": 19,
+      "sl": 5,
+      "title": "Introducing the new Galaxy S26 Ultra",
+      "description": "Introducing the new Galaxy S26 Ultra",
+      "link": "#",
+      "image": "/slider/330672890.png",
+      "status": 1,
+      "create_by": 1,
+      "created_at": "2026-03-17T07:00:55.000000Z",
+      "updated_at": "2026-03-17T07:00:55.000000Z"
+    },
+    {
+      "id": 24,
+      "sl": 11,
+      "title": "Samsung Galaxy Z Fold 8 Ultra",
+      "description": "Samsung Galaxy Z Fold 8 Ultra",
+      "link": "#",
+      "image": "/slider/387713314.jpeg",
+      "status": 1,
+      "create_by": 14989,
+      "created_at": "2026-09-12T12:21:45.000000Z",
+      "updated_at": "2026-09-12T12:21:45.000000Z"
+    }
+  ]
+}

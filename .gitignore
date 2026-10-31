@@ -1,0 +1,15 @@
+node_modules
+.next
+npm-debug.log*
+.env
+.env.local
+.env.production
+npm-cache
+.npm-cache
+shots
+*.log
+.DS_Store
+prisma/dev.db
+prisma/dev.db-journal
+prisma/*.db
+!prisma/schema.prisma

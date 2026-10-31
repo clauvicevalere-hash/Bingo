@@ -1,0 +1,654 @@
+{
+  "status_code": 100,
+  "status_description": "Reels fetched successfully",
+  "data": {
+    "current_page": 1,
+    "data": [
+      {
+        "id": 30,
+        "title": "iPhone 18 Pro Max (New)",
+        "description": "📱 iPhone 18 Pro Max 5G\r\nLatest-generation Pro Max iPhone with a premium design and advanced performance.\r\n⚡ Apple A20 Pro Chip\r\nPowerful 2nm chipset with a hexa-core CPU and 7-core Apple GPU for high-performance computing.\r\n🖥️ 6.9-inch LTPO Super Retina XDR OLED\r\n120Hz display with HDR10, Dolby Vision, anti-reflective coating and up to 3000 nits peak brightness.\r\n💾 Up to 2TB Storage\r\nAvailable storage options include 256GB, 512GB, 1TB and 2TB with 12GB RAM.\r\n📸 48MP Triple Pro Camera System\r\n48MP Main, 48MP Telephoto and 48MP Ultra Wide cameras with LiDAR depth sensing.\r\n🎥 Professional Video Recording\r\nSupports up to 4K 120fps video, Dolby Vision HDR, ProRes, ProRes RAW and Apple Log 2.\r\n🤳 18MP Front Camera\r\n18MP multi-aspect ultrawide front camera with PDAF and advanced biometric depth sensing.\r\n🔋 Fast Charging & MagSafe\r\nSupports wired fast charging and 25W wireless MagSafe/Qi2 charging.\r\n🌐 5G + Wi-Fi 7\r\nAdvanced connectivity with 5G, tri-band Wi-Fi 7, Bluetooth 6.0 and NFC.\r\n🛡️ IP68 Water & Dust Resistance\r\nDust-tight and water resistant, rated for immersion up to 6 meters for 30 minutes.",
+        "video_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/video/234790852.mp4",
+        "thumbnail_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/thumbnail/92614523.jpg",
+        "link": "https://www.mustaqbalzamzam.com/details?title=iphone-18-pro-max-(new)&pId=2959&slug=iphone-18-pro-max-(new)",
+        "views_count": 5190,
+        "likes_count": 380,
+        "comments_count": 69,
+        "is_liked": false,
+        "created_at": "2026-10-10T19:08:31+04:00",
+        "products": [
+          {
+            "id": 2959,
+            "name": "iPhone 18 Pro Max (New)",
+            "slug": "iphone_18_pro_max_5g_new",
+            "sale_price": 5300,
+            "regular_price": 6150,
+            "variants": [
+              {
+                "id": 8807,
+                "sale_price": 5300,
+                "regular_price": 6150
+              },
+              {
+                "id": 9438,
+                "sale_price": 5559,
+                "regular_price": 5950
+              },
+              {
+                "id": 9439,
+                "sale_price": 5779,
+                "regular_price": 6100
+              },
+              {
+                "id": 9440,
+                "sale_price": 5559,
+                "regular_price": 5950
+              },
+              {
+                "id": 9441,
+                "sale_price": 5589,
+                "regular_price": 5950
+              },
+              {
+                "id": 9442,
+                "sale_price": 6549,
+                "regular_price": 6850
+              },
+              {
+                "id": 9443,
+                "sale_price": 6579,
+                "regular_price": 7150
+              },
+              {
+                "id": 9444,
+                "sale_price": 6549,
+                "regular_price": 6850
+              },
+              {
+                "id": 9445,
+                "sale_price": 6499,
+                "regular_price": 6850
+              },
+              {
+                "id": 9446,
+                "sale_price": 8189,
+                "regular_price": 8800
+              },
+              {
+                "id": 9447,
+                "sale_price": 8199,
+                "regular_price": 8850
+              },
+              {
+                "id": 9448,
+                "sale_price": 8199,
+                "regular_price": 8450
+              },
+              {
+                "id": 9449,
+                "sale_price": 8199,
+                "regular_price": 8400
+              },
+              {
+                "id": 9450,
+                "sale_price": 9749,
+                "regular_price": 10550
+              },
+              {
+                "id": 9451,
+                "sale_price": 9829,
+                "regular_price": 10650
+              },
+              {
+                "id": 9452,
+                "sale_price": 9749,
+                "regular_price": 10600
+              },
+              {
+                "id": 9454,
+                "sale_price": 5370,
+                "regular_price": 6150
+              },
+              {
+                "id": 9455,
+                "sale_price": 5650,
+                "regular_price": 6050
+              },
+              {
+                "id": 9456,
+                "sale_price": 5380,
+                "regular_price": 6000
+              },
+              {
+                "id": 9458,
+                "sale_price": 6575,
+                "regular_price": 7250
+              },
+              {
+                "id": 9459,
+                "sale_price": 6180,
+                "regular_price": 7000
+              },
+              {
+                "id": 9460,
+                "sale_price": 6290,
+                "regular_price": 7150
+              },
+              {
+                "id": 9461,
+                "sale_price": 8350,
+                "regular_price": 8700
+              },
+              {
+                "id": 9462,
+                "sale_price": 8740,
+                "regular_price": 9150
+              },
+              {
+                "id": 9464,
+                "sale_price": 8180,
+                "regular_price": 8750
+              }
+            ],
+            "image_url": "https://backend.mustaqbalzamzam.com/storage/products/2045540933.png"
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "title": "iPad 7 Used 128GB A+",
+        "description": "📱 Retina Display\r\n10.2″ Retina display with True Tone for vibrant visuals and clarity.\r\n⚡ Performance\r\nA10 Fusion chip delivers smooth multitasking and app performance.\r\n🔋 Battery Life\r\nUp to 10 hours of usage for browsing, streaming, or productivity.\r\n🛡️ Used A++ Condition\r\nFully tested, minimal signs of use, comes with original accessories.",
+        "video_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/video/1911568009.mp4",
+        "thumbnail_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/thumbnail/1911347254.jpg",
+        "link": "https://www.mustaqbalzamzam.com/details?title=apple-ipad-7th-gen-used&pId=1496&slug=apple-ipad-7th-gen-used",
+        "views_count": 5148,
+        "likes_count": 282,
+        "comments_count": 47,
+        "is_liked": false,
+        "created_at": "2026-10-03T20:56:35+04:00",
+        "products": [
+          {
+            "id": 1496,
+            "name": "Apple iPad 7th Gen Used",
+            "slug": "ipad7-used",
+            "sale_price": 349,
+            "regular_price": 550,
+            "variants": [
+              {
+                "id": 4774,
+                "sale_price": 399,
+                "regular_price": 550
+              },
+              {
+                "id": 4775,
+                "sale_price": 349,
+                "regular_price": 550
+              },
+              {
+                "id": 4778,
+                "sale_price": 399,
+                "regular_price": 550
+              },
+              {
+                "id": 4779,
+                "sale_price": 349,
+                "regular_price": 550
+              }
+            ],
+            "image_url": "https://backend.mustaqbalzamzam.com/storage/products/1525022923.png"
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "title": "Chromebook 15 Item Combo",
+        "description": "🎁 15 Item Combo Offer\r\nGet a special combo package featuring multiple useful gadgets, accessories and lifestyle products.\r\n📱 iPad Air\r\niPad Air included as part of the combo package.\r\n💻 Chromebook\r\nA Chromebook included for everyday browsing, study and work.\r\n📞 Nokia Mobile\r\nA Nokia mobile phone included in the combo.\r\n🔊 Bluetooth Speaker\r\nPortable Bluetooth speaker for convenient wireless audio.\r\n🎧 Modia Earbuds\r\nWireless earbuds included for everyday listening and calls.\r\n🖱️ Mouse + Mouse Pad\r\nA practical mouse and mouse pad combination for comfortable computer use.\r\n🌸 5 Pcs Perfume\r\nA 5-piece perfume set included in the combo package.\r\n🔌 Chromebook Charger\r\nCharger included for the Chromebook.\r\n🔋 iPad Air Cable\r\nCharging/data cable included for the iPad Air.\r\n✍️ Writing Pad\r\nElectronic writing pad included for notes, drawing and everyday writing.",
+        "video_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/video/2110815610.mp4",
+        "thumbnail_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/thumbnail/165425928.jpg",
+        "link": "https://www.mustaqbalzamzam.com/details?title=chromebook-(15-items)-combo&pId=2102&slug=chromebook-(15-items)-combo",
+        "views_count": 9515,
+        "likes_count": 589,
+        "comments_count": 89,
+        "is_liked": false,
+        "created_at": "2026-09-24T22:58:43+04:00",
+        "products": [
+          {
+            "id": 2102,
+            "name": "Chromebook (15 Items) Combo",
+            "slug": "15-items-chromebook-combo",
+            "sale_price": 299,
+            "regular_price": 550,
+            "variants": [],
+            "image_url": "https://backend.mustaqbalzamzam.com/storage/products/279450714.png"
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "title": "Samsung Galaxy S23 Ultra 5G Used",
+        "description": "Samsung Galaxy S23 Ultra 5G – Used\r\n✨ Premium condition with powerful performance & stunning camera.\r\n🛒 Online Order: www.mustaqbalzamzam.com\r\n📍 Mustaqbal Zamzam UAE 🇦🇪",
+        "video_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/video/1691083850.mp4",
+        "thumbnail_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/thumbnail/669592226.jpg",
+        "link": null,
+        "views_count": 13011,
+        "likes_count": 849,
+        "comments_count": 114,
+        "is_liked": false,
+        "created_at": "2026-09-13T16:43:06+04:00",
+        "products": [
+          {
+            "id": 635,
+            "name": "Samsung Galaxy S23 Ultra 5G Used (A+)",
+            "slug": "samsung-s23-ultra",
+            "sale_price": 1699,
+            "regular_price": 2000,
+            "variants": [
+              {
+                "id": 8403,
+                "sale_price": 1699,
+                "regular_price": 2000
+              },
+              {
+                "id": 8404,
+                "sale_price": 1699,
+                "regular_price": 2000
+              },
+              {
+                "id": 8405,
+                "sale_price": 1699,
+                "regular_price": 2000
+              },
+              {
+                "id": 8406,
+                "sale_price": 1699,
+                "regular_price": 2000
+              },
+              {
+                "id": 8407,
+                "sale_price": 1699,
+                "regular_price": 2000
+              },
+              {
+                "id": 8448,
+                "sale_price": 1749,
+                "regular_price": 2150
+              },
+              {
+                "id": 8449,
+                "sale_price": 1749,
+                "regular_price": 2150
+              },
+              {
+                "id": 8450,
+                "sale_price": 1749,
+                "regular_price": 2150
+              },
+              {
+                "id": 8451,
+                "sale_price": 1749,
+                "regular_price": 2150
+              },
+              {
+                "id": 8452,
+                "sale_price": 1749,
+                "regular_price": 2150
+              }
+            ],
+            "image_url": "https://backend.mustaqbalzamzam.com/storage/products/441870516.png"
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "title": "ZOOPIN Watch 10 Smart Watch",
+        "description": "ZOOPIN Watch 10 Smartwatch is a sleek and modern wearable that combines style with functionality. Designed for fitness enthusiasts, professionals, and tech lovers, it offers health tracking, notifications, and activity monitoring right on your wrist.",
+        "video_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/video/725405233.mp4",
+        "thumbnail_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/thumbnail/248687353.jpg",
+        "link": null,
+        "views_count": 9217,
+        "likes_count": 443,
+        "comments_count": 35,
+        "is_liked": false,
+        "created_at": "2026-09-10T14:17:41+04:00",
+        "products": [
+          {
+            "id": 346,
+            "name": "ZOOPIN Watch 10 Smart Watch",
+            "slug": "zoopin-watch-10",
+            "sale_price": 50,
+            "regular_price": 100,
+            "variants": [
+              {
+                "id": 1401,
+                "sale_price": 50,
+                "regular_price": 100
+              },
+              {
+                "id": 5276,
+                "sale_price": 50,
+                "regular_price": 100
+              }
+            ],
+            "image_url": "https://backend.mustaqbalzamzam.com/storage/products/529493265.jpg"
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "title": "Earbuds Blue P12 Calus",
+        "description": "Calus Blue P12 Wireless Earbuds are designed for users who want a reliable and comfortable true-wireless listening experience. With high-definition sound, thanks to carefully tuned audio drivers, these earbuds deliver clear vocals, crisp highs, and rich bass — making them suitable for every genre of music.",
+        "video_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/video/473051847.mp4",
+        "thumbnail_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/thumbnail/723374039.jpg",
+        "link": null,
+        "views_count": 7322,
+        "likes_count": 345,
+        "comments_count": 33,
+        "is_liked": false,
+        "created_at": "2026-09-10T14:10:51+04:00",
+        "products": [
+          {
+            "id": 508,
+            "name": "Earbuds Blue P12 Calus",
+            "slug": "wireless-blue-p12",
+            "sale_price": 49,
+            "regular_price": 71.727,
+            "variants": [
+              {
+                "id": 1990,
+                "sale_price": 49,
+                "regular_price": 71.727
+              },
+              {
+                "id": 1991,
+                "sale_price": 49,
+                "regular_price": 71.727
+              }
+            ],
+            "image_url": "https://backend.mustaqbalzamzam.com/storage/products/1238124547.png"
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "title": "Motorola G55 5G",
+        "description": "Motorola Moto G55 5G is a stylish and capable 5G smartphone designed for users who want smooth performance, a high-refresh-rate display, long battery life, and plenty of storage. Its 6.49-inch FHD+ display with a 120Hz refresh rate provides a smooth experience for gaming, videos, browsing, and social media.",
+        "video_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/video/697145920.mp4",
+        "thumbnail_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/thumbnail/353126438.jpg",
+        "link": null,
+        "views_count": 7075,
+        "likes_count": 360,
+        "comments_count": 46,
+        "is_liked": false,
+        "created_at": "2026-09-10T14:01:40+04:00",
+        "products": [
+          {
+            "id": 2867,
+            "name": "Motorola Moto G55 5G New",
+            "slug": "motorola_moto_g55_5g",
+            "sale_price": 599,
+            "regular_price": 850,
+            "variants": [
+              {
+                "id": 8283,
+                "sale_price": 599,
+                "regular_price": 850
+              },
+              {
+                "id": 8284,
+                "sale_price": 599,
+                "regular_price": 850
+              },
+              {
+                "id": 8285,
+                "sale_price": 599,
+                "regular_price": 850
+              }
+            ],
+            "image_url": "https://backend.mustaqbalzamzam.com/storage/products/845461005.png"
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "title": "iPhone 13 Used (A)",
+        "description": "Apple iPhone 13 (Used) is a powerful and reliable smartphone that still performs impressively for everyday use. With its iconic design, Super Retina XDR OLED display, and dual‑camera system, this device delivers a premium Apple experience at a more affordable price",
+        "video_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/video/3772428.mp4",
+        "thumbnail_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/thumbnail/1342683662.jpg",
+        "link": null,
+        "views_count": 7559,
+        "likes_count": 425,
+        "comments_count": 67,
+        "is_liked": false,
+        "created_at": "2026-09-10T13:54:32+04:00",
+        "products": [
+          {
+            "id": 361,
+            "name": "iPhone 13 Used (A+)",
+            "slug": "iPhone-13",
+            "sale_price": 1099,
+            "regular_price": 1327,
+            "variants": [
+              {
+                "id": 1615,
+                "sale_price": 1099,
+                "regular_price": 1327
+              },
+              {
+                "id": 1675,
+                "sale_price": 1099,
+                "regular_price": 1327
+              },
+              {
+                "id": 5319,
+                "sale_price": 1099,
+                "regular_price": 1327
+              },
+              {
+                "id": 5320,
+                "sale_price": 1099,
+                "regular_price": 1327
+              },
+              {
+                "id": 5632,
+                "sale_price": 1099,
+                "regular_price": 1327
+              },
+              {
+                "id": 5633,
+                "sale_price": 1099,
+                "regular_price": 1327
+              }
+            ],
+            "image_url": "https://backend.mustaqbalzamzam.com/storage/products/1527557492.png"
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "title": "iPhone 13 Pro Used (A+)",
+        "description": "iPhone 13 Pro delivers premium performance, a stunning display, and powerful camera features in a sleek and durable design. With its 6.1-inch Super Retina display, the device provides sharp visuals and smooth performance for browsing, gaming, streaming, and everyday tasks.",
+        "video_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/video/1874607644.mp4",
+        "thumbnail_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/thumbnail/1853455832.jpg",
+        "link": null,
+        "views_count": 6923,
+        "likes_count": 443,
+        "comments_count": 63,
+        "is_liked": false,
+        "created_at": "2026-09-10T13:48:31+04:00",
+        "products": [
+          {
+            "id": 2101,
+            "name": "iPhone 13 Pro Used (A+)",
+            "slug": "iphone_13_pro_used",
+            "sale_price": 1399,
+            "regular_price": 1650,
+            "variants": [
+              {
+                "id": 6453,
+                "sale_price": 1399,
+                "regular_price": 1650
+              },
+              {
+                "id": 6454,
+                "sale_price": 1499,
+                "regular_price": 1700
+              },
+              {
+                "id": 6455,
+                "sale_price": 1549,
+                "regular_price": 1850
+              },
+              {
+                "id": 6456,
+                "sale_price": 1399,
+                "regular_price": 1650
+              },
+              {
+                "id": 6457,
+                "sale_price": 1499,
+                "regular_price": 1700
+              },
+              {
+                "id": 6458,
+                "sale_price": 1549,
+                "regular_price": 1850
+              },
+              {
+                "id": 6459,
+                "sale_price": 1399,
+                "regular_price": 1650
+              },
+              {
+                "id": 6460,
+                "sale_price": 1499,
+                "regular_price": 1700
+              },
+              {
+                "id": 6461,
+                "sale_price": 1549,
+                "regular_price": 1850
+              },
+              {
+                "id": 6462,
+                "sale_price": 1399,
+                "regular_price": 1650
+              },
+              {
+                "id": 6463,
+                "sale_price": 1499,
+                "regular_price": 1700
+              },
+              {
+                "id": 6464,
+                "sale_price": 1549,
+                "regular_price": 1850
+              },
+              {
+                "id": 6465,
+                "sale_price": 1399,
+                "regular_price": 1650
+              },
+              {
+                "id": 6466,
+                "sale_price": 1499,
+                "regular_price": 1700
+              },
+              {
+                "id": 6467,
+                "sale_price": 1549,
+                "regular_price": 1850
+              },
+              {
+                "id": 6546,
+                "sale_price": 1699,
+                "regular_price": 1950
+              },
+              {
+                "id": 6547,
+                "sale_price": 1699,
+                "regular_price": 1950
+              },
+              {
+                "id": 6548,
+                "sale_price": 1699,
+                "regular_price": 1950
+              },
+              {
+                "id": 6549,
+                "sale_price": 1699,
+                "regular_price": 1950
+              },
+              {
+                "id": 6550,
+                "sale_price": 1699,
+                "regular_price": 1950
+              }
+            ],
+            "image_url": "https://backend.mustaqbalzamzam.com/storage/products/1523023698.jpg"
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "title": "Premium Perfume Combo",
+        "description": "Luxury 5-Piece Perfume Combo Pack is a carefully selected fragrance collection featuring premium perfumes from renowned brands including Al Gazal Perfumes, House of Morais, and Ramsons. This combo combines elegant feminine fragrances, bold masculine scents, and rich oriental oud aromas to suit different moods and occasions.",
+        "video_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/video/2094117728.mp4",
+        "thumbnail_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/reels/thumbnail/1395261205.jpg",
+        "link": null,
+        "views_count": 5262,
+        "likes_count": 200,
+        "comments_count": 28,
+        "is_liked": false,
+        "created_at": "2026-09-10T13:42:29+04:00",
+        "products": [
+          {
+            "id": 1820,
+            "name": "Premium Perfume Combo",
+            "slug": "5ps_perfume_combo",
+            "sale_price": 99,
+            "regular_price": 99,
+            "variants": [],
+            "image_url": "https://backend.mustaqbalzamzam.com/storage/products/1809994804.png"
+          }
+        ]
+      }
+    ],
+    "first_page_url": "https://backend.mustaqbalzamzam.com/api/reels?page=1",
+    "from": 1,
+    "last_page": 3,
+    "last_page_url": "https://backend.mustaqbalzamzam.com/api/reels?page=3",
+    "links": [
+      {
+        "url": null,
+        "label": "&laquo; Previous",
+        "active": false
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/reels?page=1",
+        "label": "1",
+        "active": true
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/reels?page=2",
+        "label": "2",
+        "active": false
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/reels?page=3",
+        "label": "3",
+        "active": false
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/reels?page=2",
+        "label": "Next &raquo;",
+        "active": false
+      }
+    ],
+    "next_page_url": "https://backend.mustaqbalzamzam.com/api/reels?page=2",
+    "path": "https://backend.mustaqbalzamzam.com/api/reels",
+    "per_page": 10,
+    "prev_page_url": null,
+    "to": 10,
+    "total": 29
+  }
+}

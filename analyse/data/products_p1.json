@@ -1,0 +1,3977 @@
+{
+  "status_code": 100,
+  "status_description": "",
+  "data": {
+    "current_page": 1,
+    "data": [
+      {
+        "id": 3154,
+        "product_id": "PDT-002854",
+        "shop_id": "000001",
+        "item_id": 18,
+        "category_id": 220,
+        "brand_id": 121,
+        "unit_id": 1,
+        "name": "Ladies Combo",
+        "name_bn": null,
+        "purchase_price": 117.5,
+        "tp_price": null,
+        "sale_price": 150,
+        "over_stock": 0,
+        "stock_alert": 0,
+        "has_varient": "",
+        "status": "0",
+        "create_by": 68,
+        "deleted_at": null,
+        "created_at": "2026-10-28T13:57:08.000000Z",
+        "updated_at": "2026-10-28T14:17:01.000000Z",
+        "type": null,
+        "model_code": null,
+        "has_expiry": 0,
+        "has_warranty": 0,
+        "old_product_id": null,
+        "qty": 0,
+        "sub_category_id": null,
+        "is_ecommerce": 1,
+        "combo_id": 27,
+        "is_unique": 0,
+        "is_raw_meterials": 0,
+        "sort_by": null,
+        "whatsapp_button": null,
+        "like": 0,
+        "view": 58,
+        "meta_title": "Ladies Combo",
+        "meta_description": null,
+        "meta_keywords": null,
+        "item": {
+          "id": 18,
+          "name": "Fashion & Beauty",
+          "name_bn": null,
+          "status": "1",
+          "order_by": 11,
+          "shop_id": null,
+          "image": "/items/499525508.png",
+          "icon": "user",
+          "is_home_page": 0,
+          "design_pattern": "standard",
+          "create_by": 1,
+          "deleted_at": null,
+          "created_at": "2025-10-01T19:00:15.000000Z",
+          "updated_at": "2026-09-21T05:25:01.000000Z",
+          "translations": [
+            {
+              "id": 5182,
+              "translatable_type": "App\\Models\\Item",
+              "translatable_id": 18,
+              "locale": "en",
+              "key": "name",
+              "value": "Fashion & Beauty",
+              "created_at": "2026-09-21T05:25:01.000000Z",
+              "updated_at": "2026-09-21T05:25:01.000000Z"
+            }
+          ]
+        },
+        "shop": {
+          "id": 1,
+          "shop_cat_id": null,
+          "shop_id": "000001",
+          "light_logo": "/shop_info/1281332463.png",
+          "dark_logo": null,
+          "favicon": null,
+          "banner": "/shop_info/111429330.png",
+          "site_name": "MUSTAQBAL ZAMZAM",
+          "entity_type": "sole_proprietorship",
+          "tag": "electric,",
+          "phone": "+971 58 110 1248",
+          "email": "info@mustaqbalzamzam.com",
+          "timezone": 247,
+          "lang": "en",
+          "currency": 183,
+          "start_time": "09:00:00",
+          "end_time": "00:00:00",
+          "copyright_text": "0",
+          "address": "Ayal Nasser - .1No parchment shop, King of Maryam Mohammed Abdulrahman bin, Qatami Al-Suwaidi, Dera, Dubai",
+          "current_address": "8 6b St - Ayal Nasir - Deira - Dubai - United Arab Emirates",
+          "longitude": "55.30378959999999",
+          "latitude": "25.2753192",
+          "fixed_commission": 0,
+          "commission_percantage": 0,
+          "status": "1",
+          "is_admin_shop": 1,
+          "create_by": null,
+          "deleted_at": null,
+          "created_at": "2025-07-21T08:45:53.000000Z",
+          "updated_at": "2026-10-11T17:40:58.000000Z",
+          "filter_type": "Takeaway",
+          "cr_no": null,
+          "po_box": null,
+          "postal_code": null,
+          "finance_code": null,
+          "vat_in": "104422204800003",
+          "whatsapp_number": "‪+971581101247",
+          "fcm_token": null,
+          "agent_id": 0,
+          "commercial_register_number": null,
+          "commercial_register_expiry_date": null,
+          "commercial_register_file": null,
+          "commercial_license_number": null,
+          "commercial_license_expiry_date": null,
+          "commercial_license_file": null,
+          "establishment_id": null,
+          "establishment_expiry_date": null,
+          "establishment_file": null,
+          "agreement_file": null,
+          "owner_id_number": null,
+          "owner_id_expiry_date": null,
+          "owner_id_file": null,
+          "sponsor_id_number": null,
+          "sponsor_id_expiry_date": null,
+          "sponsor_id_file": null,
+          "translations": [
+            {
+              "id": 64,
+              "translatable_type": "App\\Models\\ShopInfo",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "address",
+              "value": "Ayal Nasser - .1No parchment shop, King of Maryam Mohammed Abdulrahman bin, Qatami Al-Suwaidi, Dera, Dubai",
+              "created_at": "2026-05-05T05:07:09.000000Z",
+              "updated_at": "2026-05-05T05:07:09.000000Z"
+            },
+            {
+              "id": 63,
+              "translatable_type": "App\\Models\\ShopInfo",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "copyright_text",
+              "value": "0",
+              "created_at": "2026-05-05T05:07:09.000000Z",
+              "updated_at": "2026-05-05T05:07:09.000000Z"
+            },
+            {
+              "id": 62,
+              "translatable_type": "App\\Models\\ShopInfo",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "site_name",
+              "value": "MUSTAQBAL ZAMZAM",
+              "created_at": "2026-05-05T05:07:09.000000Z",
+              "updated_at": "2026-05-05T05:07:09.000000Z"
+            }
+          ]
+        },
+        "category": {
+          "id": 220,
+          "shop_id": null,
+          "sl": 2,
+          "item_id": 18,
+          "name": "Women",
+          "name_bn": null,
+          "status": "1",
+          "create_by": 68,
+          "deleted_at": null,
+          "created_at": "2026-01-24T08:30:15.000000Z",
+          "updated_at": "2026-01-27T10:49:30.000000Z",
+          "icon": "user",
+          "slug": null,
+          "image": "/category/512794270.png",
+          "banner": null,
+          "parent_id": null,
+          "translations": []
+        },
+        "brand": {
+          "id": 121,
+          "shop_id": null,
+          "sl": 346546571,
+          "name": "Ladies Bags",
+          "name_bn": null,
+          "status": "1",
+          "image": null,
+          "create_by": 68,
+          "deleted_at": null,
+          "created_at": "2026-10-08T17:35:14.000000Z",
+          "updated_at": "2026-10-08T17:35:14.000000Z",
+          "translations": [
+            {
+              "id": 5468,
+              "translatable_type": "App\\Models\\Brand",
+              "translatable_id": 121,
+              "locale": "en",
+              "key": "name",
+              "value": "Ladies Bags",
+              "created_at": "2026-10-08T17:35:14.000000Z",
+              "updated_at": "2026-10-08T17:35:14.000000Z"
+            }
+          ]
+        },
+        "product_images": [],
+        "product_detail": {
+          "id": 2122,
+          "product_id": 3154,
+          "sku": "PDT-002854",
+          "slug": "ladies-combo",
+          "key_features": null,
+          "specification": null,
+          "description": null,
+          "meta_title": "Ladies Combo",
+          "meta_description": null,
+          "keyword": null,
+          "custom_url": null,
+          "attribute_id": null,
+          "type": 1,
+          "created_at": "2026-10-28T13:57:08.000000Z",
+          "updated_at": "2026-10-28T14:17:01.000000Z",
+          "country": "United Arab Emirates",
+          "currency_symbol": "AED",
+          "currency_code": "AED",
+          "regular_price": 150,
+          "discount_price": null,
+          "sale_price": 150,
+          "old_regular_price": 0,
+          "old_discount_price": 0,
+          "old_discount_percentage": 0,
+          "old_sale_price": 0,
+          "offer_page_id": 0,
+          "discount_percentage": 0,
+          "social_id": 0,
+          "video_url": null,
+          "thumbnail": "0",
+          "shipping_class_id": 3,
+          "release_date": null,
+          "translations": []
+        },
+        "variants": [],
+        "stock": [],
+        "translations": []
+      },
+      {
+        "id": 3112,
+        "product_id": "PDT-002812",
+        "shop_id": "000001",
+        "item_id": 3,
+        "category_id": 50,
+        "brand_id": 4,
+        "unit_id": 1,
+        "name": "October Combo (20 Items)",
+        "name_bn": null,
+        "purchase_price": 390.28499999999997,
+        "tp_price": null,
+        "sale_price": 450,
+        "over_stock": 0,
+        "stock_alert": 0,
+        "has_varient": "",
+        "status": "0",
+        "create_by": 15331,
+        "deleted_at": null,
+        "created_at": "2026-10-25T15:40:59.000000Z",
+        "updated_at": "2026-10-28T13:21:34.000000Z",
+        "type": null,
+        "model_code": null,
+        "has_expiry": 0,
+        "has_warranty": 0,
+        "old_product_id": null,
+        "qty": 0,
+        "sub_category_id": null,
+        "is_ecommerce": 1,
+        "combo_id": 26,
+        "is_unique": 0,
+        "is_raw_meterials": 0,
+        "sort_by": null,
+        "whatsapp_button": null,
+        "like": 1,
+        "view": 241,
+        "meta_title": "October Combo (20 Items)",
+        "meta_description": null,
+        "meta_keywords": null,
+        "item": {
+          "id": 3,
+          "name": "Laptop",
+          "name_bn": null,
+          "status": "1",
+          "order_by": 4,
+          "shop_id": null,
+          "image": "/items/1609030946.png",
+          "icon": "laptop",
+          "is_home_page": 0,
+          "design_pattern": "standard",
+          "create_by": 79,
+          "deleted_at": null,
+          "created_at": "2025-09-23T11:16:10.000000Z",
+          "updated_at": "2026-09-21T06:46:30.000000Z",
+          "translations": [
+            {
+              "id": 5083,
+              "translatable_type": "App\\Models\\Item",
+              "translatable_id": 3,
+              "locale": "en",
+              "key": "name",
+              "value": "Laptop",
+              "created_at": "2026-09-14T06:47:29.000000Z",
+              "updated_at": "2026-09-14T06:47:29.000000Z"
+            }
+          ]
+        },
+        "shop": {
+          "id": 1,
+          "shop_cat_id": null,
+          "shop_id": "000001",
+          "light_logo": "/shop_info/1281332463.png",
+          "dark_logo": null,
+          "favicon": null,
+          "banner": "/shop_info/111429330.png",
+          "site_name": "MUSTAQBAL ZAMZAM",
+          "entity_type": "sole_proprietorship",
+          "tag": "electric,",
+          "phone": "+971 58 110 1248",
+          "email": "info@mustaqbalzamzam.com",
+          "timezone": 247,
+          "lang": "en",
+          "currency": 183,
+          "start_time": "09:00:00",
+          "end_time": "00:00:00",
+          "copyright_text": "0",
+          "address": "Ayal Nasser - .1No parchment shop, King of Maryam Mohammed Abdulrahman bin, Qatami Al-Suwaidi, Dera, Dubai",
+          "current_address": "8 6b St - Ayal Nasir - Deira - Dubai - United Arab Emirates",
+          "longitude": "55.30378959999999",
+          "latitude": "25.2753192",
+          "fixed_commission": 0,
+          "commission_percantage": 0,
+          "status": "1",
+          "is_admin_shop": 1,
+          "create_by": null,
+          "deleted_at": null,
+          "created_at": "2025-07-21T08:45:53.000000Z",
+          "updated_at": "2026-10-11T17:40:58.000000Z",
+          "filter_type": "Takeaway",
+          "cr_no": null,
+          "po_box": null,
+          "postal_code": null,
+          "finance_code": null,
+          "vat_in": "104422204800003",
+          "whatsapp_number": "‪+971581101247",
+          "fcm_token": null,
+          "agent_id": 0,
+          "commercial_register_number": null,
+          "commercial_register_expiry_date": null,
+          "commercial_register_file": null,
+          "commercial_license_number": null,
+          "commercial_license_expiry_date": null,
+          "commercial_license_file": null,
+          "establishment_id": null,
+          "establishment_expiry_date": null,
+          "establishment_file": null,
+          "agreement_file": null,
+          "owner_id_number": null,
+          "owner_id_expiry_date": null,
+          "owner_id_file": null,
+          "sponsor_id_number": null,
+          "sponsor_id_expiry_date": null,
+          "sponsor_id_file": null,
+          "translations": [
+            {
+              "id": 64,
+              "translatable_type": "App\\Models\\ShopInfo",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "address",
+              "value": "Ayal Nasser - .1No parchment shop, King of Maryam Mohammed Abdulrahman bin, Qatami Al-Suwaidi, Dera, Dubai",
+              "created_at": "2026-05-05T05:07:09.000000Z",
+              "updated_at": "2026-05-05T05:07:09.000000Z"
+            },
+            {
+              "id": 63,
+              "translatable_type": "App\\Models\\ShopInfo",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "copyright_text",
+              "value": "0",
+              "created_at": "2026-05-05T05:07:09.000000Z",
+              "updated_at": "2026-05-05T05:07:09.000000Z"
+            },
+            {
+              "id": 62,
+              "translatable_type": "App\\Models\\ShopInfo",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "site_name",
+              "value": "MUSTAQBAL ZAMZAM",
+              "created_at": "2026-05-05T05:07:09.000000Z",
+              "updated_at": "2026-05-05T05:07:09.000000Z"
+            }
+          ]
+        },
+        "category": {
+          "id": 50,
+          "shop_id": null,
+          "sl": 50,
+          "item_id": 3,
+          "name": "Apple Macbook",
+          "name_bn": null,
+          "status": "1",
+          "create_by": 1,
+          "deleted_at": null,
+          "created_at": "2025-09-27T08:55:10.000000Z",
+          "updated_at": "2026-01-21T09:16:54.000000Z",
+          "icon": "user",
+          "slug": null,
+          "image": "/category/1817780344.png",
+          "banner": null,
+          "parent_id": null,
+          "translations": []
+        },
+        "brand": {
+          "id": 4,
+          "shop_id": null,
+          "sl": 4,
+          "name": "Apple",
+          "name_bn": null,
+          "status": "1",
+          "image": "/brand_image/1356071872.png",
+          "create_by": 1,
+          "deleted_at": null,
+          "created_at": "2025-09-28T01:04:04.000000Z",
+          "updated_at": "2026-05-24T09:05:06.000000Z",
+          "translations": []
+        },
+        "product_images": [],
+        "product_detail": {
+          "id": 2080,
+          "product_id": 3112,
+          "sku": "PDT-002812",
+          "slug": "october-combo-20-items",
+          "key_features": null,
+          "specification": null,
+          "description": null,
+          "meta_title": "October Combo (20 Items)",
+          "meta_description": null,
+          "keyword": null,
+          "custom_url": null,
+          "attribute_id": null,
+          "type": 1,
+          "created_at": "2026-10-25T15:41:00.000000Z",
+          "updated_at": "2026-10-28T13:21:34.000000Z",
+          "country": "United Arab Emirates",
+          "currency_symbol": "AED",
+          "currency_code": "AED",
+          "regular_price": 450,
+          "discount_price": null,
+          "sale_price": 450,
+          "old_regular_price": 0,
+          "old_discount_price": 0,
+          "old_discount_percentage": 0,
+          "old_sale_price": 0,
+          "offer_page_id": 0,
+          "discount_percentage": 0,
+          "social_id": 0,
+          "video_url": null,
+          "thumbnail": "0",
+          "shipping_class_id": 3,
+          "release_date": null,
+          "translations": []
+        },
+        "variants": [],
+        "stock": [],
+        "translations": []
+      },
+      {
+        "id": 3061,
+        "product_id": "PDT-002761",
+        "shop_id": "000001",
+        "item_id": 34,
+        "category_id": 383,
+        "brand_id": 122,
+        "unit_id": 1,
+        "name": "MacBook Pro 20 Item October Combo Offer",
+        "name_bn": null,
+        "purchase_price": 400,
+        "tp_price": 0,
+        "sale_price": 449,
+        "over_stock": 0,
+        "stock_alert": 0,
+        "has_varient": "0",
+        "status": "1",
+        "create_by": 68,
+        "deleted_at": null,
+        "created_at": "2026-10-21T17:15:31.000000Z",
+        "updated_at": "2026-10-21T20:24:05.000000Z",
+        "type": "product",
+        "model_code": null,
+        "has_expiry": 0,
+        "has_warranty": 0,
+        "old_product_id": null,
+        "qty": 0,
+        "sub_category_id": null,
+        "is_ecommerce": 1,
+        "combo_id": null,
+        "is_unique": 0,
+        "is_raw_meterials": 0,
+        "sort_by": null,
+        "whatsapp_button": "+971564921256",
+        "like": 26,
+        "view": 3116,
+        "meta_title": "MacBook Pro 20 Item October Combo Offer",
+        "meta_description": null,
+        "meta_keywords": null,
+        "item": {
+          "id": 34,
+          "name": "Combo Offer",
+          "name_bn": null,
+          "status": "1",
+          "order_by": 15552,
+          "shop_id": null,
+          "image": "/items/959121234.png",
+          "icon": "user",
+          "is_home_page": 0,
+          "design_pattern": "standard",
+          "create_by": 68,
+          "deleted_at": null,
+          "created_at": "2026-09-22T13:17:48.000000Z",
+          "updated_at": "2026-10-11T16:14:33.000000Z",
+          "translations": [
+            {
+              "id": 5212,
+              "translatable_type": "App\\Models\\Item",
+              "translatable_id": 34,
+              "locale": "en",
+              "key": "name",
+              "value": "Combo Offer",
+              "created_at": "2026-09-22T13:17:48.000000Z",
+              "updated_at": "2026-09-22T13:17:48.000000Z"
+            }
+          ]
+        },
+        "shop": {
+          "id": 1,
+          "shop_cat_id": null,
+          "shop_id": "000001",
+          "light_logo": "/shop_info/1281332463.png",
+          "dark_logo": null,
+          "favicon": null,
+          "banner": "/shop_info/111429330.png",
+          "site_name": "MUSTAQBAL ZAMZAM",
+          "entity_type": "sole_proprietorship",
+          "tag": "electric,",
+          "phone": "+971 58 110 1248",
+          "email": "info@mustaqbalzamzam.com",
+          "timezone": 247,
+          "lang": "en",
+          "currency": 183,
+          "start_time": "09:00:00",
+          "end_time": "00:00:00",
+          "copyright_text": "0",
+          "address": "Ayal Nasser - .1No parchment shop, King of Maryam Mohammed Abdulrahman bin, Qatami Al-Suwaidi, Dera, Dubai",
+          "current_address": "8 6b St - Ayal Nasir - Deira - Dubai - United Arab Emirates",
+          "longitude": "55.30378959999999",
+          "latitude": "25.2753192",
+          "fixed_commission": 0,
+          "commission_percantage": 0,
+          "status": "1",
+          "is_admin_shop": 1,
+          "create_by": null,
+          "deleted_at": null,
+          "created_at": "2025-07-21T08:45:53.000000Z",
+          "updated_at": "2026-10-11T17:40:58.000000Z",
+          "filter_type": "Takeaway",
+          "cr_no": null,
+          "po_box": null,
+          "postal_code": null,
+          "finance_code": null,
+          "vat_in": "104422204800003",
+          "whatsapp_number": "‪+971581101247",
+          "fcm_token": null,
+          "agent_id": 0,
+          "commercial_register_number": null,
+          "commercial_register_expiry_date": null,
+          "commercial_register_file": null,
+          "commercial_license_number": null,
+          "commercial_license_expiry_date": null,
+          "commercial_license_file": null,
+          "establishment_id": null,
+          "establishment_expiry_date": null,
+          "establishment_file": null,
+          "agreement_file": null,
+          "owner_id_number": null,
+          "owner_id_expiry_date": null,
+          "owner_id_file": null,
+          "sponsor_id_number": null,
+          "sponsor_id_expiry_date": null,
+          "sponsor_id_file": null,
+          "translations": [
+            {
+              "id": 64,
+              "translatable_type": "App\\Models\\ShopInfo",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "address",
+              "value": "Ayal Nasser - .1No parchment shop, King of Maryam Mohammed Abdulrahman bin, Qatami Al-Suwaidi, Dera, Dubai",
+              "created_at": "2026-05-05T05:07:09.000000Z",
+              "updated_at": "2026-05-05T05:07:09.000000Z"
+            },
+            {
+              "id": 63,
+              "translatable_type": "App\\Models\\ShopInfo",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "copyright_text",
+              "value": "0",
+              "created_at": "2026-05-05T05:07:09.000000Z",
+              "updated_at": "2026-05-05T05:07:09.000000Z"
+            },
+            {
+              "id": 62,
+              "translatable_type": "App\\Models\\ShopInfo",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "site_name",
+              "value": "MUSTAQBAL ZAMZAM",
+              "created_at": "2026-05-05T05:07:09.000000Z",
+              "updated_at": "2026-05-05T05:07:09.000000Z"
+            }
+          ]
+        },
+        "category": {
+          "id": 383,
+          "shop_id": null,
+          "sl": 555165495,
+          "item_id": 34,
+          "name": "October Combo 20 Item",
+          "name_bn": null,
+          "status": "1",
+          "create_by": 68,
+          "deleted_at": null,
+          "created_at": "2026-10-21T17:13:44.000000Z",
+          "updated_at": "2026-10-21T17:13:44.000000Z",
+          "icon": null,
+          "slug": null,
+          "image": null,
+          "banner": null,
+          "parent_id": null,
+          "translations": [
+            {
+              "id": 5570,
+              "translatable_type": "App\\Models\\Category",
+              "translatable_id": 383,
+              "locale": "en",
+              "key": "name",
+              "value": "October Combo 20 Item",
+              "created_at": "2026-10-21T17:13:44.000000Z",
+              "updated_at": "2026-10-21T17:13:44.000000Z"
+            }
+          ]
+        },
+        "brand": {
+          "id": 122,
+          "shop_id": null,
+          "sl": 346546572,
+          "name": "Combo Package",
+          "name_bn": null,
+          "status": "1",
+          "image": null,
+          "create_by": 68,
+          "deleted_at": null,
+          "created_at": "2026-10-11T11:21:42.000000Z",
+          "updated_at": "2026-10-11T11:21:42.000000Z",
+          "translations": [
+            {
+              "id": 5510,
+              "translatable_type": "App\\Models\\Brand",
+              "translatable_id": 122,
+              "locale": "en",
+              "key": "name",
+              "value": "Combo Package",
+              "created_at": "2026-10-11T11:21:42.000000Z",
+              "updated_at": "2026-10-11T11:21:42.000000Z"
+            }
+          ]
+        },
+        "product_images": [
+          {
+            "id": 36786,
+            "product_id": 3061,
+            "path": "/products/909746992.jpeg",
+            "sort_order": 0,
+            "created_at": "2026-10-23T16:19:53.000000Z",
+            "updated_at": "2026-10-23T16:19:53.000000Z",
+            "product_variant_id": null,
+            "attribute_value_id": null,
+            "model_code": null
+          }
+        ],
+        "product_detail": {
+          "id": 2029,
+          "product_id": 3061,
+          "sku": "PDT-002761",
+          "slug": "macbook_pro_20_item_october_combo_offer",
+          "key_features": "<div class=\"card border-0\">\r\n  <ul class=\"list-group list-group-flush\">\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      💻 <strong>MacBook Pro</strong><br>\r\n      <small class=\"text-muted\">A premium laptop for work, study, business and everyday productivity.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🌸 <strong>5 Pieces Luxury Perfume</strong><br>\r\n      <small class=\"text-muted\">Five perfumes from mixed brands to add variety to your fragrance collection.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      📱 <strong>Nokia 106 Mobile Phone</strong><br>\r\n      <small class=\"text-muted\">A classic mobile phone designed for basic communication.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      ⌚ <strong>Ladies Luxury Watch Set</strong><br>\r\n      <small class=\"text-muted\">An elegant watch and jewellery set to complement your personal style.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      ⌚ <strong>3 Pieces M59 Pro Max Smart Watch</strong><br>\r\n      <small class=\"text-muted\">Three smartwatches for everyday use and fashionable styling.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🔊 <strong>Wireless Bluetooth Speaker</strong><br>\r\n      <small class=\"text-muted\">Enjoy convenient wireless audio playback with compatible devices.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🎧 <strong>Wireless Sports Earphone N50 Pro</strong><br>\r\n      <small class=\"text-muted\">Wireless audio accessory for music and everyday listening.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🎵 <strong>Modio Air B8 Earbuds</strong><br>\r\n      <small class=\"text-muted\">Wireless earbuds for convenient listening on the go.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🖱️ <strong>Computer Mouse</strong><br>\r\n      <small class=\"text-muted\">A practical accessory for computer navigation and productivity.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🖱️ <strong>Mouse Pad</strong><br>\r\n      <small class=\"text-muted\">Provides a convenient surface for comfortable mouse movement.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      ✍️ <strong>Electronic Writing Pad</strong><br>\r\n      <small class=\"text-muted\">Useful for writing notes, reminders and simple sketches.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🔌 <strong>MacBook Charger</strong><br>\r\n      <small class=\"text-muted\">Charging accessory for a compatible MacBook Pro model.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      ⚡ <strong>Power Cable</strong><br>\r\n      <small class=\"text-muted\">Power connection accessory for compatible electronic equipment.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      💼 <strong>Laptop Bag</strong><br>\r\n      <small class=\"text-muted\">A convenient carrying bag for your laptop and essential accessories.</small>\r\n    </li>\r\n\r\n  </ul>\r\n</div>",
+          "specification": "<div class=\"table-responsive\">\r\n  <table class=\"table table-bordered align-middle\">\r\n    <tbody>\r\n      <tr>\r\n        <th style=\"width:35%;\">Product Name</th>\r\n        <td>MacBook Pro Luxury Combo</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Combo Category</th>\r\n        <td>Electronics, Smart Accessories, Fashion &amp; Fragrance</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 1</th>\r\n        <td>MacBook Pro</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 2</th>\r\n        <td>5 Pieces Luxury Perfume – Mixed Brands</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 3</th>\r\n        <td>Nokia 106 Mobile Phone</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 4</th>\r\n        <td>Ladies Luxury Watch Set</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 5</th>\r\n        <td>3 Pieces Smart Watch M59 Pro Max</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 6</th>\r\n        <td>Wireless Bluetooth Speaker</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 7</th>\r\n        <td>Wireless Sports Earphone N50 Pro</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 8</th>\r\n        <td>Modio Air B8 Earbuds</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 9</th>\r\n        <td>Computer Mouse</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 10</th>\r\n        <td>Mouse Pad</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 11</th>\r\n        <td>Electronic Writing Pad</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 12</th>\r\n        <td>MacBook Charger</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 13</th>\r\n        <td>Power Cable</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 20</th>\r\n        <td>Laptop Bag</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Main Product</th>\r\n        <td>MacBook Pro</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Perfume Quantity</th>\r\n        <td>5 Pieces</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Smart Watch Quantity</th>\r\n        <td>3 Pieces</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Total Listed Categories</th>\r\n        <td>20</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Suitable For</th>\r\n        <td>Work, Study, Daily Use, Personal Styling &amp; Gifting</td>\r\n      </tr>\r\n      <tr>\r\n        <th>MacBook Specifications</th>\r\n        <td>Depend on the included MacBook Pro model</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Product Colors</th>\r\n        <td>May vary by item and availability</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>",
+          "description": "<div class=\"product-description mb-4\">\r\n  <h4>MacBook Pro Luxury Combo – 20 Products in One Package</h4>\r\n\r\n  <p>\r\n    Discover an exciting collection of technology, smart accessories, fashion\r\n    essentials and fragrances with the <strong>MacBook Pro Luxury Combo</strong>.\r\n    This special package brings together a MacBook Pro and a variety of useful\r\n    accessories and lifestyle products in one convenient offer.\r\n  </p>\r\n\r\n  <p>\r\n    💻 <strong>MacBook Pro:</strong> The main product in this combo, suitable for\r\n    work, study, business and everyday productivity. Exact specifications depend\r\n    on the included MacBook Pro model.\r\n  </p>\r\n\r\n  <p>\r\n    🌸 <strong>Luxury Perfumes:</strong> Includes five perfumes from mixed brands,\r\n    giving you a varied fragrance collection for different occasions.\r\n  </p>\r\n\r\n  <p>\r\n    📱 <strong>Nokia 106:</strong> A classic mobile phone included for basic\r\n    communication needs.\r\n  </p>\r\n\r\n  <p>\r\n    ⌚ <strong>Fashion &amp; Smart Watches:</strong> The package includes one Ladies\r\n    Luxury Watch Set and three M59 Pro Max smartwatches, combining fashionable\r\n    accessories with smart wearable options.\r\n  </p>\r\n\r\n  <p>\r\n    🎧 <strong>Audio Accessories:</strong> Enjoy the convenience of a Wireless\r\n    Bluetooth Speaker, Wireless Sports Earphone N50 Pro and Modio Air B8 Earbuds\r\n    for compatible audio devices.\r\n  </p>\r\n\r\n  <p>\r\n    🖱️ <strong>Computer Accessories:</strong> A computer mouse, mouse pad and\r\n    electronic writing pad add useful accessories for everyday computing,\r\n    note-taking and productivity.\r\n  </p>\r\n\r\n  <p>\r\n    🔌 <strong>Essential Accessories:</strong> The combo also includes a MacBook\r\n    charger, power cable and laptop bag for added convenience when using and\r\n    carrying your laptop.\r\n  </p>\r\n\r\n  <p>\r\n    🎁 <strong>One Exciting Combo:</strong> With 14 listed product categories,\r\n    including five perfumes and three smartwatches, this package combines\r\n    technology, accessories, fragrances and fashion essentials in one offer.\r\n  </p>\r\n\r\n  <p>\r\n    <strong>MacBook Pro Luxury Combo</strong> is a convenient choice for customers\r\n    looking for a combination of computing equipment, mobile accessories,\r\n    wearable devices and lifestyle products.\r\n  </p>\r\n\r\n  <p>\r\n    <small class=\"text-muted\">\r\n      Note: The MacBook Pro model and specifications, perfume brands, accessory\r\n      designs and product variants may vary depending on the actual combo.\r\n      Please confirm the included items and compatibility before ordering.\r\n    </small>\r\n  </p>\r\n</div>",
+          "meta_title": "MacBook Pro 20 Item October Combo Offer",
+          "meta_description": "MacBook Pro 20 Item October Combo Offer",
+          "keyword": "MacBook Pro 20 Item October Combo Offer",
+          "custom_url": "#",
+          "attribute_id": null,
+          "type": 7,
+          "created_at": "2026-10-21T17:15:31.000000Z",
+          "updated_at": "2026-10-21T20:23:53.000000Z",
+          "country": "784",
+          "currency_symbol": "AED",
+          "currency_code": "AED",
+          "regular_price": 1200,
+          "discount_price": 751,
+          "sale_price": 449,
+          "old_regular_price": 0,
+          "old_discount_price": 0,
+          "old_discount_percentage": 0,
+          "old_sale_price": 0,
+          "offer_page_id": 0,
+          "discount_percentage": 0,
+          "social_id": 0,
+          "video_url": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/products/videos/684271859.mp4",
+          "thumbnail": "https://aponstorage.sgp1.cdn.digitaloceanspaces.com/ecommerce/product_video_thumbnails/382773910.jpg",
+          "shipping_class_id": 3,
+          "release_date": null,
+          "translations": [
+            {
+              "id": 5575,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2029,
+              "locale": "en",
+              "key": "custom_url",
+              "value": "#",
+              "created_at": "2026-10-21T17:53:57.000000Z",
+              "updated_at": "2026-10-21T17:53:57.000000Z"
+            },
+            {
+              "id": 5578,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2029,
+              "locale": "en",
+              "key": "description",
+              "value": "<div class=\"product-description mb-4\">\r\n  <h4>MacBook Pro Luxury Combo – 20 Products in One Package</h4>\r\n\r\n  <p>\r\n    Discover an exciting collection of technology, smart accessories, fashion\r\n    essentials and fragrances with the <strong>MacBook Pro Luxury Combo</strong>.\r\n    This special package brings together a MacBook Pro and a variety of useful\r\n    accessories and lifestyle products in one convenient offer.\r\n  </p>\r\n\r\n  <p>\r\n    💻 <strong>MacBook Pro:</strong> The main product in this combo, suitable for\r\n    work, study, business and everyday productivity. Exact specifications depend\r\n    on the included MacBook Pro model.\r\n  </p>\r\n\r\n  <p>\r\n    🌸 <strong>Luxury Perfumes:</strong> Includes five perfumes from mixed brands,\r\n    giving you a varied fragrance collection for different occasions.\r\n  </p>\r\n\r\n  <p>\r\n    📱 <strong>Nokia 106:</strong> A classic mobile phone included for basic\r\n    communication needs.\r\n  </p>\r\n\r\n  <p>\r\n    ⌚ <strong>Fashion &amp; Smart Watches:</strong> The package includes one Ladies\r\n    Luxury Watch Set and three M59 Pro Max smartwatches, combining fashionable\r\n    accessories with smart wearable options.\r\n  </p>\r\n\r\n  <p>\r\n    🎧 <strong>Audio Accessories:</strong> Enjoy the convenience of a Wireless\r\n    Bluetooth Speaker, Wireless Sports Earphone N50 Pro and Modio Air B8 Earbuds\r\n    for compatible audio devices.\r\n  </p>\r\n\r\n  <p>\r\n    🖱️ <strong>Computer Accessories:</strong> A computer mouse, mouse pad and\r\n    electronic writing pad add useful accessories for everyday computing,\r\n    note-taking and productivity.\r\n  </p>\r\n\r\n  <p>\r\n    🔌 <strong>Essential Accessories:</strong> The combo also includes a MacBook\r\n    charger, power cable and laptop bag for added convenience when using and\r\n    carrying your laptop.\r\n  </p>\r\n\r\n  <p>\r\n    🎁 <strong>One Exciting Combo:</strong> With 14 listed product categories,\r\n    including five perfumes and three smartwatches, this package combines\r\n    technology, accessories, fragrances and fashion essentials in one offer.\r\n  </p>\r\n\r\n  <p>\r\n    <strong>MacBook Pro Luxury Combo</strong> is a convenient choice for customers\r\n    looking for a combination of computing equipment, mobile accessories,\r\n    wearable devices and lifestyle products.\r\n  </p>\r\n\r\n  <p>\r\n    <small class=\"text-muted\">\r\n      Note: The MacBook Pro model and specifications, perfume brands, accessory\r\n      designs and product variants may vary depending on the actual combo.\r\n      Please confirm the included items and compatibility before ordering.\r\n    </small>\r\n  </p>\r\n</div>",
+              "created_at": "2026-10-21T17:53:57.000000Z",
+              "updated_at": "2026-10-21T17:53:57.000000Z"
+            },
+            {
+              "id": 5576,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2029,
+              "locale": "en",
+              "key": "key_features",
+              "value": "<div class=\"card border-0\">\r\n  <ul class=\"list-group list-group-flush\">\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      💻 <strong>MacBook Pro</strong><br>\r\n      <small class=\"text-muted\">A premium laptop for work, study, business and everyday productivity.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🌸 <strong>5 Pieces Luxury Perfume</strong><br>\r\n      <small class=\"text-muted\">Five perfumes from mixed brands to add variety to your fragrance collection.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      📱 <strong>Nokia 106 Mobile Phone</strong><br>\r\n      <small class=\"text-muted\">A classic mobile phone designed for basic communication.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      ⌚ <strong>Ladies Luxury Watch Set</strong><br>\r\n      <small class=\"text-muted\">An elegant watch and jewellery set to complement your personal style.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      ⌚ <strong>3 Pieces M59 Pro Max Smart Watch</strong><br>\r\n      <small class=\"text-muted\">Three smartwatches for everyday use and fashionable styling.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🔊 <strong>Wireless Bluetooth Speaker</strong><br>\r\n      <small class=\"text-muted\">Enjoy convenient wireless audio playback with compatible devices.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🎧 <strong>Wireless Sports Earphone N50 Pro</strong><br>\r\n      <small class=\"text-muted\">Wireless audio accessory for music and everyday listening.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🎵 <strong>Modio Air B8 Earbuds</strong><br>\r\n      <small class=\"text-muted\">Wireless earbuds for convenient listening on the go.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🖱️ <strong>Computer Mouse</strong><br>\r\n      <small class=\"text-muted\">A practical accessory for computer navigation and productivity.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🖱️ <strong>Mouse Pad</strong><br>\r\n      <small class=\"text-muted\">Provides a convenient surface for comfortable mouse movement.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      ✍️ <strong>Electronic Writing Pad</strong><br>\r\n      <small class=\"text-muted\">Useful for writing notes, reminders and simple sketches.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🔌 <strong>MacBook Charger</strong><br>\r\n      <small class=\"text-muted\">Charging accessory for a compatible MacBook Pro model.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      ⚡ <strong>Power Cable</strong><br>\r\n      <small class=\"text-muted\">Power connection accessory for compatible electronic equipment.</small>\r\n    </li>\r\n\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      💼 <strong>Laptop Bag</strong><br>\r\n      <small class=\"text-muted\">A convenient carrying bag for your laptop and essential accessories.</small>\r\n    </li>\r\n\r\n  </ul>\r\n</div>",
+              "created_at": "2026-10-21T17:53:57.000000Z",
+              "updated_at": "2026-10-21T17:53:57.000000Z"
+            },
+            {
+              "id": 5574,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2029,
+              "locale": "en",
+              "key": "keyword",
+              "value": "MacBook Pro 20 Item October Combo Offer",
+              "created_at": "2026-10-21T17:53:57.000000Z",
+              "updated_at": "2026-10-21T17:53:57.000000Z"
+            },
+            {
+              "id": 5573,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2029,
+              "locale": "en",
+              "key": "meta_description",
+              "value": "MacBook Pro 20 Item October Combo Offer",
+              "created_at": "2026-10-21T17:53:57.000000Z",
+              "updated_at": "2026-10-21T17:53:57.000000Z"
+            },
+            {
+              "id": 5572,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2029,
+              "locale": "en",
+              "key": "meta_title",
+              "value": "MacBook Pro 20 Item October Combo Offer",
+              "created_at": "2026-10-21T17:53:57.000000Z",
+              "updated_at": "2026-10-21T17:53:57.000000Z"
+            },
+            {
+              "id": 5577,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2029,
+              "locale": "en",
+              "key": "specification",
+              "value": "<div class=\"table-responsive\">\r\n  <table class=\"table table-bordered align-middle\">\r\n    <tbody>\r\n      <tr>\r\n        <th style=\"width:35%;\">Product Name</th>\r\n        <td>MacBook Pro Luxury Combo</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Combo Category</th>\r\n        <td>Electronics, Smart Accessories, Fashion &amp; Fragrance</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 1</th>\r\n        <td>MacBook Pro</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 2</th>\r\n        <td>5 Pieces Luxury Perfume – Mixed Brands</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 3</th>\r\n        <td>Nokia 106 Mobile Phone</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 4</th>\r\n        <td>Ladies Luxury Watch Set</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 5</th>\r\n        <td>3 Pieces Smart Watch M59 Pro Max</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 6</th>\r\n        <td>Wireless Bluetooth Speaker</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 7</th>\r\n        <td>Wireless Sports Earphone N50 Pro</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 8</th>\r\n        <td>Modio Air B8 Earbuds</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 9</th>\r\n        <td>Computer Mouse</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 10</th>\r\n        <td>Mouse Pad</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 11</th>\r\n        <td>Electronic Writing Pad</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 12</th>\r\n        <td>MacBook Charger</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 13</th>\r\n        <td>Power Cable</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Item 20</th>\r\n        <td>Laptop Bag</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Main Product</th>\r\n        <td>MacBook Pro</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Perfume Quantity</th>\r\n        <td>5 Pieces</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Smart Watch Quantity</th>\r\n        <td>3 Pieces</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Total Listed Categories</th>\r\n        <td>20</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Suitable For</th>\r\n        <td>Work, Study, Daily Use, Personal Styling &amp; Gifting</td>\r\n      </tr>\r\n      <tr>\r\n        <th>MacBook Specifications</th>\r\n        <td>Depend on the included MacBook Pro model</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Product Colors</th>\r\n        <td>May vary by item and availability</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>",
+              "created_at": "2026-10-21T17:53:57.000000Z",
+              "updated_at": "2026-10-21T17:53:57.000000Z"
+            }
+          ]
+        },
+        "variants": [],
+        "stock": [
+          {
+            "id": 8564,
+            "product_id": 3061,
+            "variant_id": null,
+            "quantity": 100,
+            "available_quantity": 95,
+            "created_at": "2026-10-21T17:16:05.000000Z",
+            "updated_at": "2026-10-28T23:32:35.000000Z"
+          }
+        ],
+        "translations": [
+          {
+            "id": 5571,
+            "translatable_type": "App\\Models\\Product",
+            "translatable_id": 3061,
+            "locale": "en",
+            "key": "name",
+            "value": "MacBook Pro 20 Item October Combo Offer",
+            "created_at": "2026-10-21T17:15:31.000000Z",
+            "updated_at": "2026-10-21T17:15:31.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 3060,
+        "product_id": "PDT-002760",
+        "shop_id": "000001",
+        "item_id": 1,
+        "category_id": 1,
+        "brand_id": 7,
+        "unit_id": 1,
+        "name": "Motorola G34 5G Used",
+        "name_bn": null,
+        "purchase_price": 295,
+        "tp_price": 0,
+        "sale_price": 350,
+        "over_stock": 300,
+        "stock_alert": 5,
+        "has_varient": "1",
+        "status": "1",
+        "create_by": 68,
+        "deleted_at": null,
+        "created_at": "2026-10-20T11:29:20.000000Z",
+        "updated_at": "2026-10-26T08:01:47.000000Z",
+        "type": "product",
+        "model_code": null,
+        "has_expiry": 0,
+        "has_warranty": 1,
+        "old_product_id": null,
+        "qty": 0,
+        "sub_category_id": null,
+        "is_ecommerce": 1,
+        "combo_id": null,
+        "is_unique": 1,
+        "is_raw_meterials": 0,
+        "sort_by": null,
+        "whatsapp_button": "+971564921256",
+        "like": 3,
+        "view": 626,
+        "meta_title": "Motorola G34 5G Used",
+        "meta_description": null,
+        "meta_keywords": null,
+        "item": {
+          "id": 1,
+          "name": "Used Mobile",
+          "name_bn": null,
+          "status": "1",
+          "order_by": 2,
+          "shop_id": null,
+          "image": "/items/1616169681.png",
+          "icon": "user",
+          "is_home_page": 0,
+          "design_pattern": "standard",
+          "create_by": 68,
+          "deleted_at": null,
+          "created_at": "2025-09-15T06:18:06.000000Z",
+          "updated_at": "2026-09-14T06:32:19.000000Z",
+          "translations": [
+            {
+              "id": 5081,
+              "translatable_type": "App\\Models\\Item",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "name",
+              "value": "Used Mobile",
+              "created_at": "2026-09-14T06:32:19.000000Z",
+              "updated_at": "2026-09-14T06:32:19.000000Z"
+            }
+          ]
+        },
+        "shop": {
+          "id": 1,
+          "shop_cat_id": null,
+          "shop_id": "000001",
+          "light_logo": "/shop_info/1281332463.png",
+          "dark_logo": null,
+          "favicon": null,
+          "banner": "/shop_info/111429330.png",
+          "site_name": "MUSTAQBAL ZAMZAM",
+          "entity_type": "sole_proprietorship",
+          "tag": "electric,",
+          "phone": "+971 58 110 1248",
+          "email": "info@mustaqbalzamzam.com",
+          "timezone": 247,
+          "lang": "en",
+          "currency": 183,
+          "start_time": "09:00:00",
+          "end_time": "00:00:00",
+          "copyright_text": "0",
+          "address": "Ayal Nasser - .1No parchment shop, King of Maryam Mohammed Abdulrahman bin, Qatami Al-Suwaidi, Dera, Dubai",
+          "current_address": "8 6b St - Ayal Nasir - Deira - Dubai - United Arab Emirates",
+          "longitude": "55.30378959999999",
+          "latitude": "25.2753192",
+          "fixed_commission": 0,
+          "commission_percantage": 0,
+          "status": "1",
+          "is_admin_shop": 1,
+          "create_by": null,
+          "deleted_at": null,
+          "created_at": "2025-07-21T08:45:53.000000Z",
+          "updated_at": "2026-10-11T17:40:58.000000Z",
+          "filter_type": "Takeaway",
+          "cr_no": null,
+          "po_box": null,
+          "postal_code": null,
+          "finance_code": null,
+          "vat_in": "104422204800003",
+          "whatsapp_number": "‪+971581101247",
+          "fcm_token": null,
+          "agent_id": 0,
+          "commercial_register_number": null,
+          "commercial_register_expiry_date": null,
+          "commercial_register_file": null,
+          "commercial_license_number": null,
+          "commercial_license_expiry_date": null,
+          "commercial_license_file": null,
+          "establishment_id": null,
+          "establishment_expiry_date": null,
+          "establishment_file": null,
+          "agreement_file": null,
+          "owner_id_number": null,
+          "owner_id_expiry_date": null,
+          "owner_id_file": null,
+          "sponsor_id_number": null,
+          "sponsor_id_expiry_date": null,
+          "sponsor_id_file": null,
+          "translations": [
+            {
+              "id": 64,
+              "translatable_type": "App\\Models\\ShopInfo",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "address",
+              "value": "Ayal Nasser - .1No parchment shop, King of Maryam Mohammed Abdulrahman bin, Qatami Al-Suwaidi, Dera, Dubai",
+              "created_at": "2026-05-05T05:07:09.000000Z",
+              "updated_at": "2026-05-05T05:07:09.000000Z"
+            },
+            {
+              "id": 63,
+              "translatable_type": "App\\Models\\ShopInfo",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "copyright_text",
+              "value": "0",
+              "created_at": "2026-05-05T05:07:09.000000Z",
+              "updated_at": "2026-05-05T05:07:09.000000Z"
+            },
+            {
+              "id": 62,
+              "translatable_type": "App\\Models\\ShopInfo",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "site_name",
+              "value": "MUSTAQBAL ZAMZAM",
+              "created_at": "2026-05-05T05:07:09.000000Z",
+              "updated_at": "2026-05-05T05:07:09.000000Z"
+            }
+          ]
+        },
+        "category": {
+          "id": 1,
+          "shop_id": null,
+          "sl": 1,
+          "item_id": 1,
+          "name": "Phones",
+          "name_bn": null,
+          "status": "1",
+          "create_by": 68,
+          "deleted_at": null,
+          "created_at": "2025-09-15T06:18:34.000000Z",
+          "updated_at": "2026-09-14T07:00:52.000000Z",
+          "icon": "user",
+          "slug": null,
+          "image": "/category/1477319309.png",
+          "banner": null,
+          "parent_id": null,
+          "translations": [
+            {
+              "id": 5080,
+              "translatable_type": "App\\Models\\Category",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "name",
+              "value": "Phones",
+              "created_at": "2026-09-14T05:58:44.000000Z",
+              "updated_at": "2026-09-14T05:58:44.000000Z"
+            }
+          ]
+        },
+        "brand": {
+          "id": 7,
+          "shop_id": null,
+          "sl": 7,
+          "name": "Motorola",
+          "name_bn": null,
+          "status": "1",
+          "image": "/brand_image/1532056264.png",
+          "create_by": 1,
+          "deleted_at": null,
+          "created_at": "2025-09-28T01:04:50.000000Z",
+          "updated_at": "2026-01-21T15:19:58.000000Z",
+          "translations": []
+        },
+        "product_images": [
+          {
+            "id": 36668,
+            "product_id": 3060,
+            "path": "/products/856906751.png",
+            "sort_order": 0,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z",
+            "product_variant_id": 9561,
+            "attribute_value_id": 629,
+            "model_code": null
+          },
+          {
+            "id": 36669,
+            "product_id": 3060,
+            "path": "/products/699959373.png",
+            "sort_order": 0,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z",
+            "product_variant_id": 9562,
+            "attribute_value_id": 674,
+            "model_code": null
+          },
+          {
+            "id": 36670,
+            "product_id": 3060,
+            "path": "/products/432906875.png",
+            "sort_order": 0,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z",
+            "product_variant_id": 9563,
+            "attribute_value_id": 688,
+            "model_code": null
+          },
+          {
+            "id": 36671,
+            "product_id": 3060,
+            "path": "/products/170360284.png",
+            "sort_order": 0,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z",
+            "product_variant_id": 9564,
+            "attribute_value_id": 724,
+            "model_code": null
+          },
+          {
+            "id": 36672,
+            "product_id": 3060,
+            "path": "/products/856906751.png",
+            "sort_order": 0,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z",
+            "product_variant_id": 9565,
+            "attribute_value_id": 629,
+            "model_code": null
+          },
+          {
+            "id": 36673,
+            "product_id": 3060,
+            "path": "/products/699959373.png",
+            "sort_order": 0,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z",
+            "product_variant_id": 9566,
+            "attribute_value_id": 674,
+            "model_code": null
+          },
+          {
+            "id": 36674,
+            "product_id": 3060,
+            "path": "/products/432906875.png",
+            "sort_order": 0,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z",
+            "product_variant_id": 9567,
+            "attribute_value_id": 688,
+            "model_code": null
+          },
+          {
+            "id": 36675,
+            "product_id": 3060,
+            "path": "/products/170360284.png",
+            "sort_order": 0,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z",
+            "product_variant_id": 9568,
+            "attribute_value_id": 724,
+            "model_code": null
+          },
+          {
+            "id": 36676,
+            "product_id": 3060,
+            "path": "/products/569896546.png",
+            "sort_order": 0,
+            "created_at": "2026-10-23T14:17:20.000000Z",
+            "updated_at": "2026-10-23T14:17:20.000000Z",
+            "product_variant_id": null,
+            "attribute_value_id": null,
+            "model_code": null
+          },
+          {
+            "id": 36677,
+            "product_id": 3060,
+            "path": "/products/1986801840.png",
+            "sort_order": 0,
+            "created_at": "2026-10-23T14:17:20.000000Z",
+            "updated_at": "2026-10-23T14:17:20.000000Z",
+            "product_variant_id": null,
+            "attribute_value_id": null,
+            "model_code": null
+          },
+          {
+            "id": 36678,
+            "product_id": 3060,
+            "path": "/products/1666722810.png",
+            "sort_order": 0,
+            "created_at": "2026-10-23T14:17:20.000000Z",
+            "updated_at": "2026-10-23T14:17:20.000000Z",
+            "product_variant_id": null,
+            "attribute_value_id": null,
+            "model_code": null
+          },
+          {
+            "id": 36679,
+            "product_id": 3060,
+            "path": "/products/814122387.png",
+            "sort_order": 0,
+            "created_at": "2026-10-23T14:17:20.000000Z",
+            "updated_at": "2026-10-23T14:17:20.000000Z",
+            "product_variant_id": null,
+            "attribute_value_id": null,
+            "model_code": null
+          },
+          {
+            "id": 36680,
+            "product_id": 3060,
+            "path": "/products/1500110728.png",
+            "sort_order": 0,
+            "created_at": "2026-10-23T14:17:20.000000Z",
+            "updated_at": "2026-10-23T14:17:20.000000Z",
+            "product_variant_id": null,
+            "attribute_value_id": null,
+            "model_code": null
+          },
+          {
+            "id": 36681,
+            "product_id": 3060,
+            "path": "/products/2107005252.png",
+            "sort_order": 0,
+            "created_at": "2026-10-23T14:17:20.000000Z",
+            "updated_at": "2026-10-23T14:17:20.000000Z",
+            "product_variant_id": null,
+            "attribute_value_id": null,
+            "model_code": null
+          },
+          {
+            "id": 36682,
+            "product_id": 3060,
+            "path": "/products/1894424518.png",
+            "sort_order": 0,
+            "created_at": "2026-10-23T14:17:20.000000Z",
+            "updated_at": "2026-10-23T14:17:20.000000Z",
+            "product_variant_id": null,
+            "attribute_value_id": null,
+            "model_code": null
+          }
+        ],
+        "product_detail": {
+          "id": 2028,
+          "product_id": 3060,
+          "sku": "PDT-002760",
+          "slug": "motorola_g34_5g_used",
+          "key_features": "<div class=\"card border-0\">\r\n  <ul class=\"list-group list-group-flush\">\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      📱 <strong>6.5\" 120Hz Display</strong><br>\r\n      <small class=\"text-muted\">Enjoy smooth scrolling and comfortable viewing with a 6.5-inch IPS LCD display and 120Hz refresh rate.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      ⚡ <strong>Snapdragon 695 5G Processor</strong><br>\r\n      <small class=\"text-muted\">Qualcomm Snapdragon 695 5G chipset designed for everyday performance and multitasking.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🧠 <strong>Up to 4GB/6GB/8GB RAM</strong><br>\r\n      <small class=\"text-muted\">Available with 4GB or 8GB RAM configurations, depending on the variant.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      💾 <strong>Up to 256GB Storage</strong><br>\r\n      <small class=\"text-muted\">Choose from 64GB, 128GB or 256GB storage options, with microSDXC expansion support.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      📸 <strong>50MP Dual Rear Camera</strong><br>\r\n      <small class=\"text-muted\">50MP main camera with PDAF and a 2MP macro camera for capturing everyday moments.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🤳 <strong>16MP Selfie Camera</strong><br>\r\n      <small class=\"text-muted\">Front-facing camera for selfies and video calls, with Full HD video recording.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🔋 <strong>5000mAh Battery</strong><br>\r\n      <small class=\"text-muted\">Large battery capacity designed to support daily communication, browsing and entertainment.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      ⚡ <strong>18W Wired Charging</strong><br>\r\n      <small class=\"text-muted\">Convenient wired charging to help recharge your phone.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🔊 <strong>Stereo Speakers</strong><br>\r\n      <small class=\"text-muted\">Stereo audio with Snapdragon Sound support for an enhanced listening experience.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🔐 <strong>Side-Mounted Fingerprint Sensor</strong><br>\r\n      <small class=\"text-muted\">Convenient fingerprint unlocking for everyday device security.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🎧 <strong>3.5mm Headphone Jack</strong><br>\r\n      <small class=\"text-muted\">Connect compatible wired headphones without needing a separate adapter.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      💧 <strong>Water-Repellent Design</strong><br>\r\n      <small class=\"text-muted\">Designed to help protect against everyday water exposure; it is not specified as fully waterproof.</small>\r\n    </li>\r\n  </ul>\r\n</div>",
+          "specification": "<div class=\"table-responsive\">\r\n  <table class=\"table table-bordered align-middle\">\r\n    <tbody>\r\n      <tr>\r\n        <th style=\"width:35%;\">Brand</th>\r\n        <td>Motorola</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Model</th>\r\n        <td>Motorola Moto G34 5G</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Model Numbers</th>\r\n        <td>XT2363-2, XT2363-3</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Network Technology</th>\r\n        <td>GSM / HSPA / LTE / 5G</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Operating System</th>\r\n        <td>Android 13 or Android 14, depending on variant</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Processor</th>\r\n        <td>Qualcomm Snapdragon 695 5G (6nm)</td>\r\n      </tr>\r\n      <tr>\r\n        <th>CPU</th>\r\n        <td>Octa-Core (2 × 2.2GHz Kryo 660 Gold + 6 × 1.7GHz Kryo 660 Silver)</td>\r\n      </tr>\r\n      <tr>\r\n        <th>GPU</th>\r\n        <td>Adreno 619</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Display Size</th>\r\n        <td>6.5 Inches</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Display Type</th>\r\n        <td>IPS LCD, 120Hz</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Display Resolution</th>\r\n        <td>720 × 1600 Pixels</td>\r\n      </tr>\r\n      <tr>\r\n        <th>RAM Options</th>\r\n        <td>4GB / 8GB</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Storage Options</th>\r\n        <td>64GB / 128GB / 256GB</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Memory Card</th>\r\n        <td>microSDXC, Shared SIM Slot</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Rear Camera</th>\r\n        <td>50MP, f/1.8, Wide, PDAF + 2MP Macro</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Rear Camera Features</th>\r\n        <td>LED Flash, HDR, Panorama</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Rear Video Recording</th>\r\n        <td>1080p@30fps</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Front Camera</th>\r\n        <td>16MP, f/2.4, Wide</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Front Video Recording</th>\r\n        <td>1080p@30fps</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Speakers</th>\r\n        <td>Stereo Speakers, Snapdragon Sound</td>\r\n      </tr>\r\n      <tr>\r\n        <th>3.5mm Headphone Jack</th>\r\n        <td>Yes</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Wi-Fi</th>\r\n        <td>Wi-Fi 802.11 a/b/g/n/ac, Dual-Band</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Bluetooth</th>\r\n        <td>Bluetooth 5.1, A2DP, LE</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Positioning</th>\r\n        <td>GPS, Galileo, GLONASS, BDS, QZSS</td>\r\n      </tr>\r\n      <tr>\r\n        <th>NFC</th>\r\n        <td>Yes, Market/Region Dependent</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Radio</th>\r\n        <td>FM Radio</td>\r\n      </tr>\r\n      <tr>\r\n        <th>USB</th>\r\n        <td>USB Type-C 2.0</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Sensors</th>\r\n        <td>Side-Mounted Fingerprint, Accelerometer, Gyroscope, Proximity, Compass</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Battery</th>\r\n        <td>5000mAh Li-Po</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Charging</th>\r\n        <td>18W Wired Charging</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Dimensions</th>\r\n        <td>162.7 × 74.6 × 8mm</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Weight</th>\r\n        <td>179g or 181g, depending on version</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Build</th>\r\n        <td>Glass Front, Plastic Frame, Plastic Back or Silicone Polymer Back</td>\r\n      </tr>\r\n      <tr>\r\n        <th>SIM</th>\r\n        <td>Nano-SIM + eSIM or Dual Nano-SIM, depending on variant</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Protection</th>\r\n        <td>Water-Repellent Design</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Available Colors</th>\r\n        <td>Charcoal Black, Ice Blue, Ocean Green, Vanilla Cream</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>",
+          "description": "<div class=\"product-description mb-4\">\r\n  <h4>Motorola Moto G34 5G</h4>\r\n\r\n  <p>\r\n    The <strong>Motorola Moto G34 5G</strong> is a versatile smartphone designed for\r\n    everyday communication, entertainment and productivity. With 5G connectivity,\r\n    a smooth 120Hz display and a capable Snapdragon processor, it offers practical\r\n    features for daily smartphone use.\r\n  </p>\r\n\r\n  <p>\r\n    Its <strong>6.5-inch IPS LCD display</strong> features a 120Hz refresh rate and\r\n    720 × 1600 resolution for smooth scrolling and comfortable viewing.\r\n    The <strong>Qualcomm Snapdragon 695 5G processor</strong> supports everyday\r\n    applications, browsing, multitasking and entertainment.\r\n  </p>\r\n\r\n  <p>\r\n    The phone is available with different memory configurations, including up to\r\n    <strong>8GB RAM and 256GB storage</strong>. The microSDXC card slot provides\r\n    additional storage expansion, although it shares the SIM slot.\r\n  </p>\r\n\r\n  <p>\r\n    Capture everyday moments with the <strong>50MP main rear camera</strong> and\r\n    2MP macro camera. The <strong>16MP front camera</strong> is suitable for selfies\r\n    and video calls, with both cameras supporting 1080p video recording at 30fps.\r\n  </p>\r\n\r\n  <p>\r\n    A <strong>5000mAh battery</strong> with 18W wired charging helps support everyday\r\n    use. Additional features include stereo speakers, Snapdragon Sound, a 3.5mm\r\n    headphone jack, USB Type-C connectivity and a side-mounted fingerprint sensor.\r\n  </p>\r\n\r\n  <p>\r\n    The Motorola Moto G34 5G also features a water-repellent design and comes in\r\n    attractive color options, including <strong>Charcoal Black, Ice Blue,\r\n    Ocean Green and Vanilla Cream</strong>.\r\n  </p>\r\n\r\n  <p>\r\n    <strong>Motorola Moto G34 5G</strong> is a practical choice for users looking for\r\n    5G connectivity, a high-refresh-rate display, versatile cameras and a\r\n    long-lasting battery for everyday activities.\r\n  </p>\r\n\r\n  <p>\r\n    <small class=\"text-muted\">\r\n      Note: RAM, storage, operating system, SIM configuration, NFC availability,\r\n      back material and weight may vary by model and region. Please confirm the\r\n      selected variant before ordering.\r\n    </small>\r\n  </p>\r\n</div>",
+          "meta_title": "Motorola G34 5G Used",
+          "meta_description": "Motorola G34 5G Used",
+          "keyword": "Motorola G34 5G Used",
+          "custom_url": "#",
+          "attribute_id": null,
+          "type": 0,
+          "created_at": "2026-10-20T11:29:20.000000Z",
+          "updated_at": "2026-10-20T11:29:20.000000Z",
+          "country": null,
+          "currency_symbol": "AED",
+          "currency_code": "AED",
+          "regular_price": 350,
+          "discount_price": 0,
+          "sale_price": 350,
+          "old_regular_price": 0,
+          "old_discount_price": 0,
+          "old_discount_percentage": 0,
+          "old_sale_price": 0,
+          "offer_page_id": 0,
+          "discount_percentage": 0,
+          "social_id": 0,
+          "video_url": null,
+          "thumbnail": "0",
+          "shipping_class_id": 3,
+          "release_date": null,
+          "translations": [
+            {
+              "id": 5591,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2028,
+              "locale": "en",
+              "key": "custom_url",
+              "value": "#",
+              "created_at": "2026-10-23T14:03:54.000000Z",
+              "updated_at": "2026-10-23T14:03:54.000000Z"
+            },
+            {
+              "id": 5594,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2028,
+              "locale": "en",
+              "key": "description",
+              "value": "<div class=\"product-description mb-4\">\r\n  <h4>Motorola Moto G34 5G</h4>\r\n\r\n  <p>\r\n    The <strong>Motorola Moto G34 5G</strong> is a versatile smartphone designed for\r\n    everyday communication, entertainment and productivity. With 5G connectivity,\r\n    a smooth 120Hz display and a capable Snapdragon processor, it offers practical\r\n    features for daily smartphone use.\r\n  </p>\r\n\r\n  <p>\r\n    Its <strong>6.5-inch IPS LCD display</strong> features a 120Hz refresh rate and\r\n    720 × 1600 resolution for smooth scrolling and comfortable viewing.\r\n    The <strong>Qualcomm Snapdragon 695 5G processor</strong> supports everyday\r\n    applications, browsing, multitasking and entertainment.\r\n  </p>\r\n\r\n  <p>\r\n    The phone is available with different memory configurations, including up to\r\n    <strong>8GB RAM and 256GB storage</strong>. The microSDXC card slot provides\r\n    additional storage expansion, although it shares the SIM slot.\r\n  </p>\r\n\r\n  <p>\r\n    Capture everyday moments with the <strong>50MP main rear camera</strong> and\r\n    2MP macro camera. The <strong>16MP front camera</strong> is suitable for selfies\r\n    and video calls, with both cameras supporting 1080p video recording at 30fps.\r\n  </p>\r\n\r\n  <p>\r\n    A <strong>5000mAh battery</strong> with 18W wired charging helps support everyday\r\n    use. Additional features include stereo speakers, Snapdragon Sound, a 3.5mm\r\n    headphone jack, USB Type-C connectivity and a side-mounted fingerprint sensor.\r\n  </p>\r\n\r\n  <p>\r\n    The Motorola Moto G34 5G also features a water-repellent design and comes in\r\n    attractive color options, including <strong>Charcoal Black, Ice Blue,\r\n    Ocean Green and Vanilla Cream</strong>.\r\n  </p>\r\n\r\n  <p>\r\n    <strong>Motorola Moto G34 5G</strong> is a practical choice for users looking for\r\n    5G connectivity, a high-refresh-rate display, versatile cameras and a\r\n    long-lasting battery for everyday activities.\r\n  </p>\r\n\r\n  <p>\r\n    <small class=\"text-muted\">\r\n      Note: RAM, storage, operating system, SIM configuration, NFC availability,\r\n      back material and weight may vary by model and region. Please confirm the\r\n      selected variant before ordering.\r\n    </small>\r\n  </p>\r\n</div>",
+              "created_at": "2026-10-23T14:03:54.000000Z",
+              "updated_at": "2026-10-23T14:03:54.000000Z"
+            },
+            {
+              "id": 5592,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2028,
+              "locale": "en",
+              "key": "key_features",
+              "value": "<div class=\"card border-0\">\r\n  <ul class=\"list-group list-group-flush\">\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      📱 <strong>6.5\" 120Hz Display</strong><br>\r\n      <small class=\"text-muted\">Enjoy smooth scrolling and comfortable viewing with a 6.5-inch IPS LCD display and 120Hz refresh rate.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      ⚡ <strong>Snapdragon 695 5G Processor</strong><br>\r\n      <small class=\"text-muted\">Qualcomm Snapdragon 695 5G chipset designed for everyday performance and multitasking.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🧠 <strong>Up to 4GB/6GB/8GB RAM</strong><br>\r\n      <small class=\"text-muted\">Available with 4GB or 8GB RAM configurations, depending on the variant.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      💾 <strong>Up to 256GB Storage</strong><br>\r\n      <small class=\"text-muted\">Choose from 64GB, 128GB or 256GB storage options, with microSDXC expansion support.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      📸 <strong>50MP Dual Rear Camera</strong><br>\r\n      <small class=\"text-muted\">50MP main camera with PDAF and a 2MP macro camera for capturing everyday moments.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🤳 <strong>16MP Selfie Camera</strong><br>\r\n      <small class=\"text-muted\">Front-facing camera for selfies and video calls, with Full HD video recording.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🔋 <strong>5000mAh Battery</strong><br>\r\n      <small class=\"text-muted\">Large battery capacity designed to support daily communication, browsing and entertainment.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      ⚡ <strong>18W Wired Charging</strong><br>\r\n      <small class=\"text-muted\">Convenient wired charging to help recharge your phone.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🔊 <strong>Stereo Speakers</strong><br>\r\n      <small class=\"text-muted\">Stereo audio with Snapdragon Sound support for an enhanced listening experience.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🔐 <strong>Side-Mounted Fingerprint Sensor</strong><br>\r\n      <small class=\"text-muted\">Convenient fingerprint unlocking for everyday device security.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🎧 <strong>3.5mm Headphone Jack</strong><br>\r\n      <small class=\"text-muted\">Connect compatible wired headphones without needing a separate adapter.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      💧 <strong>Water-Repellent Design</strong><br>\r\n      <small class=\"text-muted\">Designed to help protect against everyday water exposure; it is not specified as fully waterproof.</small>\r\n    </li>\r\n  </ul>\r\n</div>",
+              "created_at": "2026-10-23T14:03:54.000000Z",
+              "updated_at": "2026-10-23T14:03:54.000000Z"
+            },
+            {
+              "id": 5590,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2028,
+              "locale": "en",
+              "key": "keyword",
+              "value": "Motorola G34 5G Used",
+              "created_at": "2026-10-23T14:03:54.000000Z",
+              "updated_at": "2026-10-23T14:03:54.000000Z"
+            },
+            {
+              "id": 5589,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2028,
+              "locale": "en",
+              "key": "meta_description",
+              "value": "Motorola G34 5G Used",
+              "created_at": "2026-10-23T14:03:54.000000Z",
+              "updated_at": "2026-10-23T14:03:54.000000Z"
+            },
+            {
+              "id": 5588,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2028,
+              "locale": "en",
+              "key": "meta_title",
+              "value": "Motorola G34 5G Used",
+              "created_at": "2026-10-23T14:03:54.000000Z",
+              "updated_at": "2026-10-23T14:03:54.000000Z"
+            },
+            {
+              "id": 5593,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2028,
+              "locale": "en",
+              "key": "specification",
+              "value": "<div class=\"table-responsive\">\r\n  <table class=\"table table-bordered align-middle\">\r\n    <tbody>\r\n      <tr>\r\n        <th style=\"width:35%;\">Brand</th>\r\n        <td>Motorola</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Model</th>\r\n        <td>Motorola Moto G34 5G</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Model Numbers</th>\r\n        <td>XT2363-2, XT2363-3</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Network Technology</th>\r\n        <td>GSM / HSPA / LTE / 5G</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Operating System</th>\r\n        <td>Android 13 or Android 14, depending on variant</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Processor</th>\r\n        <td>Qualcomm Snapdragon 695 5G (6nm)</td>\r\n      </tr>\r\n      <tr>\r\n        <th>CPU</th>\r\n        <td>Octa-Core (2 × 2.2GHz Kryo 660 Gold + 6 × 1.7GHz Kryo 660 Silver)</td>\r\n      </tr>\r\n      <tr>\r\n        <th>GPU</th>\r\n        <td>Adreno 619</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Display Size</th>\r\n        <td>6.5 Inches</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Display Type</th>\r\n        <td>IPS LCD, 120Hz</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Display Resolution</th>\r\n        <td>720 × 1600 Pixels</td>\r\n      </tr>\r\n      <tr>\r\n        <th>RAM Options</th>\r\n        <td>4GB / 8GB</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Storage Options</th>\r\n        <td>64GB / 128GB / 256GB</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Memory Card</th>\r\n        <td>microSDXC, Shared SIM Slot</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Rear Camera</th>\r\n        <td>50MP, f/1.8, Wide, PDAF + 2MP Macro</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Rear Camera Features</th>\r\n        <td>LED Flash, HDR, Panorama</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Rear Video Recording</th>\r\n        <td>1080p@30fps</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Front Camera</th>\r\n        <td>16MP, f/2.4, Wide</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Front Video Recording</th>\r\n        <td>1080p@30fps</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Speakers</th>\r\n        <td>Stereo Speakers, Snapdragon Sound</td>\r\n      </tr>\r\n      <tr>\r\n        <th>3.5mm Headphone Jack</th>\r\n        <td>Yes</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Wi-Fi</th>\r\n        <td>Wi-Fi 802.11 a/b/g/n/ac, Dual-Band</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Bluetooth</th>\r\n        <td>Bluetooth 5.1, A2DP, LE</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Positioning</th>\r\n        <td>GPS, Galileo, GLONASS, BDS, QZSS</td>\r\n      </tr>\r\n      <tr>\r\n        <th>NFC</th>\r\n        <td>Yes, Market/Region Dependent</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Radio</th>\r\n        <td>FM Radio</td>\r\n      </tr>\r\n      <tr>\r\n        <th>USB</th>\r\n        <td>USB Type-C 2.0</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Sensors</th>\r\n        <td>Side-Mounted Fingerprint, Accelerometer, Gyroscope, Proximity, Compass</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Battery</th>\r\n        <td>5000mAh Li-Po</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Charging</th>\r\n        <td>18W Wired Charging</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Dimensions</th>\r\n        <td>162.7 × 74.6 × 8mm</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Weight</th>\r\n        <td>179g or 181g, depending on version</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Build</th>\r\n        <td>Glass Front, Plastic Frame, Plastic Back or Silicone Polymer Back</td>\r\n      </tr>\r\n      <tr>\r\n        <th>SIM</th>\r\n        <td>Nano-SIM + eSIM or Dual Nano-SIM, depending on variant</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Protection</th>\r\n        <td>Water-Repellent Design</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Available Colors</th>\r\n        <td>Charcoal Black, Ice Blue, Ocean Green, Vanilla Cream</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>",
+              "created_at": "2026-10-23T14:03:54.000000Z",
+              "updated_at": "2026-10-23T14:03:54.000000Z"
+            }
+          ]
+        },
+        "variants": [
+          {
+            "id": 9561,
+            "product_id": 3060,
+            "regular_price": 600,
+            "discount_price": 251,
+            "discount_percentage": 42,
+            "sale_price": 349,
+            "sku": "629_17_40_420",
+            "serial_no": 1,
+            "old_regular_price": 0,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z",
+            "old_discount_price": 0,
+            "old_discount_percentage": 0,
+            "old_sale_price": 0,
+            "offer_page_id": 0,
+            "purchase_price": 295,
+            "status": 1,
+            "attribute_values": [
+              {
+                "id": 17,
+                "slug": "128gb",
+                "attribute_id": 4,
+                "value": "128GB",
+                "language": "en",
+                "meta": null,
+                "created_at": "2025-10-08T08:15:09.000000Z",
+                "updated_at": "2025-10-08T08:15:09.000000Z",
+                "pivot": {
+                  "product_variant_id": 9561,
+                  "attribute_value_id": 17
+                },
+                "attributes": {
+                  "id": 4,
+                  "slug": "storage",
+                  "language": "en",
+                  "name": "Storage",
+                  "shop_id": null,
+                  "created_at": "2026-01-12T09:47:19.000000Z",
+                  "updated_at": "2026-01-12T09:47:19.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 40,
+                "slug": "network 5G",
+                "attribute_id": 6,
+                "value": "5G",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-01-14T11:48:39.000000Z",
+                "updated_at": "2026-01-14T11:48:39.000000Z",
+                "pivot": {
+                  "product_variant_id": 9561,
+                  "attribute_value_id": 40
+                },
+                "attributes": {
+                  "id": 6,
+                  "slug": "network",
+                  "language": "en",
+                  "name": "Network",
+                  "shop_id": null,
+                  "created_at": "2026-01-14T09:33:08.000000Z",
+                  "updated_at": "2026-01-14T09:33:08.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 420,
+                "slug": "used-1",
+                "attribute_id": 23,
+                "value": "Used",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-05-28T18:03:10.000000Z",
+                "updated_at": "2026-05-28T18:03:10.000000Z",
+                "pivot": {
+                  "product_variant_id": 9561,
+                  "attribute_value_id": 420
+                },
+                "attributes": {
+                  "id": 23,
+                  "slug": "condition",
+                  "language": "en",
+                  "name": "Condition",
+                  "shop_id": null,
+                  "created_at": "2026-05-28T18:00:54.000000Z",
+                  "updated_at": "2026-05-28T18:00:54.000000Z",
+                  "translations": [
+                    {
+                      "id": 730,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 23,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Condition",
+                      "created_at": "2026-05-28T18:00:54.000000Z",
+                      "updated_at": "2026-05-28T18:00:54.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 733,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 420,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Used",
+                    "created_at": "2026-05-28T18:03:10.000000Z",
+                    "updated_at": "2026-05-28T18:03:10.000000Z"
+                  }
+                ]
+              },
+              {
+                "id": 629,
+                "slug": "charcoal-black",
+                "attribute_id": 2,
+                "value": "Charcoal Black",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-07-19T14:34:37.000000Z",
+                "updated_at": "2026-07-19T14:34:37.000000Z",
+                "pivot": {
+                  "product_variant_id": 9561,
+                  "attribute_value_id": 629
+                },
+                "attributes": {
+                  "id": 2,
+                  "slug": "color",
+                  "language": "en",
+                  "name": "Color",
+                  "shop_id": null,
+                  "created_at": "2025-09-24T07:40:13.000000Z",
+                  "updated_at": "2026-06-09T08:39:42.000000Z",
+                  "translations": [
+                    {
+                      "id": 896,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 2,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Color",
+                      "created_at": "2026-06-06T09:01:08.000000Z",
+                      "updated_at": "2026-06-09T08:39:42.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 2991,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 629,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Charcoal Black",
+                    "created_at": "2026-07-19T14:34:37.000000Z",
+                    "updated_at": "2026-07-19T14:34:37.000000Z"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 9562,
+            "product_id": 3060,
+            "regular_price": 600,
+            "discount_price": 251,
+            "discount_percentage": 42,
+            "sale_price": 349,
+            "sku": "674_17_40_420",
+            "serial_no": 2,
+            "old_regular_price": 0,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-26T08:01:47.000000Z",
+            "old_discount_price": 0,
+            "old_discount_percentage": 0,
+            "old_sale_price": 0,
+            "offer_page_id": 0,
+            "purchase_price": 295,
+            "status": 1,
+            "attribute_values": [
+              {
+                "id": 17,
+                "slug": "128gb",
+                "attribute_id": 4,
+                "value": "128GB",
+                "language": "en",
+                "meta": null,
+                "created_at": "2025-10-08T08:15:09.000000Z",
+                "updated_at": "2025-10-08T08:15:09.000000Z",
+                "pivot": {
+                  "product_variant_id": 9562,
+                  "attribute_value_id": 17
+                },
+                "attributes": {
+                  "id": 4,
+                  "slug": "storage",
+                  "language": "en",
+                  "name": "Storage",
+                  "shop_id": null,
+                  "created_at": "2026-01-12T09:47:19.000000Z",
+                  "updated_at": "2026-01-12T09:47:19.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 40,
+                "slug": "network 5G",
+                "attribute_id": 6,
+                "value": "5G",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-01-14T11:48:39.000000Z",
+                "updated_at": "2026-01-14T11:48:39.000000Z",
+                "pivot": {
+                  "product_variant_id": 9562,
+                  "attribute_value_id": 40
+                },
+                "attributes": {
+                  "id": 6,
+                  "slug": "network",
+                  "language": "en",
+                  "name": "Network",
+                  "shop_id": null,
+                  "created_at": "2026-01-14T09:33:08.000000Z",
+                  "updated_at": "2026-01-14T09:33:08.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 420,
+                "slug": "used-1",
+                "attribute_id": 23,
+                "value": "Used",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-05-28T18:03:10.000000Z",
+                "updated_at": "2026-05-28T18:03:10.000000Z",
+                "pivot": {
+                  "product_variant_id": 9562,
+                  "attribute_value_id": 420
+                },
+                "attributes": {
+                  "id": 23,
+                  "slug": "condition",
+                  "language": "en",
+                  "name": "Condition",
+                  "shop_id": null,
+                  "created_at": "2026-05-28T18:00:54.000000Z",
+                  "updated_at": "2026-05-28T18:00:54.000000Z",
+                  "translations": [
+                    {
+                      "id": 730,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 23,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Condition",
+                      "created_at": "2026-05-28T18:00:54.000000Z",
+                      "updated_at": "2026-05-28T18:00:54.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 733,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 420,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Used",
+                    "created_at": "2026-05-28T18:03:10.000000Z",
+                    "updated_at": "2026-05-28T18:03:10.000000Z"
+                  }
+                ]
+              },
+              {
+                "id": 674,
+                "slug": "ocean-green",
+                "attribute_id": 2,
+                "value": "Ocean Green",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-08-10T15:29:30.000000Z",
+                "updated_at": "2026-08-10T15:29:30.000000Z",
+                "pivot": {
+                  "product_variant_id": 9562,
+                  "attribute_value_id": 674
+                },
+                "attributes": {
+                  "id": 2,
+                  "slug": "color",
+                  "language": "en",
+                  "name": "Color",
+                  "shop_id": null,
+                  "created_at": "2025-09-24T07:40:13.000000Z",
+                  "updated_at": "2026-06-09T08:39:42.000000Z",
+                  "translations": [
+                    {
+                      "id": 896,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 2,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Color",
+                      "created_at": "2026-06-06T09:01:08.000000Z",
+                      "updated_at": "2026-06-09T08:39:42.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 4278,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 674,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Ocean Green",
+                    "created_at": "2026-08-10T15:29:30.000000Z",
+                    "updated_at": "2026-08-10T15:29:30.000000Z"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 9563,
+            "product_id": 3060,
+            "regular_price": 600,
+            "discount_price": 251,
+            "discount_percentage": 42,
+            "sale_price": 349,
+            "sku": "688_17_40_420",
+            "serial_no": 3,
+            "old_regular_price": 0,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z",
+            "old_discount_price": 0,
+            "old_discount_percentage": 0,
+            "old_sale_price": 0,
+            "offer_page_id": 0,
+            "purchase_price": 295,
+            "status": 1,
+            "attribute_values": [
+              {
+                "id": 17,
+                "slug": "128gb",
+                "attribute_id": 4,
+                "value": "128GB",
+                "language": "en",
+                "meta": null,
+                "created_at": "2025-10-08T08:15:09.000000Z",
+                "updated_at": "2025-10-08T08:15:09.000000Z",
+                "pivot": {
+                  "product_variant_id": 9563,
+                  "attribute_value_id": 17
+                },
+                "attributes": {
+                  "id": 4,
+                  "slug": "storage",
+                  "language": "en",
+                  "name": "Storage",
+                  "shop_id": null,
+                  "created_at": "2026-01-12T09:47:19.000000Z",
+                  "updated_at": "2026-01-12T09:47:19.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 40,
+                "slug": "network 5G",
+                "attribute_id": 6,
+                "value": "5G",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-01-14T11:48:39.000000Z",
+                "updated_at": "2026-01-14T11:48:39.000000Z",
+                "pivot": {
+                  "product_variant_id": 9563,
+                  "attribute_value_id": 40
+                },
+                "attributes": {
+                  "id": 6,
+                  "slug": "network",
+                  "language": "en",
+                  "name": "Network",
+                  "shop_id": null,
+                  "created_at": "2026-01-14T09:33:08.000000Z",
+                  "updated_at": "2026-01-14T09:33:08.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 420,
+                "slug": "used-1",
+                "attribute_id": 23,
+                "value": "Used",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-05-28T18:03:10.000000Z",
+                "updated_at": "2026-05-28T18:03:10.000000Z",
+                "pivot": {
+                  "product_variant_id": 9563,
+                  "attribute_value_id": 420
+                },
+                "attributes": {
+                  "id": 23,
+                  "slug": "condition",
+                  "language": "en",
+                  "name": "Condition",
+                  "shop_id": null,
+                  "created_at": "2026-05-28T18:00:54.000000Z",
+                  "updated_at": "2026-05-28T18:00:54.000000Z",
+                  "translations": [
+                    {
+                      "id": 730,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 23,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Condition",
+                      "created_at": "2026-05-28T18:00:54.000000Z",
+                      "updated_at": "2026-05-28T18:00:54.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 733,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 420,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Used",
+                    "created_at": "2026-05-28T18:03:10.000000Z",
+                    "updated_at": "2026-05-28T18:03:10.000000Z"
+                  }
+                ]
+              },
+              {
+                "id": 688,
+                "slug": "ice-blue",
+                "attribute_id": 2,
+                "value": "Ice blue",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-09-09T18:34:42.000000Z",
+                "updated_at": "2026-09-09T18:34:42.000000Z",
+                "pivot": {
+                  "product_variant_id": 9563,
+                  "attribute_value_id": 688
+                },
+                "attributes": {
+                  "id": 2,
+                  "slug": "color",
+                  "language": "en",
+                  "name": "Color",
+                  "shop_id": null,
+                  "created_at": "2025-09-24T07:40:13.000000Z",
+                  "updated_at": "2026-06-09T08:39:42.000000Z",
+                  "translations": [
+                    {
+                      "id": 896,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 2,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Color",
+                      "created_at": "2026-06-06T09:01:08.000000Z",
+                      "updated_at": "2026-06-09T08:39:42.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 4909,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 688,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Ice blue",
+                    "created_at": "2026-09-09T18:34:42.000000Z",
+                    "updated_at": "2026-09-09T18:34:42.000000Z"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 9564,
+            "product_id": 3060,
+            "regular_price": 600,
+            "discount_price": 251,
+            "discount_percentage": 42,
+            "sale_price": 349,
+            "sku": "724_17_40_420",
+            "serial_no": 4,
+            "old_regular_price": 0,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z",
+            "old_discount_price": 0,
+            "old_discount_percentage": 0,
+            "old_sale_price": 0,
+            "offer_page_id": 0,
+            "purchase_price": 295,
+            "status": 1,
+            "attribute_values": [
+              {
+                "id": 17,
+                "slug": "128gb",
+                "attribute_id": 4,
+                "value": "128GB",
+                "language": "en",
+                "meta": null,
+                "created_at": "2025-10-08T08:15:09.000000Z",
+                "updated_at": "2025-10-08T08:15:09.000000Z",
+                "pivot": {
+                  "product_variant_id": 9564,
+                  "attribute_value_id": 17
+                },
+                "attributes": {
+                  "id": 4,
+                  "slug": "storage",
+                  "language": "en",
+                  "name": "Storage",
+                  "shop_id": null,
+                  "created_at": "2026-01-12T09:47:19.000000Z",
+                  "updated_at": "2026-01-12T09:47:19.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 40,
+                "slug": "network 5G",
+                "attribute_id": 6,
+                "value": "5G",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-01-14T11:48:39.000000Z",
+                "updated_at": "2026-01-14T11:48:39.000000Z",
+                "pivot": {
+                  "product_variant_id": 9564,
+                  "attribute_value_id": 40
+                },
+                "attributes": {
+                  "id": 6,
+                  "slug": "network",
+                  "language": "en",
+                  "name": "Network",
+                  "shop_id": null,
+                  "created_at": "2026-01-14T09:33:08.000000Z",
+                  "updated_at": "2026-01-14T09:33:08.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 420,
+                "slug": "used-1",
+                "attribute_id": 23,
+                "value": "Used",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-05-28T18:03:10.000000Z",
+                "updated_at": "2026-05-28T18:03:10.000000Z",
+                "pivot": {
+                  "product_variant_id": 9564,
+                  "attribute_value_id": 420
+                },
+                "attributes": {
+                  "id": 23,
+                  "slug": "condition",
+                  "language": "en",
+                  "name": "Condition",
+                  "shop_id": null,
+                  "created_at": "2026-05-28T18:00:54.000000Z",
+                  "updated_at": "2026-05-28T18:00:54.000000Z",
+                  "translations": [
+                    {
+                      "id": 730,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 23,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Condition",
+                      "created_at": "2026-05-28T18:00:54.000000Z",
+                      "updated_at": "2026-05-28T18:00:54.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 733,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 420,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Used",
+                    "created_at": "2026-05-28T18:03:10.000000Z",
+                    "updated_at": "2026-05-28T18:03:10.000000Z"
+                  }
+                ]
+              },
+              {
+                "id": 724,
+                "slug": "vanilla-cream",
+                "attribute_id": 2,
+                "value": "Vanilla Cream",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-10-02T15:39:22.000000Z",
+                "updated_at": "2026-10-02T15:39:22.000000Z",
+                "pivot": {
+                  "product_variant_id": 9564,
+                  "attribute_value_id": 724
+                },
+                "attributes": {
+                  "id": 2,
+                  "slug": "color",
+                  "language": "en",
+                  "name": "Color",
+                  "shop_id": null,
+                  "created_at": "2025-09-24T07:40:13.000000Z",
+                  "updated_at": "2026-06-09T08:39:42.000000Z",
+                  "translations": [
+                    {
+                      "id": 896,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 2,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Color",
+                      "created_at": "2026-06-06T09:01:08.000000Z",
+                      "updated_at": "2026-06-09T08:39:42.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 5371,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 724,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Vanilla Cream",
+                    "created_at": "2026-10-02T15:39:22.000000Z",
+                    "updated_at": "2026-10-02T15:39:22.000000Z"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 9565,
+            "product_id": 3060,
+            "regular_price": 800,
+            "discount_price": 351,
+            "discount_percentage": 44,
+            "sale_price": 449,
+            "sku": "629_18_40_420",
+            "serial_no": 5,
+            "old_regular_price": 0,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z",
+            "old_discount_price": 0,
+            "old_discount_percentage": 0,
+            "old_sale_price": 0,
+            "offer_page_id": 0,
+            "purchase_price": 395,
+            "status": 1,
+            "attribute_values": [
+              {
+                "id": 18,
+                "slug": "256gb",
+                "attribute_id": 4,
+                "value": "256GB",
+                "language": "en",
+                "meta": null,
+                "created_at": "2025-10-08T08:15:22.000000Z",
+                "updated_at": "2025-10-08T08:15:22.000000Z",
+                "pivot": {
+                  "product_variant_id": 9565,
+                  "attribute_value_id": 18
+                },
+                "attributes": {
+                  "id": 4,
+                  "slug": "storage",
+                  "language": "en",
+                  "name": "Storage",
+                  "shop_id": null,
+                  "created_at": "2026-01-12T09:47:19.000000Z",
+                  "updated_at": "2026-01-12T09:47:19.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 40,
+                "slug": "network 5G",
+                "attribute_id": 6,
+                "value": "5G",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-01-14T11:48:39.000000Z",
+                "updated_at": "2026-01-14T11:48:39.000000Z",
+                "pivot": {
+                  "product_variant_id": 9565,
+                  "attribute_value_id": 40
+                },
+                "attributes": {
+                  "id": 6,
+                  "slug": "network",
+                  "language": "en",
+                  "name": "Network",
+                  "shop_id": null,
+                  "created_at": "2026-01-14T09:33:08.000000Z",
+                  "updated_at": "2026-01-14T09:33:08.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 420,
+                "slug": "used-1",
+                "attribute_id": 23,
+                "value": "Used",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-05-28T18:03:10.000000Z",
+                "updated_at": "2026-05-28T18:03:10.000000Z",
+                "pivot": {
+                  "product_variant_id": 9565,
+                  "attribute_value_id": 420
+                },
+                "attributes": {
+                  "id": 23,
+                  "slug": "condition",
+                  "language": "en",
+                  "name": "Condition",
+                  "shop_id": null,
+                  "created_at": "2026-05-28T18:00:54.000000Z",
+                  "updated_at": "2026-05-28T18:00:54.000000Z",
+                  "translations": [
+                    {
+                      "id": 730,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 23,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Condition",
+                      "created_at": "2026-05-28T18:00:54.000000Z",
+                      "updated_at": "2026-05-28T18:00:54.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 733,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 420,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Used",
+                    "created_at": "2026-05-28T18:03:10.000000Z",
+                    "updated_at": "2026-05-28T18:03:10.000000Z"
+                  }
+                ]
+              },
+              {
+                "id": 629,
+                "slug": "charcoal-black",
+                "attribute_id": 2,
+                "value": "Charcoal Black",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-07-19T14:34:37.000000Z",
+                "updated_at": "2026-07-19T14:34:37.000000Z",
+                "pivot": {
+                  "product_variant_id": 9565,
+                  "attribute_value_id": 629
+                },
+                "attributes": {
+                  "id": 2,
+                  "slug": "color",
+                  "language": "en",
+                  "name": "Color",
+                  "shop_id": null,
+                  "created_at": "2025-09-24T07:40:13.000000Z",
+                  "updated_at": "2026-06-09T08:39:42.000000Z",
+                  "translations": [
+                    {
+                      "id": 896,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 2,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Color",
+                      "created_at": "2026-06-06T09:01:08.000000Z",
+                      "updated_at": "2026-06-09T08:39:42.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 2991,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 629,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Charcoal Black",
+                    "created_at": "2026-07-19T14:34:37.000000Z",
+                    "updated_at": "2026-07-19T14:34:37.000000Z"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 9566,
+            "product_id": 3060,
+            "regular_price": 800,
+            "discount_price": 351,
+            "discount_percentage": 44,
+            "sale_price": 449,
+            "sku": "674_18_40_420",
+            "serial_no": 6,
+            "old_regular_price": 0,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z",
+            "old_discount_price": 0,
+            "old_discount_percentage": 0,
+            "old_sale_price": 0,
+            "offer_page_id": 0,
+            "purchase_price": 395,
+            "status": 1,
+            "attribute_values": [
+              {
+                "id": 18,
+                "slug": "256gb",
+                "attribute_id": 4,
+                "value": "256GB",
+                "language": "en",
+                "meta": null,
+                "created_at": "2025-10-08T08:15:22.000000Z",
+                "updated_at": "2025-10-08T08:15:22.000000Z",
+                "pivot": {
+                  "product_variant_id": 9566,
+                  "attribute_value_id": 18
+                },
+                "attributes": {
+                  "id": 4,
+                  "slug": "storage",
+                  "language": "en",
+                  "name": "Storage",
+                  "shop_id": null,
+                  "created_at": "2026-01-12T09:47:19.000000Z",
+                  "updated_at": "2026-01-12T09:47:19.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 40,
+                "slug": "network 5G",
+                "attribute_id": 6,
+                "value": "5G",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-01-14T11:48:39.000000Z",
+                "updated_at": "2026-01-14T11:48:39.000000Z",
+                "pivot": {
+                  "product_variant_id": 9566,
+                  "attribute_value_id": 40
+                },
+                "attributes": {
+                  "id": 6,
+                  "slug": "network",
+                  "language": "en",
+                  "name": "Network",
+                  "shop_id": null,
+                  "created_at": "2026-01-14T09:33:08.000000Z",
+                  "updated_at": "2026-01-14T09:33:08.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 420,
+                "slug": "used-1",
+                "attribute_id": 23,
+                "value": "Used",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-05-28T18:03:10.000000Z",
+                "updated_at": "2026-05-28T18:03:10.000000Z",
+                "pivot": {
+                  "product_variant_id": 9566,
+                  "attribute_value_id": 420
+                },
+                "attributes": {
+                  "id": 23,
+                  "slug": "condition",
+                  "language": "en",
+                  "name": "Condition",
+                  "shop_id": null,
+                  "created_at": "2026-05-28T18:00:54.000000Z",
+                  "updated_at": "2026-05-28T18:00:54.000000Z",
+                  "translations": [
+                    {
+                      "id": 730,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 23,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Condition",
+                      "created_at": "2026-05-28T18:00:54.000000Z",
+                      "updated_at": "2026-05-28T18:00:54.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 733,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 420,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Used",
+                    "created_at": "2026-05-28T18:03:10.000000Z",
+                    "updated_at": "2026-05-28T18:03:10.000000Z"
+                  }
+                ]
+              },
+              {
+                "id": 674,
+                "slug": "ocean-green",
+                "attribute_id": 2,
+                "value": "Ocean Green",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-08-10T15:29:30.000000Z",
+                "updated_at": "2026-08-10T15:29:30.000000Z",
+                "pivot": {
+                  "product_variant_id": 9566,
+                  "attribute_value_id": 674
+                },
+                "attributes": {
+                  "id": 2,
+                  "slug": "color",
+                  "language": "en",
+                  "name": "Color",
+                  "shop_id": null,
+                  "created_at": "2025-09-24T07:40:13.000000Z",
+                  "updated_at": "2026-06-09T08:39:42.000000Z",
+                  "translations": [
+                    {
+                      "id": 896,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 2,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Color",
+                      "created_at": "2026-06-06T09:01:08.000000Z",
+                      "updated_at": "2026-06-09T08:39:42.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 4278,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 674,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Ocean Green",
+                    "created_at": "2026-08-10T15:29:30.000000Z",
+                    "updated_at": "2026-08-10T15:29:30.000000Z"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 9567,
+            "product_id": 3060,
+            "regular_price": 800,
+            "discount_price": 351,
+            "discount_percentage": 44,
+            "sale_price": 449,
+            "sku": "688_18_40_420",
+            "serial_no": 7,
+            "old_regular_price": 0,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z",
+            "old_discount_price": 0,
+            "old_discount_percentage": 0,
+            "old_sale_price": 0,
+            "offer_page_id": 0,
+            "purchase_price": 395,
+            "status": 1,
+            "attribute_values": [
+              {
+                "id": 18,
+                "slug": "256gb",
+                "attribute_id": 4,
+                "value": "256GB",
+                "language": "en",
+                "meta": null,
+                "created_at": "2025-10-08T08:15:22.000000Z",
+                "updated_at": "2025-10-08T08:15:22.000000Z",
+                "pivot": {
+                  "product_variant_id": 9567,
+                  "attribute_value_id": 18
+                },
+                "attributes": {
+                  "id": 4,
+                  "slug": "storage",
+                  "language": "en",
+                  "name": "Storage",
+                  "shop_id": null,
+                  "created_at": "2026-01-12T09:47:19.000000Z",
+                  "updated_at": "2026-01-12T09:47:19.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 40,
+                "slug": "network 5G",
+                "attribute_id": 6,
+                "value": "5G",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-01-14T11:48:39.000000Z",
+                "updated_at": "2026-01-14T11:48:39.000000Z",
+                "pivot": {
+                  "product_variant_id": 9567,
+                  "attribute_value_id": 40
+                },
+                "attributes": {
+                  "id": 6,
+                  "slug": "network",
+                  "language": "en",
+                  "name": "Network",
+                  "shop_id": null,
+                  "created_at": "2026-01-14T09:33:08.000000Z",
+                  "updated_at": "2026-01-14T09:33:08.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 420,
+                "slug": "used-1",
+                "attribute_id": 23,
+                "value": "Used",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-05-28T18:03:10.000000Z",
+                "updated_at": "2026-05-28T18:03:10.000000Z",
+                "pivot": {
+                  "product_variant_id": 9567,
+                  "attribute_value_id": 420
+                },
+                "attributes": {
+                  "id": 23,
+                  "slug": "condition",
+                  "language": "en",
+                  "name": "Condition",
+                  "shop_id": null,
+                  "created_at": "2026-05-28T18:00:54.000000Z",
+                  "updated_at": "2026-05-28T18:00:54.000000Z",
+                  "translations": [
+                    {
+                      "id": 730,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 23,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Condition",
+                      "created_at": "2026-05-28T18:00:54.000000Z",
+                      "updated_at": "2026-05-28T18:00:54.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 733,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 420,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Used",
+                    "created_at": "2026-05-28T18:03:10.000000Z",
+                    "updated_at": "2026-05-28T18:03:10.000000Z"
+                  }
+                ]
+              },
+              {
+                "id": 688,
+                "slug": "ice-blue",
+                "attribute_id": 2,
+                "value": "Ice blue",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-09-09T18:34:42.000000Z",
+                "updated_at": "2026-09-09T18:34:42.000000Z",
+                "pivot": {
+                  "product_variant_id": 9567,
+                  "attribute_value_id": 688
+                },
+                "attributes": {
+                  "id": 2,
+                  "slug": "color",
+                  "language": "en",
+                  "name": "Color",
+                  "shop_id": null,
+                  "created_at": "2025-09-24T07:40:13.000000Z",
+                  "updated_at": "2026-06-09T08:39:42.000000Z",
+                  "translations": [
+                    {
+                      "id": 896,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 2,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Color",
+                      "created_at": "2026-06-06T09:01:08.000000Z",
+                      "updated_at": "2026-06-09T08:39:42.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 4909,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 688,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Ice blue",
+                    "created_at": "2026-09-09T18:34:42.000000Z",
+                    "updated_at": "2026-09-09T18:34:42.000000Z"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 9568,
+            "product_id": 3060,
+            "regular_price": 800,
+            "discount_price": 351,
+            "discount_percentage": 44,
+            "sale_price": 449,
+            "sku": "724_18_40_420",
+            "serial_no": 8,
+            "old_regular_price": 0,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z",
+            "old_discount_price": 0,
+            "old_discount_percentage": 0,
+            "old_sale_price": 0,
+            "offer_page_id": 0,
+            "purchase_price": 395,
+            "status": 1,
+            "attribute_values": [
+              {
+                "id": 18,
+                "slug": "256gb",
+                "attribute_id": 4,
+                "value": "256GB",
+                "language": "en",
+                "meta": null,
+                "created_at": "2025-10-08T08:15:22.000000Z",
+                "updated_at": "2025-10-08T08:15:22.000000Z",
+                "pivot": {
+                  "product_variant_id": 9568,
+                  "attribute_value_id": 18
+                },
+                "attributes": {
+                  "id": 4,
+                  "slug": "storage",
+                  "language": "en",
+                  "name": "Storage",
+                  "shop_id": null,
+                  "created_at": "2026-01-12T09:47:19.000000Z",
+                  "updated_at": "2026-01-12T09:47:19.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 40,
+                "slug": "network 5G",
+                "attribute_id": 6,
+                "value": "5G",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-01-14T11:48:39.000000Z",
+                "updated_at": "2026-01-14T11:48:39.000000Z",
+                "pivot": {
+                  "product_variant_id": 9568,
+                  "attribute_value_id": 40
+                },
+                "attributes": {
+                  "id": 6,
+                  "slug": "network",
+                  "language": "en",
+                  "name": "Network",
+                  "shop_id": null,
+                  "created_at": "2026-01-14T09:33:08.000000Z",
+                  "updated_at": "2026-01-14T09:33:08.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 420,
+                "slug": "used-1",
+                "attribute_id": 23,
+                "value": "Used",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-05-28T18:03:10.000000Z",
+                "updated_at": "2026-05-28T18:03:10.000000Z",
+                "pivot": {
+                  "product_variant_id": 9568,
+                  "attribute_value_id": 420
+                },
+                "attributes": {
+                  "id": 23,
+                  "slug": "condition",
+                  "language": "en",
+                  "name": "Condition",
+                  "shop_id": null,
+                  "created_at": "2026-05-28T18:00:54.000000Z",
+                  "updated_at": "2026-05-28T18:00:54.000000Z",
+                  "translations": [
+                    {
+                      "id": 730,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 23,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Condition",
+                      "created_at": "2026-05-28T18:00:54.000000Z",
+                      "updated_at": "2026-05-28T18:00:54.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 733,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 420,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Used",
+                    "created_at": "2026-05-28T18:03:10.000000Z",
+                    "updated_at": "2026-05-28T18:03:10.000000Z"
+                  }
+                ]
+              },
+              {
+                "id": 724,
+                "slug": "vanilla-cream",
+                "attribute_id": 2,
+                "value": "Vanilla Cream",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-10-02T15:39:22.000000Z",
+                "updated_at": "2026-10-02T15:39:22.000000Z",
+                "pivot": {
+                  "product_variant_id": 9568,
+                  "attribute_value_id": 724
+                },
+                "attributes": {
+                  "id": 2,
+                  "slug": "color",
+                  "language": "en",
+                  "name": "Color",
+                  "shop_id": null,
+                  "created_at": "2025-09-24T07:40:13.000000Z",
+                  "updated_at": "2026-06-09T08:39:42.000000Z",
+                  "translations": [
+                    {
+                      "id": 896,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 2,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Color",
+                      "created_at": "2026-06-06T09:01:08.000000Z",
+                      "updated_at": "2026-06-09T08:39:42.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 5371,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 724,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Vanilla Cream",
+                    "created_at": "2026-10-02T15:39:22.000000Z",
+                    "updated_at": "2026-10-02T15:39:22.000000Z"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "stock": [
+          {
+            "id": 8581,
+            "product_id": 3060,
+            "variant_id": 9561,
+            "quantity": 500,
+            "available_quantity": 500,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z"
+          },
+          {
+            "id": 8582,
+            "product_id": 3060,
+            "variant_id": 9562,
+            "quantity": 50,
+            "available_quantity": 50,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z"
+          },
+          {
+            "id": 8583,
+            "product_id": 3060,
+            "variant_id": 9563,
+            "quantity": 50,
+            "available_quantity": 50,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z"
+          },
+          {
+            "id": 8584,
+            "product_id": 3060,
+            "variant_id": 9564,
+            "quantity": 50,
+            "available_quantity": 50,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z"
+          },
+          {
+            "id": 8585,
+            "product_id": 3060,
+            "variant_id": 9565,
+            "quantity": 50,
+            "available_quantity": 50,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z"
+          },
+          {
+            "id": 8586,
+            "product_id": 3060,
+            "variant_id": 9566,
+            "quantity": 50,
+            "available_quantity": 50,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z"
+          },
+          {
+            "id": 8587,
+            "product_id": 3060,
+            "variant_id": 9567,
+            "quantity": 50,
+            "available_quantity": 50,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z"
+          },
+          {
+            "id": 8588,
+            "product_id": 3060,
+            "variant_id": 9568,
+            "quantity": 50,
+            "available_quantity": 50,
+            "created_at": "2026-10-23T14:15:20.000000Z",
+            "updated_at": "2026-10-23T14:15:20.000000Z"
+          }
+        ],
+        "translations": [
+          {
+            "id": 5569,
+            "translatable_type": "App\\Models\\Product",
+            "translatable_id": 3060,
+            "locale": "en",
+            "key": "name",
+            "value": "Motorola G34 5G Used",
+            "created_at": "2026-10-20T11:29:20.000000Z",
+            "updated_at": "2026-10-23T11:21:14.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 3055,
+        "product_id": "PDT-002755",
+        "shop_id": "000001",
+        "item_id": 4,
+        "category_id": 38,
+        "brand_id": 9,
+        "unit_id": 1,
+        "name": "Infinix Smart 20",
+        "name_bn": null,
+        "purchase_price": 460,
+        "tp_price": 0,
+        "sale_price": 499,
+        "over_stock": null,
+        "stock_alert": null,
+        "has_varient": "1",
+        "status": "1",
+        "create_by": 15345,
+        "deleted_at": null,
+        "created_at": "2026-10-15T19:41:45.000000Z",
+        "updated_at": "2026-10-15T20:10:33.000000Z",
+        "type": "product",
+        "model_code": null,
+        "has_expiry": 0,
+        "has_warranty": 1,
+        "old_product_id": null,
+        "qty": 0,
+        "sub_category_id": null,
+        "is_ecommerce": 1,
+        "combo_id": null,
+        "is_unique": 1,
+        "is_raw_meterials": 0,
+        "sort_by": null,
+        "whatsapp_button": "+971564921256",
+        "like": 3,
+        "view": 831,
+        "meta_title": "Infinix Smart 20",
+        "meta_description": null,
+        "meta_keywords": null,
+        "item": {
+          "id": 4,
+          "name": "New Mobile",
+          "name_bn": null,
+          "status": "1",
+          "order_by": 1,
+          "shop_id": null,
+          "image": "/items/1326378141.png",
+          "icon": "mobile",
+          "is_home_page": 0,
+          "design_pattern": "standard",
+          "create_by": 74,
+          "deleted_at": null,
+          "created_at": "2025-09-24T07:35:22.000000Z",
+          "updated_at": "2026-09-14T09:20:02.000000Z",
+          "translations": [
+            {
+              "id": 5078,
+              "translatable_type": "App\\Models\\Item",
+              "translatable_id": 4,
+              "locale": "en",
+              "key": "name",
+              "value": "New Mobile",
+              "created_at": "2026-09-13T14:28:19.000000Z",
+              "updated_at": "2026-09-13T14:28:19.000000Z"
+            }
+          ]
+        },
+        "shop": {
+          "id": 1,
+          "shop_cat_id": null,
+          "shop_id": "000001",
+          "light_logo": "/shop_info/1281332463.png",
+          "dark_logo": null,
+          "favicon": null,
+          "banner": "/shop_info/111429330.png",
+          "site_name": "MUSTAQBAL ZAMZAM",
+          "entity_type": "sole_proprietorship",
+          "tag": "electric,",
+          "phone": "+971 58 110 1248",
+          "email": "info@mustaqbalzamzam.com",
+          "timezone": 247,
+          "lang": "en",
+          "currency": 183,
+          "start_time": "09:00:00",
+          "end_time": "00:00:00",
+          "copyright_text": "0",
+          "address": "Ayal Nasser - .1No parchment shop, King of Maryam Mohammed Abdulrahman bin, Qatami Al-Suwaidi, Dera, Dubai",
+          "current_address": "8 6b St - Ayal Nasir - Deira - Dubai - United Arab Emirates",
+          "longitude": "55.30378959999999",
+          "latitude": "25.2753192",
+          "fixed_commission": 0,
+          "commission_percantage": 0,
+          "status": "1",
+          "is_admin_shop": 1,
+          "create_by": null,
+          "deleted_at": null,
+          "created_at": "2025-07-21T08:45:53.000000Z",
+          "updated_at": "2026-10-11T17:40:58.000000Z",
+          "filter_type": "Takeaway",
+          "cr_no": null,
+          "po_box": null,
+          "postal_code": null,
+          "finance_code": null,
+          "vat_in": "104422204800003",
+          "whatsapp_number": "‪+971581101247",
+          "fcm_token": null,
+          "agent_id": 0,
+          "commercial_register_number": null,
+          "commercial_register_expiry_date": null,
+          "commercial_register_file": null,
+          "commercial_license_number": null,
+          "commercial_license_expiry_date": null,
+          "commercial_license_file": null,
+          "establishment_id": null,
+          "establishment_expiry_date": null,
+          "establishment_file": null,
+          "agreement_file": null,
+          "owner_id_number": null,
+          "owner_id_expiry_date": null,
+          "owner_id_file": null,
+          "sponsor_id_number": null,
+          "sponsor_id_expiry_date": null,
+          "sponsor_id_file": null,
+          "translations": [
+            {
+              "id": 64,
+              "translatable_type": "App\\Models\\ShopInfo",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "address",
+              "value": "Ayal Nasser - .1No parchment shop, King of Maryam Mohammed Abdulrahman bin, Qatami Al-Suwaidi, Dera, Dubai",
+              "created_at": "2026-05-05T05:07:09.000000Z",
+              "updated_at": "2026-05-05T05:07:09.000000Z"
+            },
+            {
+              "id": 63,
+              "translatable_type": "App\\Models\\ShopInfo",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "copyright_text",
+              "value": "0",
+              "created_at": "2026-05-05T05:07:09.000000Z",
+              "updated_at": "2026-05-05T05:07:09.000000Z"
+            },
+            {
+              "id": 62,
+              "translatable_type": "App\\Models\\ShopInfo",
+              "translatable_id": 1,
+              "locale": "en",
+              "key": "site_name",
+              "value": "MUSTAQBAL ZAMZAM",
+              "created_at": "2026-05-05T05:07:09.000000Z",
+              "updated_at": "2026-05-05T05:07:09.000000Z"
+            }
+          ]
+        },
+        "category": {
+          "id": 38,
+          "shop_id": null,
+          "sl": 39,
+          "item_id": 4,
+          "name": "Infinix",
+          "name_bn": null,
+          "status": "1",
+          "create_by": 1,
+          "deleted_at": null,
+          "created_at": "2025-09-27T08:50:15.000000Z",
+          "updated_at": "2026-01-21T11:20:39.000000Z",
+          "icon": "user",
+          "slug": null,
+          "image": "/category/1917119123.png",
+          "banner": null,
+          "parent_id": null,
+          "translations": []
+        },
+        "brand": {
+          "id": 9,
+          "shop_id": null,
+          "sl": 9,
+          "name": "Infinix",
+          "name_bn": null,
+          "status": "1",
+          "image": "/brand_image/477841964.png",
+          "create_by": 1,
+          "deleted_at": null,
+          "created_at": "2025-09-28T01:05:18.000000Z",
+          "updated_at": "2026-01-21T15:20:34.000000Z",
+          "translations": []
+        },
+        "product_images": [
+          {
+            "id": 36289,
+            "product_id": 3055,
+            "path": "/products/592514487.png",
+            "sort_order": 0,
+            "created_at": "2026-10-15T20:01:20.000000Z",
+            "updated_at": "2026-10-15T20:01:20.000000Z",
+            "product_variant_id": 9528,
+            "attribute_value_id": 632,
+            "model_code": null
+          },
+          {
+            "id": 36290,
+            "product_id": 3055,
+            "path": "/products/750659670.png",
+            "sort_order": 0,
+            "created_at": "2026-10-15T20:01:20.000000Z",
+            "updated_at": "2026-10-15T20:01:20.000000Z",
+            "product_variant_id": 9529,
+            "attribute_value_id": 732,
+            "model_code": null
+          },
+          {
+            "id": 36291,
+            "product_id": 3055,
+            "path": "/products/1371901513.png",
+            "sort_order": 0,
+            "created_at": "2026-10-15T20:01:20.000000Z",
+            "updated_at": "2026-10-15T20:01:20.000000Z",
+            "product_variant_id": 9530,
+            "attribute_value_id": 733,
+            "model_code": null
+          },
+          {
+            "id": 36292,
+            "product_id": 3055,
+            "path": "/products/1524072080.png",
+            "sort_order": 0,
+            "created_at": "2026-10-15T20:01:20.000000Z",
+            "updated_at": "2026-10-15T20:01:20.000000Z",
+            "product_variant_id": 9531,
+            "attribute_value_id": 734,
+            "model_code": null
+          },
+          {
+            "id": 36293,
+            "product_id": 3055,
+            "path": "/products/521454249.png",
+            "sort_order": 0,
+            "created_at": "2026-10-15T20:08:49.000000Z",
+            "updated_at": "2026-10-15T20:08:49.000000Z",
+            "product_variant_id": null,
+            "attribute_value_id": null,
+            "model_code": null
+          },
+          {
+            "id": 36294,
+            "product_id": 3055,
+            "path": "/products/1913955509.png",
+            "sort_order": 0,
+            "created_at": "2026-10-15T20:08:49.000000Z",
+            "updated_at": "2026-10-15T20:08:49.000000Z",
+            "product_variant_id": null,
+            "attribute_value_id": null,
+            "model_code": null
+          },
+          {
+            "id": 36295,
+            "product_id": 3055,
+            "path": "/products/860097148.png",
+            "sort_order": 0,
+            "created_at": "2026-10-15T20:08:49.000000Z",
+            "updated_at": "2026-10-15T20:08:49.000000Z",
+            "product_variant_id": null,
+            "attribute_value_id": null,
+            "model_code": null
+          },
+          {
+            "id": 36296,
+            "product_id": 3055,
+            "path": "/products/2096613688.png",
+            "sort_order": 0,
+            "created_at": "2026-10-15T20:08:49.000000Z",
+            "updated_at": "2026-10-15T20:08:49.000000Z",
+            "product_variant_id": null,
+            "attribute_value_id": null,
+            "model_code": null
+          },
+          {
+            "id": 36297,
+            "product_id": 3055,
+            "path": "/products/1324686406.png",
+            "sort_order": 0,
+            "created_at": "2026-10-15T20:08:49.000000Z",
+            "updated_at": "2026-10-15T20:08:49.000000Z",
+            "product_variant_id": null,
+            "attribute_value_id": null,
+            "model_code": null
+          },
+          {
+            "id": 36298,
+            "product_id": 3055,
+            "path": "/products/2085197291.png",
+            "sort_order": 0,
+            "created_at": "2026-10-15T20:08:49.000000Z",
+            "updated_at": "2026-10-15T20:08:49.000000Z",
+            "product_variant_id": null,
+            "attribute_value_id": null,
+            "model_code": null
+          },
+          {
+            "id": 36299,
+            "product_id": 3055,
+            "path": "/products/404824222.png",
+            "sort_order": 0,
+            "created_at": "2026-10-15T20:08:49.000000Z",
+            "updated_at": "2026-10-15T20:08:49.000000Z",
+            "product_variant_id": null,
+            "attribute_value_id": null,
+            "model_code": null
+          }
+        ],
+        "product_detail": {
+          "id": 2023,
+          "product_id": 3055,
+          "sku": "PDT-002755",
+          "slug": "infinix_smart_20",
+          "key_features": "<div class=\"card border-0\">\r\n  <ul class=\"list-group list-group-flush\">\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      📱 <strong>6.78\" 120Hz Display</strong><br>\r\n      <small class=\"text-muted\">Large IPS LCD display with a smooth 120Hz refresh rate and up to 700 nits HBM brightness.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      ⚡ <strong>MediaTek Helio G81 Ultimate</strong><br>\r\n      <small class=\"text-muted\">12nm octa-core processor designed for everyday apps, browsing and multitasking.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🧠 <strong>4GB+4GB RAM</strong><br>\r\n      <small class=\"text-muted\">Designed to support everyday smartphone tasks and essential applications.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      💾 <strong>Up to 128GB Storage</strong><br>\r\n      <small class=\"text-muted\">Choose between 64GB and 128GB storage options, with a dedicated microSDXC card slot for expansion.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      📸 <strong>8MP Rear Camera</strong><br>\r\n      <small class=\"text-muted\">Autofocus rear camera with dual-LED flash and panorama support.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🤳 <strong>8MP Front Camera</strong><br>\r\n      <small class=\"text-muted\">Front-facing camera for selfies and video calls.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🔋 <strong>5200mAh Battery</strong><br>\r\n      <small class=\"text-muted\">Large battery capacity designed to support everyday use.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      ⚡ <strong>15W Wired Charging</strong><br>\r\n      <small class=\"text-muted\">Convenient wired charging with support for 5W reverse wired charging.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🔐 <strong>Side-Mounted Fingerprint Sensor</strong><br>\r\n      <small class=\"text-muted\">Convenient fingerprint unlocking for everyday device security.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🌧️ <strong>IP64 Protection</strong><br>\r\n      <small class=\"text-muted\">Dust-tight protection with resistance to water splashes.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      📶 <strong>4G Connectivity</strong><br>\r\n      <small class=\"text-muted\">GSM, HSPA and LTE network support with dual Nano-SIM capability.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🔊 <strong>3.5mm Headphone Jack</strong><br>\r\n      <small class=\"text-muted\">Connect compatible wired headphones for convenient audio listening.</small>\r\n    </li>\r\n  </ul>\r\n</div>",
+          "specification": "<div class=\"table-responsive\">\r\n  <table class=\"table table-bordered align-middle\">\r\n    <tbody>\r\n      <tr>\r\n        <th style=\"width:35%;\">Brand</th>\r\n        <td>Infinix</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Model</th>\r\n        <td>Infinix SMART 20</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Model Numbers</th>\r\n        <td>X6840, X6840B</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Network Technology</th>\r\n        <td>GSM / HSPA / LTE (4G)</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Operating System</th>\r\n        <td>Android 16 with XOS 16</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Processor</th>\r\n        <td>MediaTek Helio G81 Ultimate (12nm)</td>\r\n      </tr>\r\n      <tr>\r\n        <th>CPU</th>\r\n        <td>Octa-Core (2 × 2.0GHz Cortex-A75 + 6 × 1.7GHz Cortex-A55)</td>\r\n      </tr>\r\n      <tr>\r\n        <th>GPU</th>\r\n        <td>Mali-G52 MC2</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Display Size</th>\r\n        <td>6.78 Inches</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Display Type</th>\r\n        <td>IPS LCD, 120Hz, 700 nits HBM</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Display Resolution</th>\r\n        <td>720 × 1576 Pixels</td>\r\n      </tr>\r\n      <tr>\r\n        <th>RAM</th>\r\n        <td>4GB+4GB</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Internal Storage</th>\r\n        <td>64GB / 128GB</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Storage Type</th>\r\n        <td>eMMC 5.1</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Memory Card</th>\r\n        <td>Dedicated microSDXC Slot</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Rear Camera</th>\r\n        <td>8MP, f/2.0, Wide, Autofocus</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Rear Camera Features</th>\r\n        <td>Dual-LED Flash, Panorama</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Rear Video Recording</th>\r\n        <td>1440p@30fps, 1080p@30fps</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Front Camera</th>\r\n        <td>8MP, f/2.0, Wide</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Front Video Recording</th>\r\n        <td>1440p@30fps, 1080p@30fps</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Loudspeaker</th>\r\n        <td>Yes</td>\r\n      </tr>\r\n      <tr>\r\n        <th>3.5mm Headphone Jack</th>\r\n        <td>Yes</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Wi-Fi</th>\r\n        <td>Wi-Fi 802.11 a/b/g/n/ac, Dual-Band</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Bluetooth</th>\r\n        <td>Yes (Version Not Specified)</td>\r\n      </tr>\r\n      <tr>\r\n        <th>GPS</th>\r\n        <td>Yes</td>\r\n      </tr>\r\n      <tr>\r\n        <th>NFC</th>\r\n        <td>Yes</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Infrared Port</th>\r\n        <td>Yes</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Radio</th>\r\n        <td>FM Radio</td>\r\n      </tr>\r\n      <tr>\r\n        <th>USB</th>\r\n        <td>USB Type-C 2.0, OTG</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Sensors</th>\r\n        <td>Side-Mounted Fingerprint, Accelerometer, Proximity, Compass</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Battery Capacity</th>\r\n        <td>5200mAh</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Charging</th>\r\n        <td>15W Wired Charging</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Reverse Charging</th>\r\n        <td>5W Reverse Wired Charging</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Dimensions</th>\r\n        <td>167.7 × 78.8 × 7.7mm</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Weight</th>\r\n        <td>185g</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Build</th>\r\n        <td>Glass Front, Plastic Back, Plastic Frame</td>\r\n      </tr>\r\n      <tr>\r\n        <th>SIM</th>\r\n        <td>Dual Nano-SIM</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Protection</th>\r\n        <td>IP64 Dust and Water-Splash Resistance</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Drop Resistance</th>\r\n        <td>Up to 1.5m</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Available Colors</th>\r\n        <td>Shadow Black, Cloudline Blue, Polaris Titanium, Sunlike Orange</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>",
+          "description": "<div class=\"product-description mb-4\">\r\n  <h4>Infinix SMART 20</h4>\r\n\r\n  <p>\r\n    The <strong>Infinix SMART 20</strong> is designed for everyday smartphone users\r\n    who need a large display, practical performance, useful connectivity and reliable\r\n    battery capacity for daily activities.\r\n  </p>\r\n\r\n  <p>\r\n    Its <strong>6.78-inch IPS LCD display</strong> features a smooth 120Hz refresh rate\r\n    and up to 700 nits HBM brightness. The <strong>MediaTek Helio G81 Ultimate processor</strong>\r\n    and 4GB RAM support everyday tasks such as browsing, messaging, social media and\r\n    multimedia playback.\r\n  </p>\r\n\r\n  <p>\r\n    With <strong>64GB or 128GB internal storage</strong> and a dedicated microSDXC card slot,\r\n    you can store your essential apps, photos, videos and documents with additional\r\n    expansion options.\r\n  </p>\r\n\r\n  <p>\r\n    Capture everyday moments with the <strong>8MP autofocus rear camera</strong> and take\r\n    selfies or make video calls using the <strong>8MP front camera</strong>. Both cameras\r\n    support video recording at the resolutions listed in the specifications.\r\n  </p>\r\n\r\n  <p>\r\n    The <strong>5200mAh battery</strong> supports 15W wired charging and 5W reverse wired\r\n    charging. Additional features include a side-mounted fingerprint sensor, dual Nano-SIM,\r\n    NFC, infrared port, FM radio and a 3.5mm headphone jack.\r\n  </p>\r\n\r\n  <p>\r\n    Running <strong>Android 16 with XOS 16</strong>, the Infinix SMART 20 combines practical\r\n    everyday features with a slim design, IP64 dust and splash resistance, and multiple\r\n    color options.\r\n  </p>\r\n\r\n  <p>\r\n    <strong>Infinix SMART 20</strong> is a practical option for users looking for an\r\n    affordable everyday smartphone for communication, entertainment and daily productivity.\r\n  </p>\r\n\r\n  <p>\r\n    <small class=\"text-muted\">\r\n      Note: Storage options, colors and specifications may vary by region and selected model.\r\n    </small>\r\n  </p>\r\n</div>",
+          "meta_title": "Infinix Smart 20",
+          "meta_description": "Infinix Smart 20",
+          "keyword": "Infinix Smart 20",
+          "custom_url": "#",
+          "attribute_id": null,
+          "type": 0,
+          "created_at": "2026-10-15T19:41:45.000000Z",
+          "updated_at": "2026-10-15T19:41:45.000000Z",
+          "country": null,
+          "currency_symbol": "AED",
+          "currency_code": "AED",
+          "regular_price": 499,
+          "discount_price": 0,
+          "sale_price": 499,
+          "old_regular_price": 0,
+          "old_discount_price": 0,
+          "old_discount_percentage": 0,
+          "old_sale_price": 0,
+          "offer_page_id": 0,
+          "discount_percentage": 0,
+          "social_id": 0,
+          "video_url": null,
+          "thumbnail": "0",
+          "shipping_class_id": 3,
+          "release_date": null,
+          "translations": [
+            {
+              "id": 5549,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2023,
+              "locale": "en",
+              "key": "custom_url",
+              "value": "#",
+              "created_at": "2026-10-15T19:44:55.000000Z",
+              "updated_at": "2026-10-15T19:44:55.000000Z"
+            },
+            {
+              "id": 5552,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2023,
+              "locale": "en",
+              "key": "description",
+              "value": "<div class=\"product-description mb-4\">\r\n  <h4>Infinix SMART 20</h4>\r\n\r\n  <p>\r\n    The <strong>Infinix SMART 20</strong> is designed for everyday smartphone users\r\n    who need a large display, practical performance, useful connectivity and reliable\r\n    battery capacity for daily activities.\r\n  </p>\r\n\r\n  <p>\r\n    Its <strong>6.78-inch IPS LCD display</strong> features a smooth 120Hz refresh rate\r\n    and up to 700 nits HBM brightness. The <strong>MediaTek Helio G81 Ultimate processor</strong>\r\n    and 4GB RAM support everyday tasks such as browsing, messaging, social media and\r\n    multimedia playback.\r\n  </p>\r\n\r\n  <p>\r\n    With <strong>64GB or 128GB internal storage</strong> and a dedicated microSDXC card slot,\r\n    you can store your essential apps, photos, videos and documents with additional\r\n    expansion options.\r\n  </p>\r\n\r\n  <p>\r\n    Capture everyday moments with the <strong>8MP autofocus rear camera</strong> and take\r\n    selfies or make video calls using the <strong>8MP front camera</strong>. Both cameras\r\n    support video recording at the resolutions listed in the specifications.\r\n  </p>\r\n\r\n  <p>\r\n    The <strong>5200mAh battery</strong> supports 15W wired charging and 5W reverse wired\r\n    charging. Additional features include a side-mounted fingerprint sensor, dual Nano-SIM,\r\n    NFC, infrared port, FM radio and a 3.5mm headphone jack.\r\n  </p>\r\n\r\n  <p>\r\n    Running <strong>Android 16 with XOS 16</strong>, the Infinix SMART 20 combines practical\r\n    everyday features with a slim design, IP64 dust and splash resistance, and multiple\r\n    color options.\r\n  </p>\r\n\r\n  <p>\r\n    <strong>Infinix SMART 20</strong> is a practical option for users looking for an\r\n    affordable everyday smartphone for communication, entertainment and daily productivity.\r\n  </p>\r\n\r\n  <p>\r\n    <small class=\"text-muted\">\r\n      Note: Storage options, colors and specifications may vary by region and selected model.\r\n    </small>\r\n  </p>\r\n</div>",
+              "created_at": "2026-10-15T19:44:55.000000Z",
+              "updated_at": "2026-10-15T19:44:55.000000Z"
+            },
+            {
+              "id": 5550,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2023,
+              "locale": "en",
+              "key": "key_features",
+              "value": "<div class=\"card border-0\">\r\n  <ul class=\"list-group list-group-flush\">\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      📱 <strong>6.78\" 120Hz Display</strong><br>\r\n      <small class=\"text-muted\">Large IPS LCD display with a smooth 120Hz refresh rate and up to 700 nits HBM brightness.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      ⚡ <strong>MediaTek Helio G81 Ultimate</strong><br>\r\n      <small class=\"text-muted\">12nm octa-core processor designed for everyday apps, browsing and multitasking.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🧠 <strong>4GB+4GB RAM</strong><br>\r\n      <small class=\"text-muted\">Designed to support everyday smartphone tasks and essential applications.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      💾 <strong>Up to 128GB Storage</strong><br>\r\n      <small class=\"text-muted\">Choose between 64GB and 128GB storage options, with a dedicated microSDXC card slot for expansion.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      📸 <strong>8MP Rear Camera</strong><br>\r\n      <small class=\"text-muted\">Autofocus rear camera with dual-LED flash and panorama support.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🤳 <strong>8MP Front Camera</strong><br>\r\n      <small class=\"text-muted\">Front-facing camera for selfies and video calls.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🔋 <strong>5200mAh Battery</strong><br>\r\n      <small class=\"text-muted\">Large battery capacity designed to support everyday use.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      ⚡ <strong>15W Wired Charging</strong><br>\r\n      <small class=\"text-muted\">Convenient wired charging with support for 5W reverse wired charging.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🔐 <strong>Side-Mounted Fingerprint Sensor</strong><br>\r\n      <small class=\"text-muted\">Convenient fingerprint unlocking for everyday device security.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🌧️ <strong>IP64 Protection</strong><br>\r\n      <small class=\"text-muted\">Dust-tight protection with resistance to water splashes.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      📶 <strong>4G Connectivity</strong><br>\r\n      <small class=\"text-muted\">GSM, HSPA and LTE network support with dual Nano-SIM capability.</small>\r\n    </li>\r\n    <li class=\"list-group-item py-2 px-2\">\r\n      🔊 <strong>3.5mm Headphone Jack</strong><br>\r\n      <small class=\"text-muted\">Connect compatible wired headphones for convenient audio listening.</small>\r\n    </li>\r\n  </ul>\r\n</div>",
+              "created_at": "2026-10-15T19:44:55.000000Z",
+              "updated_at": "2026-10-15T19:44:55.000000Z"
+            },
+            {
+              "id": 5548,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2023,
+              "locale": "en",
+              "key": "keyword",
+              "value": "Infinix Smart 20",
+              "created_at": "2026-10-15T19:44:55.000000Z",
+              "updated_at": "2026-10-15T19:44:55.000000Z"
+            },
+            {
+              "id": 5547,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2023,
+              "locale": "en",
+              "key": "meta_description",
+              "value": "Infinix Smart 20",
+              "created_at": "2026-10-15T19:44:55.000000Z",
+              "updated_at": "2026-10-15T19:44:55.000000Z"
+            },
+            {
+              "id": 5546,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2023,
+              "locale": "en",
+              "key": "meta_title",
+              "value": "Infinix Smart 20",
+              "created_at": "2026-10-15T19:44:55.000000Z",
+              "updated_at": "2026-10-15T19:44:55.000000Z"
+            },
+            {
+              "id": 5551,
+              "translatable_type": "App\\Models\\ProductDetail",
+              "translatable_id": 2023,
+              "locale": "en",
+              "key": "specification",
+              "value": "<div class=\"table-responsive\">\r\n  <table class=\"table table-bordered align-middle\">\r\n    <tbody>\r\n      <tr>\r\n        <th style=\"width:35%;\">Brand</th>\r\n        <td>Infinix</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Model</th>\r\n        <td>Infinix SMART 20</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Model Numbers</th>\r\n        <td>X6840, X6840B</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Network Technology</th>\r\n        <td>GSM / HSPA / LTE (4G)</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Operating System</th>\r\n        <td>Android 16 with XOS 16</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Processor</th>\r\n        <td>MediaTek Helio G81 Ultimate (12nm)</td>\r\n      </tr>\r\n      <tr>\r\n        <th>CPU</th>\r\n        <td>Octa-Core (2 × 2.0GHz Cortex-A75 + 6 × 1.7GHz Cortex-A55)</td>\r\n      </tr>\r\n      <tr>\r\n        <th>GPU</th>\r\n        <td>Mali-G52 MC2</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Display Size</th>\r\n        <td>6.78 Inches</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Display Type</th>\r\n        <td>IPS LCD, 120Hz, 700 nits HBM</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Display Resolution</th>\r\n        <td>720 × 1576 Pixels</td>\r\n      </tr>\r\n      <tr>\r\n        <th>RAM</th>\r\n        <td>4GB+4GB</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Internal Storage</th>\r\n        <td>64GB / 128GB</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Storage Type</th>\r\n        <td>eMMC 5.1</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Memory Card</th>\r\n        <td>Dedicated microSDXC Slot</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Rear Camera</th>\r\n        <td>8MP, f/2.0, Wide, Autofocus</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Rear Camera Features</th>\r\n        <td>Dual-LED Flash, Panorama</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Rear Video Recording</th>\r\n        <td>1440p@30fps, 1080p@30fps</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Front Camera</th>\r\n        <td>8MP, f/2.0, Wide</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Front Video Recording</th>\r\n        <td>1440p@30fps, 1080p@30fps</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Loudspeaker</th>\r\n        <td>Yes</td>\r\n      </tr>\r\n      <tr>\r\n        <th>3.5mm Headphone Jack</th>\r\n        <td>Yes</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Wi-Fi</th>\r\n        <td>Wi-Fi 802.11 a/b/g/n/ac, Dual-Band</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Bluetooth</th>\r\n        <td>Yes (Version Not Specified)</td>\r\n      </tr>\r\n      <tr>\r\n        <th>GPS</th>\r\n        <td>Yes</td>\r\n      </tr>\r\n      <tr>\r\n        <th>NFC</th>\r\n        <td>Yes</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Infrared Port</th>\r\n        <td>Yes</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Radio</th>\r\n        <td>FM Radio</td>\r\n      </tr>\r\n      <tr>\r\n        <th>USB</th>\r\n        <td>USB Type-C 2.0, OTG</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Sensors</th>\r\n        <td>Side-Mounted Fingerprint, Accelerometer, Proximity, Compass</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Battery Capacity</th>\r\n        <td>5200mAh</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Charging</th>\r\n        <td>15W Wired Charging</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Reverse Charging</th>\r\n        <td>5W Reverse Wired Charging</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Dimensions</th>\r\n        <td>167.7 × 78.8 × 7.7mm</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Weight</th>\r\n        <td>185g</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Build</th>\r\n        <td>Glass Front, Plastic Back, Plastic Frame</td>\r\n      </tr>\r\n      <tr>\r\n        <th>SIM</th>\r\n        <td>Dual Nano-SIM</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Protection</th>\r\n        <td>IP64 Dust and Water-Splash Resistance</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Drop Resistance</th>\r\n        <td>Up to 1.5m</td>\r\n      </tr>\r\n      <tr>\r\n        <th>Available Colors</th>\r\n        <td>Shadow Black, Cloudline Blue, Polaris Titanium, Sunlike Orange</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n</div>",
+              "created_at": "2026-10-15T19:44:55.000000Z",
+              "updated_at": "2026-10-15T19:44:55.000000Z"
+            }
+          ]
+        },
+        "variants": [
+          {
+            "id": 9528,
+            "product_id": 3055,
+            "regular_price": 750,
+            "discount_price": 251,
+            "discount_percentage": 33,
+            "sale_price": 499,
+            "sku": "632_290_39_421",
+            "serial_no": 1,
+            "old_regular_price": 0,
+            "created_at": "2026-10-15T20:01:20.000000Z",
+            "updated_at": "2026-10-15T20:01:20.000000Z",
+            "old_discount_price": 0,
+            "old_discount_percentage": 0,
+            "old_sale_price": 0,
+            "offer_page_id": 0,
+            "purchase_price": 460,
+            "status": 1,
+            "attribute_values": [
+              {
+                "id": 39,
+                "slug": "network 4g",
+                "attribute_id": 6,
+                "value": "4G",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-01-14T11:48:20.000000Z",
+                "updated_at": "2026-01-14T11:48:20.000000Z",
+                "pivot": {
+                  "product_variant_id": 9528,
+                  "attribute_value_id": 39
+                },
+                "attributes": {
+                  "id": 6,
+                  "slug": "network",
+                  "language": "en",
+                  "name": "Network",
+                  "shop_id": null,
+                  "created_at": "2026-01-14T09:33:08.000000Z",
+                  "updated_at": "2026-01-14T09:33:08.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 290,
+                "slug": "44128gb",
+                "attribute_id": 4,
+                "value": "4+4/128GB",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-07-14T15:59:03.000000Z",
+                "updated_at": "2026-07-14T15:59:03.000000Z",
+                "pivot": {
+                  "product_variant_id": 9528,
+                  "attribute_value_id": 290
+                },
+                "attributes": {
+                  "id": 4,
+                  "slug": "storage",
+                  "language": "en",
+                  "name": "Storage",
+                  "shop_id": null,
+                  "created_at": "2026-01-12T09:47:19.000000Z",
+                  "updated_at": "2026-01-12T09:47:19.000000Z",
+                  "translations": []
+                },
+                "translations": [
+                  {
+                    "id": 2686,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 290,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "4+4/128GB",
+                    "created_at": "2026-07-14T15:58:14.000000Z",
+                    "updated_at": "2026-07-14T15:59:03.000000Z"
+                  }
+                ]
+              },
+              {
+                "id": 421,
+                "slug": "new",
+                "attribute_id": 23,
+                "value": "New",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-05-28T18:03:20.000000Z",
+                "updated_at": "2026-05-28T18:03:20.000000Z",
+                "pivot": {
+                  "product_variant_id": 9528,
+                  "attribute_value_id": 421
+                },
+                "attributes": {
+                  "id": 23,
+                  "slug": "condition",
+                  "language": "en",
+                  "name": "Condition",
+                  "shop_id": null,
+                  "created_at": "2026-05-28T18:00:54.000000Z",
+                  "updated_at": "2026-05-28T18:00:54.000000Z",
+                  "translations": [
+                    {
+                      "id": 730,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 23,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Condition",
+                      "created_at": "2026-05-28T18:00:54.000000Z",
+                      "updated_at": "2026-05-28T18:00:54.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 734,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 421,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "New",
+                    "created_at": "2026-05-28T18:03:20.000000Z",
+                    "updated_at": "2026-05-28T18:03:20.000000Z"
+                  }
+                ]
+              },
+              {
+                "id": 632,
+                "slug": "shadow-black",
+                "attribute_id": 2,
+                "value": "Shadow Black",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-07-19T14:36:21.000000Z",
+                "updated_at": "2026-07-19T14:36:21.000000Z",
+                "pivot": {
+                  "product_variant_id": 9528,
+                  "attribute_value_id": 632
+                },
+                "attributes": {
+                  "id": 2,
+                  "slug": "color",
+                  "language": "en",
+                  "name": "Color",
+                  "shop_id": null,
+                  "created_at": "2025-09-24T07:40:13.000000Z",
+                  "updated_at": "2026-06-09T08:39:42.000000Z",
+                  "translations": [
+                    {
+                      "id": 896,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 2,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Color",
+                      "created_at": "2026-06-06T09:01:08.000000Z",
+                      "updated_at": "2026-06-09T08:39:42.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 2994,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 632,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Shadow Black",
+                    "created_at": "2026-07-19T14:36:21.000000Z",
+                    "updated_at": "2026-07-19T14:36:21.000000Z"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 9529,
+            "product_id": 3055,
+            "regular_price": 750,
+            "discount_price": 251,
+            "discount_percentage": 33,
+            "sale_price": 499,
+            "sku": "732_290_39_421",
+            "serial_no": 2,
+            "old_regular_price": 0,
+            "created_at": "2026-10-15T20:01:20.000000Z",
+            "updated_at": "2026-10-15T20:01:20.000000Z",
+            "old_discount_price": 0,
+            "old_discount_percentage": 0,
+            "old_sale_price": 0,
+            "offer_page_id": 0,
+            "purchase_price": 460,
+            "status": 1,
+            "attribute_values": [
+              {
+                "id": 39,
+                "slug": "network 4g",
+                "attribute_id": 6,
+                "value": "4G",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-01-14T11:48:20.000000Z",
+                "updated_at": "2026-01-14T11:48:20.000000Z",
+                "pivot": {
+                  "product_variant_id": 9529,
+                  "attribute_value_id": 39
+                },
+                "attributes": {
+                  "id": 6,
+                  "slug": "network",
+                  "language": "en",
+                  "name": "Network",
+                  "shop_id": null,
+                  "created_at": "2026-01-14T09:33:08.000000Z",
+                  "updated_at": "2026-01-14T09:33:08.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 290,
+                "slug": "44128gb",
+                "attribute_id": 4,
+                "value": "4+4/128GB",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-07-14T15:59:03.000000Z",
+                "updated_at": "2026-07-14T15:59:03.000000Z",
+                "pivot": {
+                  "product_variant_id": 9529,
+                  "attribute_value_id": 290
+                },
+                "attributes": {
+                  "id": 4,
+                  "slug": "storage",
+                  "language": "en",
+                  "name": "Storage",
+                  "shop_id": null,
+                  "created_at": "2026-01-12T09:47:19.000000Z",
+                  "updated_at": "2026-01-12T09:47:19.000000Z",
+                  "translations": []
+                },
+                "translations": [
+                  {
+                    "id": 2686,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 290,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "4+4/128GB",
+                    "created_at": "2026-07-14T15:58:14.000000Z",
+                    "updated_at": "2026-07-14T15:59:03.000000Z"
+                  }
+                ]
+              },
+              {
+                "id": 421,
+                "slug": "new",
+                "attribute_id": 23,
+                "value": "New",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-05-28T18:03:20.000000Z",
+                "updated_at": "2026-05-28T18:03:20.000000Z",
+                "pivot": {
+                  "product_variant_id": 9529,
+                  "attribute_value_id": 421
+                },
+                "attributes": {
+                  "id": 23,
+                  "slug": "condition",
+                  "language": "en",
+                  "name": "Condition",
+                  "shop_id": null,
+                  "created_at": "2026-05-28T18:00:54.000000Z",
+                  "updated_at": "2026-05-28T18:00:54.000000Z",
+                  "translations": [
+                    {
+                      "id": 730,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 23,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Condition",
+                      "created_at": "2026-05-28T18:00:54.000000Z",
+                      "updated_at": "2026-05-28T18:00:54.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 734,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 421,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "New",
+                    "created_at": "2026-05-28T18:03:20.000000Z",
+                    "updated_at": "2026-05-28T18:03:20.000000Z"
+                  }
+                ]
+              },
+              {
+                "id": 732,
+                "slug": "cloudline-blue",
+                "attribute_id": 2,
+                "value": "Cloudline Blue",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-10-02T17:06:34.000000Z",
+                "updated_at": "2026-10-02T17:06:34.000000Z",
+                "pivot": {
+                  "product_variant_id": 9529,
+                  "attribute_value_id": 732
+                },
+                "attributes": {
+                  "id": 2,
+                  "slug": "color",
+                  "language": "en",
+                  "name": "Color",
+                  "shop_id": null,
+                  "created_at": "2025-09-24T07:40:13.000000Z",
+                  "updated_at": "2026-06-09T08:39:42.000000Z",
+                  "translations": [
+                    {
+                      "id": 896,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 2,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Color",
+                      "created_at": "2026-06-06T09:01:08.000000Z",
+                      "updated_at": "2026-06-09T08:39:42.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 5381,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 732,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Cloudline Blue",
+                    "created_at": "2026-10-02T17:06:34.000000Z",
+                    "updated_at": "2026-10-02T17:06:34.000000Z"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 9530,
+            "product_id": 3055,
+            "regular_price": 750,
+            "discount_price": 251,
+            "discount_percentage": 33,
+            "sale_price": 499,
+            "sku": "733_290_39_421",
+            "serial_no": 3,
+            "old_regular_price": 0,
+            "created_at": "2026-10-15T20:01:20.000000Z",
+            "updated_at": "2026-10-15T20:01:20.000000Z",
+            "old_discount_price": 0,
+            "old_discount_percentage": 0,
+            "old_sale_price": 0,
+            "offer_page_id": 0,
+            "purchase_price": 460,
+            "status": 1,
+            "attribute_values": [
+              {
+                "id": 39,
+                "slug": "network 4g",
+                "attribute_id": 6,
+                "value": "4G",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-01-14T11:48:20.000000Z",
+                "updated_at": "2026-01-14T11:48:20.000000Z",
+                "pivot": {
+                  "product_variant_id": 9530,
+                  "attribute_value_id": 39
+                },
+                "attributes": {
+                  "id": 6,
+                  "slug": "network",
+                  "language": "en",
+                  "name": "Network",
+                  "shop_id": null,
+                  "created_at": "2026-01-14T09:33:08.000000Z",
+                  "updated_at": "2026-01-14T09:33:08.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 290,
+                "slug": "44128gb",
+                "attribute_id": 4,
+                "value": "4+4/128GB",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-07-14T15:59:03.000000Z",
+                "updated_at": "2026-07-14T15:59:03.000000Z",
+                "pivot": {
+                  "product_variant_id": 9530,
+                  "attribute_value_id": 290
+                },
+                "attributes": {
+                  "id": 4,
+                  "slug": "storage",
+                  "language": "en",
+                  "name": "Storage",
+                  "shop_id": null,
+                  "created_at": "2026-01-12T09:47:19.000000Z",
+                  "updated_at": "2026-01-12T09:47:19.000000Z",
+                  "translations": []
+                },
+                "translations": [
+                  {
+                    "id": 2686,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 290,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "4+4/128GB",
+                    "created_at": "2026-07-14T15:58:14.000000Z",
+                    "updated_at": "2026-07-14T15:59:03.000000Z"
+                  }
+                ]
+              },
+              {
+                "id": 421,
+                "slug": "new",
+                "attribute_id": 23,
+                "value": "New",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-05-28T18:03:20.000000Z",
+                "updated_at": "2026-05-28T18:03:20.000000Z",
+                "pivot": {
+                  "product_variant_id": 9530,
+                  "attribute_value_id": 421
+                },
+                "attributes": {
+                  "id": 23,
+                  "slug": "condition",
+                  "language": "en",
+                  "name": "Condition",
+                  "shop_id": null,
+                  "created_at": "2026-05-28T18:00:54.000000Z",
+                  "updated_at": "2026-05-28T18:00:54.000000Z",
+                  "translations": [
+                    {
+                      "id": 730,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 23,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Condition",
+                      "created_at": "2026-05-28T18:00:54.000000Z",
+                      "updated_at": "2026-05-28T18:00:54.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 734,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 421,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "New",
+                    "created_at": "2026-05-28T18:03:20.000000Z",
+                    "updated_at": "2026-05-28T18:03:20.000000Z"
+                  }
+                ]
+              },
+              {
+                "id": 733,
+                "slug": "polaris-titanium",
+                "attribute_id": 2,
+                "value": "Polaris Titanium",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-10-02T17:06:46.000000Z",
+                "updated_at": "2026-10-02T17:06:46.000000Z",
+                "pivot": {
+                  "product_variant_id": 9530,
+                  "attribute_value_id": 733
+                },
+                "attributes": {
+                  "id": 2,
+                  "slug": "color",
+                  "language": "en",
+                  "name": "Color",
+                  "shop_id": null,
+                  "created_at": "2025-09-24T07:40:13.000000Z",
+                  "updated_at": "2026-06-09T08:39:42.000000Z",
+                  "translations": [
+                    {
+                      "id": 896,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 2,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Color",
+                      "created_at": "2026-06-06T09:01:08.000000Z",
+                      "updated_at": "2026-06-09T08:39:42.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 5382,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 733,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Polaris Titanium",
+                    "created_at": "2026-10-02T17:06:46.000000Z",
+                    "updated_at": "2026-10-02T17:06:46.000000Z"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 9531,
+            "product_id": 3055,
+            "regular_price": 750,
+            "discount_price": 251,
+            "discount_percentage": 33,
+            "sale_price": 499,
+            "sku": "734_290_39_421",
+            "serial_no": 4,
+            "old_regular_price": 0,
+            "created_at": "2026-10-15T20:01:20.000000Z",
+            "updated_at": "2026-10-15T20:01:20.000000Z",
+            "old_discount_price": 0,
+            "old_discount_percentage": 0,
+            "old_sale_price": 0,
+            "offer_page_id": 0,
+            "purchase_price": 460,
+            "status": 1,
+            "attribute_values": [
+              {
+                "id": 39,
+                "slug": "network 4g",
+                "attribute_id": 6,
+                "value": "4G",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-01-14T11:48:20.000000Z",
+                "updated_at": "2026-01-14T11:48:20.000000Z",
+                "pivot": {
+                  "product_variant_id": 9531,
+                  "attribute_value_id": 39
+                },
+                "attributes": {
+                  "id": 6,
+                  "slug": "network",
+                  "language": "en",
+                  "name": "Network",
+                  "shop_id": null,
+                  "created_at": "2026-01-14T09:33:08.000000Z",
+                  "updated_at": "2026-01-14T09:33:08.000000Z",
+                  "translations": []
+                },
+                "translations": []
+              },
+              {
+                "id": 290,
+                "slug": "44128gb",
+                "attribute_id": 4,
+                "value": "4+4/128GB",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-07-14T15:59:03.000000Z",
+                "updated_at": "2026-07-14T15:59:03.000000Z",
+                "pivot": {
+                  "product_variant_id": 9531,
+                  "attribute_value_id": 290
+                },
+                "attributes": {
+                  "id": 4,
+                  "slug": "storage",
+                  "language": "en",
+                  "name": "Storage",
+                  "shop_id": null,
+                  "created_at": "2026-01-12T09:47:19.000000Z",
+                  "updated_at": "2026-01-12T09:47:19.000000Z",
+                  "translations": []
+                },
+                "translations": [
+                  {
+                    "id": 2686,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 290,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "4+4/128GB",
+                    "created_at": "2026-07-14T15:58:14.000000Z",
+                    "updated_at": "2026-07-14T15:59:03.000000Z"
+                  }
+                ]
+              },
+              {
+                "id": 421,
+                "slug": "new",
+                "attribute_id": 23,
+                "value": "New",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-05-28T18:03:20.000000Z",
+                "updated_at": "2026-05-28T18:03:20.000000Z",
+                "pivot": {
+                  "product_variant_id": 9531,
+                  "attribute_value_id": 421
+                },
+                "attributes": {
+                  "id": 23,
+                  "slug": "condition",
+                  "language": "en",
+                  "name": "Condition",
+                  "shop_id": null,
+                  "created_at": "2026-05-28T18:00:54.000000Z",
+                  "updated_at": "2026-05-28T18:00:54.000000Z",
+                  "translations": [
+                    {
+                      "id": 730,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 23,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Condition",
+                      "created_at": "2026-05-28T18:00:54.000000Z",
+                      "updated_at": "2026-05-28T18:00:54.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 734,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 421,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "New",
+                    "created_at": "2026-05-28T18:03:20.000000Z",
+                    "updated_at": "2026-05-28T18:03:20.000000Z"
+                  }
+                ]
+              },
+              {
+                "id": 734,
+                "slug": "sunlike-orange",
+                "attribute_id": 2,
+                "value": "Sunlike Orange",
+                "language": "en",
+                "meta": null,
+                "created_at": "2026-10-02T17:06:58.000000Z",
+                "updated_at": "2026-10-02T17:06:58.000000Z",
+                "pivot": {
+                  "product_variant_id": 9531,
+                  "attribute_value_id": 734
+                },
+                "attributes": {
+                  "id": 2,
+                  "slug": "color",
+                  "language": "en",
+                  "name": "Color",
+                  "shop_id": null,
+                  "created_at": "2025-09-24T07:40:13.000000Z",
+                  "updated_at": "2026-06-09T08:39:42.000000Z",
+                  "translations": [
+                    {
+                      "id": 896,
+                      "translatable_type": "App\\Models\\Attribute",
+                      "translatable_id": 2,
+                      "locale": "en",
+                      "key": "name",
+                      "value": "Color",
+                      "created_at": "2026-06-06T09:01:08.000000Z",
+                      "updated_at": "2026-06-09T08:39:42.000000Z"
+                    }
+                  ]
+                },
+                "translations": [
+                  {
+                    "id": 5383,
+                    "translatable_type": "App\\Models\\AttributeValue",
+                    "translatable_id": 734,
+                    "locale": "en",
+                    "key": "value",
+                    "value": "Sunlike Orange",
+                    "created_at": "2026-10-02T17:06:58.000000Z",
+                    "updated_at": "2026-10-02T17:06:58.000000Z"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "stock": [
+          {
+            "id": 8554,
+            "product_id": 3055,
+            "variant_id": 9528,
+            "quantity": 50,
+            "available_quantity": 50,
+            "created_at": "2026-10-15T20:01:20.000000Z",
+            "updated_at": "2026-10-15T20:01:20.000000Z"
+          },
+          {
+            "id": 8555,
+            "product_id": 3055,
+            "variant_id": 9529,
+            "quantity": 50,
+            "available_quantity": 50,
+            "created_at": "2026-10-15T20:01:20.000000Z",
+            "updated_at": "2026-10-15T20:01:20.000000Z"
+          },
+          {
+            "id": 8556,
+            "product_id": 3055,
+            "variant_id": 9530,
+            "quantity": 50,
+            "available_quantity": 50,
+            "created_at": "2026-10-15T20:01:20.000000Z",
+            "updated_at": "2026-10-15T20:01:20.000000Z"
+          },
+          {
+            "id": 8557,
+            "product_id": 3055,
+            "variant_id": 9531,
+            "quantity": 50,
+            "available_quantity": 50,
+            "created_at": "2026-10-15T20:01:20.000000Z",
+            "updated_at": "2026-10-15T20:01:20.000000Z"
+          }
+        ],
+        "translations": [
+          {
+            "id": 5545,
+            "translatable_type": "App\\Models\\Product",
+            "translatable_id": 3055,
+            "locale": "en",
+            "key": "name",
+            "value": "Infinix Smart 20",
+            "created_at": "2026-10-15T19:41:45.000000Z",
+            "updated_at": "2026-10-15T19:41:45.000000Z"
+          }
+        ]
+      }
+    ],
+    "first_page_url": "https://backend.mustaqbalzamzam.com/api/product/list?page=1",
+    "from": 1,
+    "last_page": 156,
+    "last_page_url": "https://backend.mustaqbalzamzam.com/api/product/list?page=156",
+    "links": [
+      {
+        "url": null,
+        "label": "&laquo; Previous",
+        "active": false
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/product/list?page=1",
+        "label": "1",
+        "active": true
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/product/list?page=2",
+        "label": "2",
+        "active": false
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/product/list?page=3",
+        "label": "3",
+        "active": false
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/product/list?page=4",
+        "label": "4",
+        "active": false
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/product/list?page=5",
+        "label": "5",
+        "active": false
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/product/list?page=6",
+        "label": "6",
+        "active": false
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/product/list?page=7",
+        "label": "7",
+        "active": false
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/product/list?page=8",
+        "label": "8",
+        "active": false
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/product/list?page=9",
+        "label": "9",
+        "active": false
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/product/list?page=10",
+        "label": "10",
+        "active": false
+      },
+      {
+        "url": null,
+        "label": "...",
+        "active": false
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/product/list?page=155",
+        "label": "155",
+        "active": false
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/product/list?page=156",
+        "label": "156",
+        "active": false
+      },
+      {
+        "url": "https://backend.mustaqbalzamzam.com/api/product/list?page=2",
+        "label": "Next &raquo;",
+        "active": false
+      }
+    ],
+    "next_page_url": "https://backend.mustaqbalzamzam.com/api/product/list?page=2",
+    "path": "https://backend.mustaqbalzamzam.com/api/product/list",
+    "per_page": 5,
+    "prev_page_url": null,
+    "to": 5,
+    "total": 780
+  }
+}

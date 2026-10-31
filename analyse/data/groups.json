@@ -1,0 +1,3131 @@
+{
+  "status_code": 100,
+  "status_description": "",
+  "data": [
+    {
+      "id": 4,
+      "name": "New Mobile",
+      "design_pattern": "standard",
+      "image": "/items/1326378141.png",
+      "icon": "mobile",
+      "categories": [
+        {
+          "id": 2,
+          "name": "iPhone",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1858742601.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 136,
+          "name": "Pixel",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1656970659.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 33,
+          "name": "ZTE",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1933017423.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 34,
+          "name": "Motorola",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/601388651.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 35,
+          "name": "Oppo",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1981081168.png",
+          "parent_id": null,
+          "parent_category": [
+            {
+              "id": 364,
+              "name": "Oppo",
+              "item_id": 4,
+              "slug": null,
+              "image": null,
+              "parent_id": 35
+            }
+          ]
+        },
+        {
+          "id": 36,
+          "name": "Vivo",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1252380767.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 37,
+          "name": "Realme",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/550496624.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 38,
+          "name": "Infinix",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1917119123.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 39,
+          "name": "Tecno",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/926118282.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 40,
+          "name": "Poco",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/482121032.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 41,
+          "name": "Iqoo",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/910501527.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 42,
+          "name": "Samsung",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/760290039.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 43,
+          "name": "Google",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1324798695.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 44,
+          "name": "Xiaomi",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1129396181.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 45,
+          "name": "OnePlus",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1084784447.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 46,
+          "name": "Honor",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1909073479.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 47,
+          "name": "Huawei",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1653122507.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 190,
+          "name": "X-inova",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1759995970.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 48,
+          "name": "Nothing",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/476080871.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 54,
+          "name": "Lenovo",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/2108746978.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 336,
+          "name": "Oale",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/141778326.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 124,
+          "name": "Itel",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1037131192.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 129,
+          "name": "Aquos",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/770901741.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 130,
+          "name": "Atfly",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/131045651.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 131,
+          "name": "Blackview",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1463541300.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 132,
+          "name": "CALUS",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/897558212.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 169,
+          "name": "T-Mobile",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1963246509.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 199,
+          "name": "Sony",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1757486141.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 235,
+          "name": "Redmi",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/74243587.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 212,
+          "name": "Nokia",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/4467909.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 329,
+          "name": "Umiio",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/229995793.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 344,
+          "name": "Soyes",
+          "item_id": 4,
+          "slug": null,
+          "image": "/category/1107655588.jpg",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 354,
+          "name": "DREAME",
+          "item_id": 4,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 359,
+          "name": "iQOO",
+          "item_id": 4,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 361,
+          "name": "HTC",
+          "item_id": 4,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 362,
+          "name": "RAVOZ",
+          "item_id": 4,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 363,
+          "name": "RED MAGIC",
+          "item_id": 4,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 364,
+          "name": "Oppo",
+          "item_id": 4,
+          "slug": null,
+          "image": null,
+          "parent_id": 35,
+          "parent_category": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Used Mobile",
+      "design_pattern": "standard",
+      "image": "/items/1616169681.png",
+      "icon": "user",
+      "categories": [
+        {
+          "id": 1,
+          "name": "Phones",
+          "item_id": 1,
+          "slug": null,
+          "image": "/category/1477319309.png",
+          "parent_id": null,
+          "parent_category": [
+            {
+              "id": 279,
+              "name": "Aquos",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 280,
+              "name": "Atfly",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 281,
+              "name": "Blackview",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 282,
+              "name": "Calus",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 283,
+              "name": "Honor",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 284,
+              "name": "Huawei",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 285,
+              "name": "Iphone",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 286,
+              "name": "Itel",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 287,
+              "name": "Motorola",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 288,
+              "name": "Nokia",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 289,
+              "name": "OnePlus",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 290,
+              "name": "Oppo",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 291,
+              "name": "Pixel",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 292,
+              "name": "Poco",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 293,
+              "name": "Realme",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 294,
+              "name": "Samsung",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 295,
+              "name": "Sony",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 296,
+              "name": "T-Mobile",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 297,
+              "name": "Vivo",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 331,
+              "name": "Digno",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 298,
+              "name": "Xiaomi",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            },
+            {
+              "id": 299,
+              "name": "X-Inova",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 1
+            }
+          ]
+        },
+        {
+          "id": 279,
+          "name": "Aquos",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 302,
+          "name": "Acer",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 159,
+          "parent_category": []
+        },
+        {
+          "id": 280,
+          "name": "Atfly",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 303,
+          "name": "Dell",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 159,
+          "parent_category": []
+        },
+        {
+          "id": 281,
+          "name": "Blackview",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 304,
+          "name": "Evolve",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 159,
+          "parent_category": []
+        },
+        {
+          "id": 282,
+          "name": "Calus",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 305,
+          "name": "HP",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 159,
+          "parent_category": []
+        },
+        {
+          "id": 283,
+          "name": "Honor",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 306,
+          "name": "Lenovo",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 159,
+          "parent_category": []
+        },
+        {
+          "id": 284,
+          "name": "Huawei",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 307,
+          "name": "Macbook",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 159,
+          "parent_category": []
+        },
+        {
+          "id": 285,
+          "name": "Iphone",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 308,
+          "name": "Microsoft",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 159,
+          "parent_category": []
+        },
+        {
+          "id": 286,
+          "name": "Itel",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 309,
+          "name": "NEC",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 159,
+          "parent_category": []
+        },
+        {
+          "id": 287,
+          "name": "Motorola",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 310,
+          "name": "Samsung",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 159,
+          "parent_category": []
+        },
+        {
+          "id": 288,
+          "name": "Nokia",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 289,
+          "name": "OnePlus",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 290,
+          "name": "Oppo",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 291,
+          "name": "Pixel",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 292,
+          "name": "Poco",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 293,
+          "name": "Realme",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 294,
+          "name": "Samsung",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 295,
+          "name": "Sony",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 296,
+          "name": "T-Mobile",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 297,
+          "name": "Vivo",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 331,
+          "name": "Digno",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 298,
+          "name": "Xiaomi",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 299,
+          "name": "X-Inova",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 1,
+          "parent_category": []
+        },
+        {
+          "id": 313,
+          "name": "Acer",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 162,
+          "parent_category": []
+        },
+        {
+          "id": 314,
+          "name": "iPad",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 162,
+          "parent_category": []
+        },
+        {
+          "id": 315,
+          "name": "Lenovo",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 162,
+          "parent_category": []
+        },
+        {
+          "id": 316,
+          "name": "Samsung",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 162,
+          "parent_category": []
+        },
+        {
+          "id": 317,
+          "name": "Xiaomi",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 162,
+          "parent_category": []
+        },
+        {
+          "id": 318,
+          "name": "Umiio",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 162,
+          "parent_category": []
+        },
+        {
+          "id": 319,
+          "name": "Bestrio",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": 162,
+          "parent_category": []
+        },
+        {
+          "id": 332,
+          "name": "Documo",
+          "item_id": 1,
+          "slug": null,
+          "image": "/category/642818329.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 337,
+          "name": "Infinix",
+          "item_id": 1,
+          "slug": null,
+          "image": "/category/1527717774.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 338,
+          "name": "MBO",
+          "item_id": 1,
+          "slug": null,
+          "image": "/category/1229367460.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 355,
+          "name": "Cricket",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 377,
+          "name": "Motorola",
+          "item_id": 1,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Watches",
+      "design_pattern": "standard",
+      "image": "/items/1812455406.png",
+      "icon": "user",
+      "categories": [
+        {
+          "id": 4,
+          "name": "Fastrack",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/992018272.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 6,
+          "name": "OnePlus",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/144306426.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 7,
+          "name": "Motorola",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/742409391.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 8,
+          "name": "Oppo",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1549822155.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 9,
+          "name": "Vivo",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1147467867.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 182,
+          "name": "X Inova",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1462578018.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 10,
+          "name": "Google",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1232975993.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 180,
+          "name": "Rolex",
+          "item_id": 2,
+          "slug": null,
+          "image": "/sub_category/1644211467.png",
+          "parent_id": 179,
+          "parent_category": []
+        },
+        {
+          "id": 11,
+          "name": "Honor",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/654277626.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 12,
+          "name": "Nothing",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/54457632.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 13,
+          "name": "Apple",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/138951925.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 14,
+          "name": "Samsung Galaxy",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/2057654980.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 15,
+          "name": "FitBit",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1269300301.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 16,
+          "name": "Garmin",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/198103882.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 17,
+          "name": "Huawei",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/97805591.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 18,
+          "name": "Amazfit",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1384883838.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 19,
+          "name": "Fossil",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1864028469.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 351,
+          "name": "Blue Signature",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/930413769.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 20,
+          "name": "Kieslect",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/657372947.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 21,
+          "name": "Mibro",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/2046866638.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 22,
+          "name": "Xiaomi Watch",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/106604699.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 23,
+          "name": "Redmi Watch",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/294044792.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 24,
+          "name": "Realme Watch",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1834210870.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 25,
+          "name": "Zeblaze",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1837405308.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 26,
+          "name": "Noise",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/484220539.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 27,
+          "name": "boAt",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/462299899.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 28,
+          "name": "iMilab",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1331885691.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 29,
+          "name": "Kospet",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1706547909.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 30,
+          "name": "Haylou",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1222194028.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 31,
+          "name": "QCY",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1777642772.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 32,
+          "name": "HiFuture Watch",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/588096117.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 189,
+          "name": "Q-SEVEN",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1680276595.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 185,
+          "name": "OTEETO",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1892146386.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 191,
+          "name": "Teket",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/602809349.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 187,
+          "name": "Wisme",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/620144441.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 188,
+          "name": "Telzeal",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/2044496689.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 186,
+          "name": "Hommtel",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/221999710.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 125,
+          "name": "AURAFIT",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/667754637.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 137,
+          "name": "Haino Teko",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1331930395.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 176,
+          "name": "Zoopin",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1784597387.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 177,
+          "name": "Analog",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/540309924.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 178,
+          "name": "Smart Watch",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1595136537.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 179,
+          "name": "Luxary Watch",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/7553620.png",
+          "parent_id": null,
+          "parent_category": [
+            {
+              "id": 180,
+              "name": "Rolex",
+              "item_id": 2,
+              "slug": null,
+              "image": "/sub_category/1644211467.png",
+              "parent_id": 179
+            }
+          ]
+        },
+        {
+          "id": 206,
+          "name": "LENYES",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/2059976635.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 207,
+          "name": "Modio",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1986960253.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 208,
+          "name": "Bestrio",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1240325106.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 209,
+          "name": "CALUS",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/799708980.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 205,
+          "name": "JSYES",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1763177456.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 214,
+          "name": "Hie-Q",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1808226632.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 215,
+          "name": "G-tab",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1410858405.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 236,
+          "name": "Teket Watch",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/534315489.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 237,
+          "name": "General",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/797435002.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 238,
+          "name": "FitPro",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/446428973.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 216,
+          "name": "Yesido",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1773892625.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 226,
+          "name": "Cyber",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/54183392.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 328,
+          "name": "Casio",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/714109510.webp",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 227,
+          "name": "NAVIFACE",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/198277766.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 229,
+          "name": "Domino",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1015277867.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 230,
+          "name": "Smaker",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/13962210.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 231,
+          "name": "Patrol",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1551646396.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 228,
+          "name": "Seven Stone",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1487851825.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 233,
+          "name": "Techno",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/166999811.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 234,
+          "name": "Zedx",
+          "item_id": 2,
+          "slug": null,
+          "image": "/category/1180671103.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 378,
+          "name": "Ladies Luxury Watch",
+          "item_id": 2,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 386,
+          "name": "LeeWas",
+          "item_id": 2,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 387,
+          "name": "Orix",
+          "item_id": 2,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 388,
+          "name": "Sveston",
+          "item_id": 2,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 389,
+          "name": "VIZIN",
+          "item_id": 2,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Laptop",
+      "design_pattern": "standard",
+      "image": "/items/1609030946.png",
+      "icon": "laptop",
+      "categories": [
+        {
+          "id": 159,
+          "name": "Laptop",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/1860753026.png",
+          "parent_id": null,
+          "parent_category": [
+            {
+              "id": 302,
+              "name": "Acer",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 159
+            },
+            {
+              "id": 303,
+              "name": "Dell",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 159
+            },
+            {
+              "id": 304,
+              "name": "Evolve",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 159
+            },
+            {
+              "id": 305,
+              "name": "HP",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 159
+            },
+            {
+              "id": 306,
+              "name": "Lenovo",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 159
+            },
+            {
+              "id": 307,
+              "name": "Macbook",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 159
+            },
+            {
+              "id": 308,
+              "name": "Microsoft",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 159
+            },
+            {
+              "id": 309,
+              "name": "NEC",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 159
+            },
+            {
+              "id": 310,
+              "name": "Samsung",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 159
+            }
+          ]
+        },
+        {
+          "id": 347,
+          "name": "Mix",
+          "item_id": 3,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 49,
+          "name": "Mac Mini",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/1906398420.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 50,
+          "name": "Apple Macbook",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/1817780344.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 51,
+          "name": "iMac",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/586901792.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 52,
+          "name": "Gaming",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/894501158.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 53,
+          "name": "Mac Studio",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/1451916703.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 55,
+          "name": "Samsung",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/1771848938.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 56,
+          "name": "Asus",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/1150922670.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 57,
+          "name": "Acer",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/2050176553.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 58,
+          "name": "Dell",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/772680758.jpeg",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 59,
+          "name": "HP",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/1019619351.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 60,
+          "name": "MSI",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/119936681.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 135,
+          "name": "EVOLVE",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/238283866.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 172,
+          "name": "Lenovo",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/1586088926.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 173,
+          "name": "NEC",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/1925846895.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 204,
+          "name": "Microsoft",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/1958699575.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 369,
+          "name": "MSI Gaming Laptop",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/128472399.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 370,
+          "name": "Chromebook",
+          "item_id": 3,
+          "slug": null,
+          "image": "/category/1296877200.png",
+          "parent_id": null,
+          "parent_category": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Tablet",
+      "design_pattern": "standard",
+      "image": "/items/293134956.png",
+      "icon": "tablet",
+      "categories": [
+        {
+          "id": 162,
+          "name": "Tablet",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/765546485.png",
+          "parent_id": null,
+          "parent_category": [
+            {
+              "id": 313,
+              "name": "Acer",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 162
+            },
+            {
+              "id": 314,
+              "name": "iPad",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 162
+            },
+            {
+              "id": 315,
+              "name": "Lenovo",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 162
+            },
+            {
+              "id": 316,
+              "name": "Samsung",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 162
+            },
+            {
+              "id": 317,
+              "name": "Xiaomi",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 162
+            },
+            {
+              "id": 318,
+              "name": "Umiio",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 162
+            },
+            {
+              "id": 319,
+              "name": "Bestrio",
+              "item_id": 1,
+              "slug": null,
+              "image": null,
+              "parent_id": 162
+            }
+          ]
+        },
+        {
+          "id": 346,
+          "name": "Everypad",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/473748597.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 348,
+          "name": "Mix",
+          "item_id": 5,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 335,
+          "name": "Oteeto",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/1205545596.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 61,
+          "name": "ZTE",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/1578256333.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 62,
+          "name": "Motorola",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/963649311.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 63,
+          "name": "OnePlus",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/1479480021.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 64,
+          "name": "Huawei",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/2088354759.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 66,
+          "name": "Pixel",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/872912516.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 67,
+          "name": "Samsung",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/746604035.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 68,
+          "name": "Xiaomi",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/677307788.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 69,
+          "name": "Honor",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/2054954834.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 70,
+          "name": "Realme",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/1145866217.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 71,
+          "name": "iQOO",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/961168646.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 72,
+          "name": "Infinix",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/10697222.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 73,
+          "name": "Vivo",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/338861683.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 334,
+          "name": "Nodizz",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/1949875358.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 128,
+          "name": "Acer",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/216663774.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 171,
+          "name": "Lenovo",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/180423628.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 174,
+          "name": "Smart Tablet",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/1542713453.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 223,
+          "name": "Umiio",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/1055459405.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 225,
+          "name": "Bestrio",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/1470847391.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 333,
+          "name": "docomo",
+          "item_id": 5,
+          "slug": null,
+          "image": "/category/1417434557.png",
+          "parent_id": null,
+          "parent_category": []
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "iPad",
+      "design_pattern": "standard",
+      "image": "/items/996322556.png",
+      "icon": "user",
+      "categories": [
+        {
+          "id": 65,
+          "name": "iPad",
+          "item_id": 33,
+          "slug": null,
+          "image": "/category/969577558.png",
+          "parent_id": null,
+          "parent_category": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Gadget",
+      "design_pattern": "standard",
+      "image": "/items/875193550.png",
+      "icon": "camera",
+      "categories": [
+        {
+          "id": 75,
+          "name": "Earbuds",
+          "item_id": 6,
+          "slug": null,
+          "image": "/category/446114063.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 76,
+          "name": "AirPods",
+          "item_id": 6,
+          "slug": null,
+          "image": "/category/247714546.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 78,
+          "name": "Fitness Trackers",
+          "item_id": 6,
+          "slug": null,
+          "image": "/category/1075282404.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 79,
+          "name": "Smart Glasses",
+          "item_id": 6,
+          "slug": null,
+          "image": "/category/1511246892.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 80,
+          "name": "VR Headsets",
+          "item_id": 6,
+          "slug": null,
+          "image": "/category/1177856746.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 81,
+          "name": "Charging Docks",
+          "item_id": 6,
+          "slug": null,
+          "image": "/category/22265683.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 84,
+          "name": "In-Ear Monitors",
+          "item_id": 6,
+          "slug": null,
+          "image": "/category/285739837.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 86,
+          "name": "Wireless Microphone",
+          "item_id": 6,
+          "slug": null,
+          "image": "/category/1397616424.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 89,
+          "name": "Smart Ring",
+          "item_id": 6,
+          "slug": null,
+          "image": "/category/1780886119.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 90,
+          "name": "Router",
+          "item_id": 6,
+          "slug": null,
+          "image": "/category/1437245578.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 127,
+          "name": "Power Bank",
+          "item_id": 6,
+          "slug": null,
+          "image": "/category/798546520.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 133,
+          "name": "Projector",
+          "item_id": 6,
+          "slug": null,
+          "image": "/category/1667768686.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 248,
+          "name": "Game Pad",
+          "item_id": 6,
+          "slug": null,
+          "image": "/category/822832127.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 324,
+          "name": "CCTV Camera",
+          "item_id": 6,
+          "slug": null,
+          "image": "/sub_category/1789410909.png",
+          "parent_id": 269,
+          "parent_category": []
+        },
+        {
+          "id": 323,
+          "name": "IP Camera",
+          "item_id": 6,
+          "slug": null,
+          "image": "/sub_category/1141652971.png",
+          "parent_id": 269,
+          "parent_category": []
+        },
+        {
+          "id": 269,
+          "name": "Cameras &  Accesseries",
+          "item_id": 6,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": [
+            {
+              "id": 324,
+              "name": "CCTV Camera",
+              "item_id": 6,
+              "slug": null,
+              "image": "/sub_category/1789410909.png",
+              "parent_id": 269
+            },
+            {
+              "id": 323,
+              "name": "IP Camera",
+              "item_id": 6,
+              "slug": null,
+              "image": "/sub_category/1141652971.png",
+              "parent_id": 269
+            },
+            {
+              "id": 321,
+              "name": "Gimbal Stabilizer",
+              "item_id": 6,
+              "slug": null,
+              "image": "/sub_category/368419833.png",
+              "parent_id": 269
+            },
+            {
+              "id": 278,
+              "name": "Gopro Action Camera",
+              "item_id": 6,
+              "slug": null,
+              "image": "/sub_category/776927341.png",
+              "parent_id": 269
+            }
+          ]
+        },
+        {
+          "id": 272,
+          "name": "Headphones and Earphones",
+          "item_id": 6,
+          "slug": null,
+          "image": "/category/566276567.png",
+          "parent_id": null,
+          "parent_category": [
+            {
+              "id": 276,
+              "name": "Bone Conduction Headphone",
+              "item_id": 6,
+              "slug": null,
+              "image": "/sub_category/1260770388.png",
+              "parent_id": 272
+            },
+            {
+              "id": 274,
+              "name": "Wired Earphones",
+              "item_id": 6,
+              "slug": null,
+              "image": "/sub_category/578739360.png",
+              "parent_id": 272
+            },
+            {
+              "id": 277,
+              "name": "Neckband",
+              "item_id": 6,
+              "slug": null,
+              "image": "/sub_category/230261232.png",
+              "parent_id": 272
+            },
+            {
+              "id": 322,
+              "name": "In Ear Headphones",
+              "item_id": 6,
+              "slug": null,
+              "image": "/sub_category/828991154.png",
+              "parent_id": 272
+            }
+          ]
+        },
+        {
+          "id": 276,
+          "name": "Bone Conduction Headphone",
+          "item_id": 6,
+          "slug": null,
+          "image": "/sub_category/1260770388.png",
+          "parent_id": 272,
+          "parent_category": []
+        },
+        {
+          "id": 274,
+          "name": "Wired Earphones",
+          "item_id": 6,
+          "slug": null,
+          "image": "/sub_category/578739360.png",
+          "parent_id": 272,
+          "parent_category": []
+        },
+        {
+          "id": 277,
+          "name": "Neckband",
+          "item_id": 6,
+          "slug": null,
+          "image": "/sub_category/230261232.png",
+          "parent_id": 272,
+          "parent_category": []
+        },
+        {
+          "id": 322,
+          "name": "In Ear Headphones",
+          "item_id": 6,
+          "slug": null,
+          "image": "/sub_category/828991154.png",
+          "parent_id": 272,
+          "parent_category": []
+        },
+        {
+          "id": 300,
+          "name": "GPS & Trackers",
+          "item_id": 6,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": [
+            {
+              "id": 301,
+              "name": "Bluetooth Trackers",
+              "item_id": 6,
+              "slug": null,
+              "image": "/sub_category/1376638564.png",
+              "parent_id": 300
+            }
+          ]
+        },
+        {
+          "id": 301,
+          "name": "Bluetooth Trackers",
+          "item_id": 6,
+          "slug": null,
+          "image": "/sub_category/1376638564.png",
+          "parent_id": 300,
+          "parent_category": []
+        },
+        {
+          "id": 321,
+          "name": "Gimbal Stabilizer",
+          "item_id": 6,
+          "slug": null,
+          "image": "/sub_category/368419833.png",
+          "parent_id": 269,
+          "parent_category": []
+        },
+        {
+          "id": 278,
+          "name": "Gopro Action Camera",
+          "item_id": 6,
+          "slug": null,
+          "image": "/sub_category/776927341.png",
+          "parent_id": 269,
+          "parent_category": []
+        },
+        {
+          "id": 266,
+          "name": "Wireless Chargers",
+          "item_id": 6,
+          "slug": null,
+          "image": "/category/208480848.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 232,
+          "name": "Smart Drone",
+          "item_id": 6,
+          "slug": null,
+          "image": "/category/548606512.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 358,
+          "name": "Keyboard",
+          "item_id": 6,
+          "slug": "magic_keyboard",
+          "image": "/category/596569258.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 365,
+          "name": "Ear Headphones",
+          "item_id": 6,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 366,
+          "name": "JBL Speaker",
+          "item_id": 6,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 367,
+          "name": "Insta360",
+          "item_id": 6,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 368,
+          "name": "Speaker Accessories",
+          "item_id": 6,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 371,
+          "name": "Crystal Ball",
+          "item_id": 6,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 372,
+          "name": "TV",
+          "item_id": 6,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 375,
+          "name": "Neckband",
+          "item_id": 6,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 376,
+          "name": "Remote Car",
+          "item_id": 6,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 380,
+          "name": "Dry Care Machine",
+          "item_id": 6,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Accessories",
+      "design_pattern": "standard",
+      "image": "/items/1057810379.png",
+      "icon": "user",
+      "categories": [
+        {
+          "id": 349,
+          "name": "Cover",
+          "item_id": 7,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 350,
+          "name": "Screen Guard",
+          "item_id": 7,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 327,
+          "name": "Samsung Adapters",
+          "item_id": 7,
+          "slug": null,
+          "image": null,
+          "parent_id": 91,
+          "parent_category": []
+        },
+        {
+          "id": 91,
+          "name": "Adapters",
+          "item_id": 7,
+          "slug": null,
+          "image": "/category/1337936171.png",
+          "parent_id": null,
+          "parent_category": [
+            {
+              "id": 327,
+              "name": "Samsung Adapters",
+              "item_id": 7,
+              "slug": null,
+              "image": null,
+              "parent_id": 91
+            }
+          ]
+        },
+        {
+          "id": 92,
+          "name": "Cables",
+          "item_id": 7,
+          "slug": null,
+          "image": "/category/787401903.png",
+          "parent_id": null,
+          "parent_category": [
+            {
+              "id": 325,
+              "name": "Data Cable",
+              "item_id": 7,
+              "slug": null,
+              "image": "/sub_category/656830378.png",
+              "parent_id": 92
+            },
+            {
+              "id": 326,
+              "name": "Audio Cable",
+              "item_id": 7,
+              "slug": null,
+              "image": "/sub_category/1867258173.png",
+              "parent_id": 92
+            },
+            {
+              "id": 252,
+              "name": "Hdmi Cables",
+              "item_id": 7,
+              "slug": null,
+              "image": "/sub_category/377127952.png",
+              "parent_id": 92
+            }
+          ]
+        },
+        {
+          "id": 97,
+          "name": "Computer Accessories",
+          "item_id": 7,
+          "slug": null,
+          "image": "/category/754618662.png",
+          "parent_id": null,
+          "parent_category": [
+            {
+              "id": 249,
+              "name": "Keyboards",
+              "item_id": 7,
+              "slug": null,
+              "image": "/sub_category/1830396032.png",
+              "parent_id": 97
+            },
+            {
+              "id": 253,
+              "name": "External Hard Drives",
+              "item_id": 7,
+              "slug": null,
+              "image": "/sub_category/1704363531.png",
+              "parent_id": 97
+            },
+            {
+              "id": 260,
+              "name": "Usb Hubs",
+              "item_id": 7,
+              "slug": null,
+              "image": "/sub_category/717734000.png",
+              "parent_id": 97
+            }
+          ]
+        },
+        {
+          "id": 111,
+          "name": "Mac Accessories",
+          "item_id": 7,
+          "slug": null,
+          "image": "/category/1258098213.png",
+          "parent_id": null,
+          "parent_category": [
+            {
+              "id": 259,
+              "name": "Macbook Case",
+              "item_id": 7,
+              "slug": null,
+              "image": "/sub_category/1476681473.png",
+              "parent_id": 111
+            }
+          ]
+        },
+        {
+          "id": 115,
+          "name": "Watch Accessories",
+          "item_id": 7,
+          "slug": null,
+          "image": "/category/2105443747.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 117,
+          "name": "Phone Accessories",
+          "item_id": 7,
+          "slug": null,
+          "image": "/category/1784816123.png",
+          "parent_id": null,
+          "parent_category": [
+            {
+              "id": 254,
+              "name": "Tripod",
+              "item_id": 7,
+              "slug": null,
+              "image": "/sub_category/157176346.png",
+              "parent_id": 117
+            },
+            {
+              "id": 255,
+              "name": "Selfie Stick",
+              "item_id": 7,
+              "slug": null,
+              "image": "/sub_category/414130916.png",
+              "parent_id": 117
+            },
+            {
+              "id": 320,
+              "name": "Anti Lost Locator",
+              "item_id": 7,
+              "slug": null,
+              "image": "/sub_category/289909089.png",
+              "parent_id": 117
+            },
+            {
+              "id": 265,
+              "name": "Screen Protectors",
+              "item_id": 7,
+              "slug": null,
+              "image": "/sub_category/2055878287.png",
+              "parent_id": 117
+            },
+            {
+              "id": 312,
+              "name": "Phone Holder",
+              "item_id": 7,
+              "slug": null,
+              "image": "/sub_category/651258422.png",
+              "parent_id": 117
+            },
+            {
+              "id": 263,
+              "name": "Stylus Pens",
+              "item_id": 7,
+              "slug": null,
+              "image": "/sub_category/1794208842.png",
+              "parent_id": 117
+            },
+            {
+              "id": 267,
+              "name": "Phone Cases",
+              "item_id": 7,
+              "slug": null,
+              "image": "/sub_category/436177193.png",
+              "parent_id": 117
+            }
+          ]
+        },
+        {
+          "id": 119,
+          "name": "Speaker Accessories",
+          "item_id": 7,
+          "slug": null,
+          "image": "/category/1001503242.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 122,
+          "name": "VR Accessories",
+          "item_id": 7,
+          "slug": null,
+          "image": "/category/962324741.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 123,
+          "name": "iPad Accessories",
+          "item_id": 7,
+          "slug": null,
+          "image": "/category/980916972.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 241,
+          "name": "Vehicle's  Windshield Holder",
+          "item_id": 7,
+          "slug": null,
+          "image": "/category/1524565095.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 325,
+          "name": "Data Cable",
+          "item_id": 7,
+          "slug": null,
+          "image": "/sub_category/656830378.png",
+          "parent_id": 92,
+          "parent_category": []
+        },
+        {
+          "id": 326,
+          "name": "Audio Cable",
+          "item_id": 7,
+          "slug": null,
+          "image": "/sub_category/1867258173.png",
+          "parent_id": 92,
+          "parent_category": []
+        },
+        {
+          "id": 249,
+          "name": "Keyboards",
+          "item_id": 7,
+          "slug": null,
+          "image": "/sub_category/1830396032.png",
+          "parent_id": 97,
+          "parent_category": []
+        },
+        {
+          "id": 252,
+          "name": "Hdmi Cables",
+          "item_id": 7,
+          "slug": null,
+          "image": "/sub_category/377127952.png",
+          "parent_id": 92,
+          "parent_category": []
+        },
+        {
+          "id": 254,
+          "name": "Tripod",
+          "item_id": 7,
+          "slug": null,
+          "image": "/sub_category/157176346.png",
+          "parent_id": 117,
+          "parent_category": []
+        },
+        {
+          "id": 253,
+          "name": "External Hard Drives",
+          "item_id": 7,
+          "slug": null,
+          "image": "/sub_category/1704363531.png",
+          "parent_id": 97,
+          "parent_category": []
+        },
+        {
+          "id": 255,
+          "name": "Selfie Stick",
+          "item_id": 7,
+          "slug": null,
+          "image": "/sub_category/414130916.png",
+          "parent_id": 117,
+          "parent_category": []
+        },
+        {
+          "id": 259,
+          "name": "Macbook Case",
+          "item_id": 7,
+          "slug": null,
+          "image": "/sub_category/1476681473.png",
+          "parent_id": 111,
+          "parent_category": []
+        },
+        {
+          "id": 260,
+          "name": "Usb Hubs",
+          "item_id": 7,
+          "slug": null,
+          "image": "/sub_category/717734000.png",
+          "parent_id": 97,
+          "parent_category": []
+        },
+        {
+          "id": 320,
+          "name": "Anti Lost Locator",
+          "item_id": 7,
+          "slug": null,
+          "image": "/sub_category/289909089.png",
+          "parent_id": 117,
+          "parent_category": []
+        },
+        {
+          "id": 265,
+          "name": "Screen Protectors",
+          "item_id": 7,
+          "slug": null,
+          "image": "/sub_category/2055878287.png",
+          "parent_id": 117,
+          "parent_category": []
+        },
+        {
+          "id": 312,
+          "name": "Phone Holder",
+          "item_id": 7,
+          "slug": null,
+          "image": "/sub_category/651258422.png",
+          "parent_id": 117,
+          "parent_category": []
+        },
+        {
+          "id": 263,
+          "name": "Stylus Pens",
+          "item_id": 7,
+          "slug": null,
+          "image": "/sub_category/1794208842.png",
+          "parent_id": 117,
+          "parent_category": []
+        },
+        {
+          "id": 267,
+          "name": "Phone Cases",
+          "item_id": 7,
+          "slug": null,
+          "image": "/sub_category/436177193.png",
+          "parent_id": 117,
+          "parent_category": []
+        },
+        {
+          "id": 360,
+          "name": "Wireless Neckband",
+          "item_id": 7,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 374,
+          "name": "Tablet Accessories",
+          "item_id": 7,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 384,
+          "name": "Box",
+          "item_id": 7,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 385,
+          "name": "Sticker",
+          "item_id": 7,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 390,
+          "name": "Cap",
+          "item_id": 7,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Fashion & Beauty",
+      "design_pattern": "standard",
+      "image": "/items/499525508.png",
+      "icon": "user",
+      "categories": [
+        {
+          "id": 219,
+          "name": "Men",
+          "item_id": 18,
+          "slug": null,
+          "image": "/category/1171798447.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 220,
+          "name": "Women",
+          "item_id": 18,
+          "slug": null,
+          "image": "/category/512794270.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 203,
+          "name": "Perfume",
+          "item_id": 18,
+          "slug": null,
+          "image": "/category/1559700573.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 221,
+          "name": "Both (Men & Women)",
+          "item_id": 18,
+          "slug": null,
+          "image": "/category/1506903444.png",
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 391,
+          "name": "T Shirt",
+          "item_id": 18,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 392,
+          "name": "Cap",
+          "item_id": 18,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Bags",
+      "design_pattern": "standard",
+      "image": "/items/1429217603.png",
+      "icon": "user",
+      "categories": [
+        {
+          "id": 330,
+          "name": "Laptop Bags",
+          "item_id": 19,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 379,
+          "name": "Ladies Bags",
+          "item_id": 19,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Apple iMac",
+      "design_pattern": "standard",
+      "image": "/items/741063777.png",
+      "icon": "user",
+      "categories": [
+        {
+          "id": 357,
+          "name": "iMac",
+          "item_id": 30,
+          "slug": "apple_imac",
+          "image": "/category/580083778.png",
+          "parent_id": null,
+          "parent_category": []
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Crystal Whale Lamp",
+      "design_pattern": "standard",
+      "image": "/items/209228230.png",
+      "icon": "eye",
+      "categories": []
+    },
+    {
+      "id": 32,
+      "name": "Lucky Box",
+      "design_pattern": "standard",
+      "image": "/items/391786769.png",
+      "icon": "user",
+      "categories": [
+        {
+          "id": 373,
+          "name": "Lucky Box",
+          "item_id": 32,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Combo Offer",
+      "design_pattern": "standard",
+      "image": "/items/959121234.png",
+      "icon": "user",
+      "categories": [
+        {
+          "id": 381,
+          "name": "Ladies Luxury Combo",
+          "item_id": 34,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 382,
+          "name": "Smart Watch Combo",
+          "item_id": 34,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        },
+        {
+          "id": 383,
+          "name": "October Combo 20 Item",
+          "item_id": 34,
+          "slug": null,
+          "image": null,
+          "parent_id": null,
+          "parent_category": []
+        }
+      ]
+    }
+  ]
+}
