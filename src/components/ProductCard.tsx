@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { discountPercent, money } from "@/lib/site";
+import { categoryLabel, productLabel } from "@/lib/fr";
 
 export type CardProduct = {
   id: number;
@@ -8,7 +9,7 @@ export type CardProduct = {
   price: number;
   oldPrice: number | null;
   images: { url: string }[];
-  category?: { name: string } | null;
+  category?: { name: string; slug: string } | null;
   stocks?: { qty: number }[];
 };
 
@@ -22,11 +23,11 @@ export function ProductCard({ product }: { product: CardProduct }) {
       <div className="card-media">
         {off > 0 && <span className="tag">-{off}%</span>}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={img} alt={product.name} loading="lazy" />
+        <img src={img} alt={productLabel(product.name)} loading="lazy" />
       </div>
       <div className="card-body">
-        <span className="card-cat">{product.category?.name ?? "High-tech"}</span>
-        <span className="card-title">{product.name}</span>
+        <span className="card-cat">{categoryLabel(product.category?.slug, product.category?.name) || "High-tech"}</span>
+        <span className="card-title">{productLabel(product.name)}</span>
         <div className="price-row">
           <span className="price">{money(product.price)}</span>
           {product.oldPrice ? <span className="old-price">{money(product.oldPrice)}</span> : null}

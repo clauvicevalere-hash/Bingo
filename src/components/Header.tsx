@@ -3,6 +3,7 @@ import { db } from "@/lib/db";
 import { getCountryCode } from "@/lib/country";
 import { countryByCode } from "@/lib/site";
 import { GROUP_SLUGS } from "@/lib/groups";
+import { categoryLabel } from "@/lib/fr";
 import { CartBadge } from "./CartBadge";
 import { CountrySelect } from "./CountrySelect";
 
@@ -12,7 +13,7 @@ export async function Header() {
     db.category.findMany({
       where: { parentId: null, slug: { in: GROUP_SLUGS } },
       orderBy: { sort: "asc" },
-      take: 10,
+      take: 8,
     }),
   ]);
   const info = countryByCode(country);
@@ -52,7 +53,7 @@ export async function Header() {
           <Link href="/catalogue">Tout le catalogue</Link>
           {categories.map((c) => (
             <Link key={c.id} href={`/c/${c.slug}`}>
-              {c.name}
+              {categoryLabel(c.slug, c.name)}
             </Link>
           ))}
           <Link href="/suivi">Suivre ma commande</Link>

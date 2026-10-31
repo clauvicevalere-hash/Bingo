@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { db } from "@/lib/db";
 import { getCountryCode } from "@/lib/country";
 import { money } from "@/lib/site";
+import { categoryLabel } from "@/lib/fr";
 import { ProductCard } from "@/components/ProductCard";
 
 export const dynamic = "force-dynamic";
@@ -59,15 +60,15 @@ export default async function CategoryPage({
         <Link href="/">Accueil</Link> <span>/</span>
         {category.parent ? (
           <>
-            <Link href={`/c/${category.parent.slug}`}>{category.parent.name}</Link> <span>/</span>
+            <Link href={`/c/${category.parent.slug}`}>{categoryLabel(category.parent.slug, category.parent.name)}</Link> <span>/</span>
           </>
         ) : null}
-        <span>{category.name}</span>
+        <span>{categoryLabel(category.slug, category.name)}</span>
       </div>
 
       <div className="section-head" style={{ marginTop: 14 }}>
         <div>
-          <h1 style={{ fontSize: 30, letterSpacing: "-0.03em", margin: 0 }}>{category.name}</h1>
+          <h1 style={{ fontSize: 30, letterSpacing: "-0.03em", margin: 0 }}>{categoryLabel(category.slug, category.name)}</h1>
           <p>{count} produit(s) · prix en FCFA</p>
         </div>
       </div>
@@ -79,7 +80,7 @@ export default async function CategoryPage({
           </Link>
           {category.children.map((c) => (
             <Link key={c.id} href={`/c/${c.slug}`} className="tab">
-              {c.name}
+              {categoryLabel(c.slug, c.name)}
             </Link>
           ))}
         </div>

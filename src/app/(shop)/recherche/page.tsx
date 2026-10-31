@@ -2,6 +2,7 @@ import Link from "next/link";
 import { db } from "@/lib/db";
 import { getCountryCode } from "@/lib/country";
 import { ProductCard } from "@/components/ProductCard";
+import { searchTerms } from "@/lib/fr";
 
 export const dynamic = "force-dynamic";
 
@@ -13,10 +14,11 @@ export default async function SearchPage({
   const { q } = await searchParams;
   const country = await getCountryCode();
   const query = (q ?? "").trim();
+  const terms = searchTerms(query);
 
   const products = query
     ? await db.product.findMany({
-        where: { active: true, name: { contains: query } },
+        where: { active: true, OR: terms.map((term) => ({ name: { contains: term } })) },
         include: {
           images: { orderBy: { sort: "asc" }, take: 1 },
           category: true,

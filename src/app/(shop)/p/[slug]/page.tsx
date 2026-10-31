@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { db } from "@/lib/db";
 import { getCountryCode } from "@/lib/country";
 import { countryByCode, discountPercent, money, stripHtml } from "@/lib/site";
+import { categoryLabel, productLabel } from "@/lib/fr";
 import { Gallery } from "@/components/Gallery";
 import { ProductPurchase } from "@/components/ProductPurchase";
 import { ProductCard } from "@/components/ProductCard";
@@ -25,16 +26,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!product) return { title: "Produit introuvable" };
 
   const base = (process.env.APP_URL || "http://localhost:3000").replace(/\/+$/, "");
+  const label = productLabel(product.name);
   const description =
     stripHtml(product.description).slice(0, 155) ||
-    `Achetez ${product.name} chez Bingo. Livraison au Burkina Faso, Mali, Niger et Côte d'Ivoire, paiement à la livraison.`;
+    `Achetez ${label} chez Bingo. Livraison au Burkina Faso, Mali, Niger et Côte d'Ivoire, paiement à la livraison.`;
   const image = product.images[0] ? `${base}${product.images[0].url}` : `${base}/icons/icon-512.png`;
 
   return {
-    title: product.name,
+    title: label,
     description,
     openGraph: {
-      title: product.name,
+      title: label,
       description,
       type: "website",
       images: [{ url: image }],
@@ -100,12 +102,13 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
   const image = product.images[0]?.url ?? "/placeholder.svg";
   const off = discountPercent(product.price, product.oldPrice);
+  const label = productLabel(product.name);
 
   const siteBase = (process.env.APP_URL || "http://localhost:3000").replace(/\/+$/, "");
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: product.name,
+    name: label,
     image: `${siteBase}${image}`,
     description: stripHtml(product.description).slice(0, 300),
     sku: product.sku || product.slug,
@@ -130,15 +133,15 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <Link href="/">Accueil</Link> <span>/</span>
         {product.category ? (
           <>
-            <Link href={`/c/${product.category.slug}`}>{product.category.name}</Link> <span>/</span>
+            <Link href={`/c/${product.category.slug}`}>{categoryLabel(product.category.slug, product.category.name)}</Link> <span>/</span>
           </>
         ) : null}
-        <span>{product.name}</span>
+        <span>{label}</span>
       </div>
 
       <div className="product-layout">
         <div>
-          <Gallery images={product.images.map((i) => i.url)} name={product.name} />
+          <Gallery images={product.images.map((i) => i.url)} name={label} />
           <div className="delivery-box">
             <div className="delivery-line">
               <span aria-hidden>🚚</span>
@@ -174,7 +177,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               {totalStock > 0 ? "En stock" : "Rupture"}
             </span>
           </div>
-          <h1 className="p-title">{product.name}</h1>
+          <h1 className="p-title">{label}</h1>
 
           <div className="p-price">
             <span className="price">
@@ -204,7 +207,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             product={{
               id: product.id,
               slug: product.slug,
-              name: product.name,
+              name: label,
               price: product.price,
               oldPrice: product.oldPrice,
               image,
@@ -216,7 +219,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
           <a
             href={`https://wa.me/${(process.env.SITE_WHATSAPP || "22600000000").replace(/\D/g, "")}?text=${encodeURIComponent(
-              `Bonjour Bingo, je suis intéressé par : ${product.name} — ${money(product.price)}. Est-il disponible au ${info.name} ?`
+              `Bonjour Bingo, je suis intéressé par : ${label} — ${money(product.price)}. Est-il disponible au ${info.name} ?`
             )}`}
             target="_blank"
             rel="noreferrer"

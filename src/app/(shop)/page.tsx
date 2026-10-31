@@ -3,6 +3,7 @@ import { db } from "@/lib/db";
 import { getCountryCode } from "@/lib/country";
 import { COUNTRIES, countryByCode } from "@/lib/site";
 import { GROUP_SLUGS } from "@/lib/groups";
+import { categoryLabel } from "@/lib/fr";
 import { ProductCard } from "@/components/ProductCard";
 import { CountrySelect } from "@/components/CountrySelect";
 
@@ -103,7 +104,7 @@ export default async function HomePage() {
                   <span aria-hidden>{c.icon || "📦"}</span>
                 )}
               </span>
-              <span>{c.name}</span>
+              <span>{categoryLabel(c.slug, c.name)}</span>
             </Link>
           ))}
         </div>
