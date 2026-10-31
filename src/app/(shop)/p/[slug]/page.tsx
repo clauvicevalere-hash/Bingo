@@ -214,6 +214,18 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             countryName={info.name}
           />
 
+          <a
+            href={`https://wa.me/${(process.env.SITE_WHATSAPP || "22600000000").replace(/\D/g, "")}?text=${encodeURIComponent(
+              `Bonjour Bingo, je suis intéressé par : ${product.name} — ${money(product.price)}. Est-il disponible au ${info.name} ?`
+            )}`}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-block"
+            style={{ background: "#25D366", color: "#fff", marginTop: 10 }}
+          >
+            Commander sur WhatsApp
+          </a>
+
           <div className="specs">
             <h3>À propos de ce produit</h3>
             {product.description ? (

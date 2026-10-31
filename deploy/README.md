@@ -67,6 +67,27 @@ npm run start
 
 Un gestionnaire de processus (systemd, pm2) doit maintenir `npm run start`.
 
+## Tâches planifiées
+
+Les commandes Orange Money non payées bloquent du stock. Les libérer chaque heure :
+
+```cron
+0 * * * * cd /opt/bingo && docker compose exec -T bingo node scripts/release-stale-orders.mjs 24 >> /var/log/bingo-orders.log 2>&1
+```
+
+Sans Docker :
+
+```cron
+0 * * * * cd /opt/bingo && node scripts/release-stale-orders.mjs 24 >> /var/log/bingo-orders.log 2>&1
+```
+
+Sauvegarde quotidienne de la base et des images :
+
+```cron
+30 2 * * * cd /opt/bingo && tar czf /backup/bingo-$(date +\%F).tar.gz prisma/dev.db public/uploads
+```
+
+
 ## HTTPS avec Caddy
 
 ```caddyfile

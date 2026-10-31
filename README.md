@@ -97,12 +97,15 @@ puis déclarer le webhook `https://…/api/payments/orange/webhook` chez Orange.
 
 - **Annulation** : remet automatiquement les articles en stock ; une commande annulée
   ne peut pas être réactivée.
+- **Commandes Orange Money non payées** : libération planifiée du stock au-delà de 24 h
+  (`npm run orders:release`), à mettre en cron sur le serveur.
 - **Livraison offerte** : champ `freeAbove` par ville (activé dès qu'un seuil est renseigné).
 - **SEO** : `sitemap.xml` (1 085 URLs), `robots.txt`, métadonnées Open Graph par produit,
   JSON-LD `Product` avec prix et disponibilité.
 - **PWA** : service worker avec cache statique et page hors ligne (`/offline.html`).
 - **Santé** : `GET /api/health` (statut + nombre de produits), healthcheck Docker.
-- **WhatsApp** : bouton de confirmation de commande pré-rempli.
+- **WhatsApp** : bouton de confirmation de commande et bouton « Commander sur WhatsApp »
+  pré-rempli sur chaque fiche produit.
 - **Sécurité admin** : cookie HMAC signé, routes `/admin` en `noindex`, API admin protégée.
 - **Préflight production** : `node scripts/preflight.mjs` vérifie secrets, APP_URL, clés Orange,
   build, images, catalogue et stock avant mise en ligne.
