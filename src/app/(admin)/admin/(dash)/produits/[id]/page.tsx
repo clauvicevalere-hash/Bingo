@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
 import { money } from "@/lib/site";
+import { VariantManager } from "@/components/admin/VariantManager";
 
 export const dynamic = "force-dynamic";
 
@@ -65,6 +66,21 @@ export default async function AdminProductEdit({
   }
 
   const countries = ["BF", "ML", "NE", "CI"];
+
+  const variantData = product.variants.map((v) => ({
+    id: v.id,
+    label: v.label,
+    price: v.price,
+    oldPrice: v.oldPrice,
+    stocks: Object.fromEntries(
+      countries.map((code) => [
+        code,
+        product.stocks
+          .filter((s) => s.variantId === v.id && s.countryCode === code)
+          .reduce((n, s) => n + s.qty, 0),
+      ])
+    ) as Record<string, number>,
+  }));
 
   return (
     <div style={{ maxWidth: 900 }}>
@@ -149,6 +165,8 @@ export default async function AdminProductEdit({
 
         <button type="submit" className="btn btn-primary">Enregistrer</button>
       </form>
+
+      <VariantManager productId={product.id} variants={variantData} />
 
       <div className="panel" style={{ marginTop: 16 }}>
         <h3 style={{ margin: "0 0 10px", fontSize: 15 }}>Images</h3>

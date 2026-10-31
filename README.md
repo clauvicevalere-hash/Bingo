@@ -88,6 +88,8 @@ puis déclarer le webhook `https://…/api/payments/orange/webhook` chez Orange.
 - **Création de produit** (`/admin/produits/nouveau`) : photo, description, fiche technique,
   stock initial dans les 4 pays
 - **Création de catégories** (`/admin/categories`) : rayons et sous-rayons
+- **Options / variantes** : ajout et suppression depuis la fiche produit, prix propre et
+  stock par pays pour chaque option (stockage, couleur…)
 - Stocks : quantités par variante et par pays, alertes stock faible
 
 ## Qualité & exploitation
