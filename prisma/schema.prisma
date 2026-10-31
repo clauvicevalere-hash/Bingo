@@ -60,6 +60,10 @@ model Product {
   specs        String         @default("")
   price        Int
   oldPrice     Int?
+  oldPriceMode     String   @default("none")
+  oldPriceValue    Float    @default(0)
+  showOldPrice     Boolean  @default(false)
+  showDiscountBadge Boolean @default(true)
   condition    String         @default("Neuf")
   featured     Boolean        @default(false)
   active       Boolean        @default(true)

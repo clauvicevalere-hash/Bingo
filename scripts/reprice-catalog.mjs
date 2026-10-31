@@ -60,9 +60,19 @@ for (const product of products) {
     newPrice = legacy;
     capped = true;
   }
-  const regular = Number(detail.regular_price || 0);
-  const computedOld = regular > aed ? compute(regular, d) : null;
-  const newOld = computedOld && computedOld > newPrice ? computedOld : null;
+  // Le prix barré est marketing : on respecte le mode choisi dans l'admin.
+  const newOld = (() => {
+    if (product.oldPriceMode === "percent") {
+      const step = Math.max(1, d.roundTo);
+      const raw = newPrice * (1 + (product.oldPriceValue || 0) / 100);
+      const rounded = Math.round(raw / step) * step;
+      return rounded > newPrice ? rounded : null;
+    }
+    if (product.oldPriceMode === "fixed") {
+      return (product.oldPrice ?? 0) > newPrice ? product.oldPrice : null;
+    }
+    return null;
+  })();
   const delta = newPrice - legacy;
 
   totalOld += legacy;

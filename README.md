@@ -50,6 +50,11 @@ docs/APK.md             génération de l'APK Android
   L'admin saisit le prix fournisseur, le fret et la marge : le prix de vente est calculé
   automatiquement (mode manuel possible). `scripts/reprice-catalog.mjs` permet de
   recalculer tout le catalogue (simulation par défaut, `--apply` pour écrire).
+- **Prix barré (marketing)** : indépendant du calcul. Par produit, l'admin choisit
+  « aucun », « pourcentage au-dessus du prix » (ex. +30 %) ou « montant fixe », active
+  l'affichage du prix barré et, séparément, le badge `-X %`. Le prix barré n'entre jamais
+  dans le calcul du prix de vente. `scripts/marketing-prices.mjs --percent 25 --apply`
+  applique une politique globale ; `--off` masque tout.
 - **Stock** : une ligne par produit/variante **et par pays** (`BF`, `ML`, `NE`, `CI`),
   décrémenté à la commande dans une transaction.
 - **Livraison** : frais par ville (`City.deliveryFee`), modifiables en base.

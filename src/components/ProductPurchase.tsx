@@ -19,7 +19,16 @@ export function ProductPurchase({
   baseStock,
   countryName,
 }: {
-  product: { id: number; slug: string; name: string; price: number; oldPrice: number | null; image: string };
+  product: {
+    id: number;
+    slug: string;
+    name: string;
+    price: number;
+    oldPrice: number | null;
+    showOldPrice?: boolean;
+    showDiscountBadge?: boolean;
+    image: string;
+  };
   variants: Variant[];
   baseStock: number;
   countryName: string;
@@ -33,6 +42,7 @@ export function ProductPurchase({
   const selected = useMemo(() => variants.find((v) => v.id === variantId) ?? null, [variantId, variants]);
   const price = selected?.price ?? product.price;
   const oldPrice = selected?.oldPrice ?? product.oldPrice;
+  const showOld = product.showOldPrice !== false && (oldPrice ?? 0) > price;
   const stock = selected ? selected.stock : baseStock;
   const max = Math.max(0, Math.min(stock, 10));
 
@@ -98,7 +108,7 @@ export function ProductPurchase({
           <div className="selected-price">
             <span className="muted small">Prix sélectionné</span>
             <b>{money(price)}</b>
-            {oldPrice ? <span className="old-price">{money(oldPrice)}</span> : null}
+            {showOld ? <span className="old-price">{money(oldPrice as number)}</span> : null}
           </div>
         </>
       )}

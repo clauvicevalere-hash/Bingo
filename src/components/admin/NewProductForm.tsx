@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import { computePrice, type PricingDefaults } from "@/lib/pricing";
+import { computeOldPrice, type OldPriceMode } from "@/lib/marketing";
 
 type Option = { id: number; name: string; parent?: string };
 
@@ -30,6 +31,10 @@ export function NewProductForm({
   const [roundTo, setRoundTo] = useState("500");
   const [manual, setManual] = useState(false);
   const [manualPrice, setManualPrice] = useState("");
+  const [oldPriceMode, setOldPriceMode] = useState<OldPriceMode>("none");
+  const [oldPriceValue, setOldPriceValue] = useState("30");
+  const [showOldPrice, setShowOldPrice] = useState(false);
+  const [showDiscountBadge, setShowDiscountBadge] = useState(true);
 
   const defaults = categoryId ? pricing[Number(categoryId)] : undefined;
 
@@ -59,6 +64,14 @@ export function NewProductForm({
       roundTo: Number(roundTo) || 500,
     });
   }, [supplierPriceAed, rate, logisticsCost, profitMode, profitValue, minProfit, maxProfit, roundTo]);
+
+  const finalPrice = manual ? Number(manualPrice) || 0 : result?.price || 0;
+  const oldPreview = computeOldPrice(
+    finalPrice,
+    oldPriceMode,
+    Number(oldPriceValue) || 0,
+    Number(roundTo) || 500
+  );
 
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -260,6 +273,72 @@ export function NewProductForm({
               required
             />
           </div>
+        ) : null}
+      </div>
+
+      <div className="panel" style={{ marginBottom: 14 }}>
+        <h3 style={{ margin: "0 0 4px", fontSize: 16 }}>Prix barré (marketing)</h3>
+        <p className="muted tiny" style={{ marginTop: 0 }}>
+          Facultatif. Le prix barré n&apos;entre pas dans le calcul du prix de vente : il sert
+          uniquement à afficher une référence et, si vous le souhaitez, un badge de réduction.
+        </p>
+        <div className="grid-2">
+          <div className="field">
+            <label htmlFor="p-oldmode">Type de prix barré</label>
+            <select
+              id="p-oldmode"
+              name="oldPriceMode"
+              value={oldPriceMode}
+              onChange={(e) => setOldPriceMode(e.target.value as OldPriceMode)}
+            >
+              <option value="none">Aucun prix barré</option>
+              <option value="percent">Pourcentage au-dessus du prix</option>
+              <option value="fixed">Montant fixe</option>
+            </select>
+          </div>
+          <div className="field">
+            <label htmlFor="p-oldvalue">
+              {oldPriceMode === "percent" ? "Pourcentage (%)" : "Montant (FCFA)"}
+            </label>
+            <input
+              id="p-oldvalue"
+              name="oldPriceValue"
+              type="number"
+              min={0}
+              step={oldPriceMode === "percent" ? 1 : 500}
+              value={oldPriceValue}
+              onChange={(e) => setOldPriceValue(e.target.value)}
+              disabled={oldPriceMode === "none"}
+            />
+          </div>
+        </div>
+        <div style={{ display: "flex", gap: 18, flexWrap: "wrap", marginBottom: 8 }}>
+          <label className="small" style={{ display: "flex", gap: 7, alignItems: "center" }}>
+            <input
+              type="checkbox"
+              name="showOldPrice"
+              checked={showOldPrice}
+              onChange={(e) => setShowOldPrice(e.target.checked)}
+              disabled={oldPriceMode === "none"}
+            />{" "}
+            Afficher le prix barré
+          </label>
+          <label className="small" style={{ display: "flex", gap: 7, alignItems: "center" }}>
+            <input
+              type="checkbox"
+              name="showDiscountBadge"
+              checked={showDiscountBadge}
+              onChange={(e) => setShowDiscountBadge(e.target.checked)}
+              disabled={oldPriceMode === "none"}
+            />{" "}
+            Afficher le badge -X %
+          </label>
+        </div>
+        {oldPriceMode !== "none" ? (
+          <p className="muted tiny" style={{ margin: 0 }}>
+            Prix barré calculé : <b>{oldPreview ? money(oldPreview) : "aucun (valeur trop basse)"}</b>
+            {oldPreview && finalPrice ? ` · badge -${Math.round(((oldPreview - finalPrice) / oldPreview) * 100)} %` : ""}
+          </p>
         ) : null}
       </div>
 

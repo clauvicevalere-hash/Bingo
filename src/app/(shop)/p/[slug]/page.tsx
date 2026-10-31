@@ -116,7 +116,11 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     : baseStock;
 
   const image = product.images[0]?.url ?? "/placeholder.svg";
-  const off = discountPercent(product.price, product.oldPrice);
+  const showOld = product.showOldPrice && (product.oldPrice ?? 0) > product.price;
+  const off =
+    showOld && product.showDiscountBadge
+      ? discountPercent(product.price, product.oldPrice)
+      : 0;
   const label = productLabel(product.name);
 
   const siteBase = (await baseUrl()).replace(/\/+$/, "");
@@ -214,8 +218,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
                 ? `Dès ${money(Math.min(...variants.map((v) => v.price)))}`
                 : money(product.price)}
             </span>
-            {variants.length === 0 && product.oldPrice ? (
-              <span className="old-price">{money(product.oldPrice)}</span>
+            {variants.length === 0 && showOld ? (
+              <span className="old-price">{money(product.oldPrice as number)}</span>
             ) : null}
             {variants.length === 0 && off > 0 ? <span className="saving">-{off}%</span> : null}
           </div>
@@ -239,6 +243,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               name: label,
               price: product.price,
               oldPrice: product.oldPrice,
+              showOldPrice: product.showOldPrice,
+              showDiscountBadge: product.showDiscountBadge,
               image,
             }}
             variants={variants}

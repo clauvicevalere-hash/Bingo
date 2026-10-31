@@ -7,6 +7,7 @@ import { money } from "@/lib/site";
 import { VariantManager } from "@/components/admin/VariantManager";
 import { ImageManager } from "@/components/admin/ImageManager";
 import { computePrice } from "@/lib/pricing";
+import { computeOldPrice, type OldPriceMode } from "@/lib/marketing";
 
 export const dynamic = "force-dynamic";
 
@@ -62,14 +63,23 @@ export default async function AdminProductEdit({
       }).price;
     }
 
-    const oldPriceRaw = Number(formData.get("oldPrice"));
-    const oldPrice = oldPriceRaw > price ? Math.round(oldPriceRaw) : null;
+    const oldPriceModeRaw = String(formData.get("oldPriceMode") || "none");
+    const oldPriceMode: OldPriceMode =
+      oldPriceModeRaw === "percent" || oldPriceModeRaw === "fixed" ? oldPriceModeRaw : "none";
+    const oldPriceValue = Number(formData.get("oldPriceValue")) || 0;
+    const showOldPrice = formData.get("showOldPrice") === "on";
+    const showDiscountBadge = formData.get("showDiscountBadge") === "on";
+    const oldPrice = showOldPrice ? computeOldPrice(price, oldPriceMode, oldPriceValue, roundTo) : null;
 
     await db.product.update({
       where: { id: pid },
       data: {
         price,
         oldPrice,
+        oldPriceMode,
+        oldPriceValue,
+        showOldPrice,
+        showDiscountBadge,
         supplierPriceAed: supplierPriceAed || null,
         logisticsCost,
         profitMode,
@@ -162,8 +172,16 @@ export default async function AdminProductEdit({
               <input name="price" type="number" defaultValue={product.price} min={0} step={50} />
             </div>
             <div className="field">
-              <label>Ancien prix (barré, optionnel)</label>
-              <input name="oldPrice" type="number" defaultValue={product.oldPrice ?? 0} min={0} step={50} />
+              <label>Prix barré (marketing)</label>
+              <select name="oldPriceMode" defaultValue={product.oldPriceMode}>
+                <option value="none">Aucun prix barré</option>
+                <option value="percent">Pourcentage au-dessus du prix</option>
+                <option value="fixed">Montant fixe</option>
+              </select>
+            </div>
+            <div className="field">
+              <label>Valeur (% ou FCFA)</label>
+              <input name="oldPriceValue" type="number" defaultValue={product.oldPriceValue} min={0} step="0.1" />
             </div>
           <input type="hidden" name="minProfit" value={product.minProfit} />
           <input type="hidden" name="maxProfit" value={product.maxProfit} />
@@ -190,6 +208,18 @@ export default async function AdminProductEdit({
               </select>
             </div>
           </div>
+          <div style={{ display: "flex", gap: 18, margin: "4px 0 8px", flexWrap: "wrap" }}>
+            <label className="small" style={{ display: "flex", gap: 7, alignItems: "center" }}>
+              <input type="checkbox" name="showOldPrice" defaultChecked={product.showOldPrice} /> Afficher le prix barré
+            </label>
+            <label className="small" style={{ display: "flex", gap: 7, alignItems: "center" }}>
+              <input type="checkbox" name="showDiscountBadge" defaultChecked={product.showDiscountBadge} /> Afficher le badge -X %
+            </label>
+          </div>
+          <p className="muted tiny" style={{ marginTop: 0 }}>
+            Le prix barré est purement marketing : il n&apos;entre pas dans le calcul du prix de
+            vente. Prix barré actuel : <b>{product.oldPrice ? money(product.oldPrice) : "aucun"}</b>.
+          </p>
           <div style={{ display: "flex", gap: 18, marginTop: 4 }}>
             <label className="small" style={{ display: "flex", gap: 7, alignItems: "center" }}>
               <input type="checkbox" name="active" defaultChecked={product.active} /> Visible en boutique

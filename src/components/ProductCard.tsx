@@ -8,6 +8,8 @@ export type CardProduct = {
   name: string;
   price: number;
   oldPrice: number | null;
+  showOldPrice?: boolean;
+  showDiscountBadge?: boolean;
   images: { url: string }[];
   category?: { name: string; slug: string } | null;
   stocks?: { qty: number }[];
@@ -16,7 +18,11 @@ export type CardProduct = {
 export function ProductCard({ product }: { product: CardProduct }) {
   const img = product.images[0]?.url ?? "/placeholder.svg";
   const stock = (product.stocks ?? []).reduce((n, s) => n + s.qty, 0);
-  const off = discountPercent(product.price, product.oldPrice);
+  const showOld = product.showOldPrice !== false && (product.oldPrice ?? 0) > product.price;
+  const off =
+    product.showDiscountBadge !== false && showOld
+      ? discountPercent(product.price, product.oldPrice)
+      : 0;
 
   return (
     <Link href={`/p/${product.slug}`} className="card">
@@ -30,7 +36,7 @@ export function ProductCard({ product }: { product: CardProduct }) {
         <span className="card-title">{productLabel(product.name)}</span>
         <div className="price-row">
           <span className="price">{money(product.price)}</span>
-          {product.oldPrice ? <span className="old-price">{money(product.oldPrice)}</span> : null}
+          {showOld ? <span className="old-price">{money(product.oldPrice as number)}</span> : null}
         </div>
         <div className="card-foot">
           <span className={`stock-dot${stock > 0 ? "" : " out"}`}>

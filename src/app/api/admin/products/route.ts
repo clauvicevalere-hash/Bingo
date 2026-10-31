@@ -6,6 +6,7 @@ import { isAdmin } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { slugify } from "@/lib/site";
 import { computePrice, defaultsFor } from "@/lib/pricing";
+import { computeOldPrice, type OldPriceMode } from "@/lib/marketing";
 
 const COUNTRIES = ["BF", "ML", "NE", "CI"];
 const UPLOAD_DIR = path.join(process.cwd(), "public", "uploads", "products");
@@ -34,7 +35,13 @@ export async function POST(req: Request) {
 
   const name = String(form.get("name") || "").trim();
   const manualPrice = Math.round(Number(form.get("price")) || 0);
-  const oldPriceRaw = Math.round(Number(form.get("oldPrice")) || 0);
+  const oldPriceModeRaw = String(form.get("oldPriceMode") || "none");
+  const oldPriceMode: OldPriceMode =
+    oldPriceModeRaw === "percent" || oldPriceModeRaw === "fixed" ? oldPriceModeRaw : "none";
+  const oldPriceValue = Number(form.get("oldPriceValue")) || 0;
+  const showOldPrice = form.get("showOldPrice") === "on" || form.get("showOldPrice") === "true";
+  const showDiscountBadge =
+    form.get("showDiscountBadge") === "on" || form.get("showDiscountBadge") === "true";
   const categoryId = Number(form.get("categoryId")) || null;
   const brandName = String(form.get("brand") || "").trim();
   const condition = String(form.get("condition") || "Neuf");
@@ -105,7 +112,11 @@ export async function POST(req: Request) {
       name,
       slug: candidate,
       price,
-      oldPrice: oldPriceRaw > price ? oldPriceRaw : null,
+      oldPrice: showOldPrice ? computeOldPrice(price, oldPriceMode, oldPriceValue, roundTo) : null,
+      oldPriceMode,
+      oldPriceValue,
+      showOldPrice,
+      showDiscountBadge,
       supplierPriceAed: supplierPriceAed || null,
       logisticsCost,
       profitMode,
