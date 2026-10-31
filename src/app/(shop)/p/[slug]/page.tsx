@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { db } from "@/lib/db";
 import { getCountryCode } from "@/lib/country";
 import { countryByCode, discountPercent, money, stripHtml } from "@/lib/site";
+import { getSiteSettings, waDigits } from "@/lib/settings";
 import { categoryLabel, productLabel } from "@/lib/fr";
 import { baseUrl } from "@/lib/base-url";
 import { Gallery } from "@/components/Gallery";
@@ -124,6 +125,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const label = productLabel(product.name);
 
   const siteBase = (await baseUrl()).replace(/\/+$/, "");
+  const settings = await getSiteSettings();
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -253,7 +255,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           />
 
           <a
-            href={`https://wa.me/${(process.env.SITE_WHATSAPP || "22600000000").replace(/\D/g, "")}?text=${encodeURIComponent(
+            href={`https://wa.me/${waDigits(settings.whatsapp)}?text=${encodeURIComponent(
               `Bonjour Tresor Empire, je suis intéressé par : ${label} — ${money(product.price)}. Est-il disponible au ${info.name} ?`
             )}`}
             target="_blank"

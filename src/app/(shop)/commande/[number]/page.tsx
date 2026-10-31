@@ -3,11 +3,13 @@ import { notFound } from "next/navigation";
 import { db } from "@/lib/db";
 import { money } from "@/lib/site";
 import { STATUS_LABELS } from "@/lib/status";
+import { getSiteSettings, waDigits } from "@/lib/settings";
 
 export const dynamic = "force-dynamic";
 
 export default async function OrderPage({ params }: { params: Promise<{ number: string }> }) {
   const { number } = await params;
+  const settings = await getSiteSettings();
   const order = await db.order.findUnique({
     where: { number },
     include: { items: true, country: true },
@@ -162,7 +164,7 @@ export default async function OrderPage({ params }: { params: Promise<{ number: 
           Suivre ma commande
         </Link>
         <a
-          href={`https://wa.me/${(process.env.SITE_WHATSAPP || "22600000000").replace(/\D/g, "")}?text=${encodeURIComponent(
+          href={`https://wa.me/${waDigits(settings.whatsapp)}?text=${encodeURIComponent(
             `Bonjour Tresor Empire, je confirme ma commande ${order.number} (${order.items.reduce((n, i) => n + i.qty, 0)} article(s), total ${money(order.total)}).`
           )}`}
           target="_blank"

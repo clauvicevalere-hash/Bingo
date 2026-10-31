@@ -108,6 +108,8 @@ puis déclarer le webhook `https://…/api/payments/orange/webhook` chez Orange.
 - **Images** : ajout et suppression depuis la fiche produit, conversion WebP automatique
 - **Avis clients** (`/admin/avis`) : modération (publier, refuser, supprimer)
 - Stocks : quantités par variante et par pays, alertes stock faible
+- **Paramètres** (`/admin/parametres`) : numéro WhatsApp, numéro d'appel, e-mail et adresse
+  utilisés sur la boutique, la page contact, les fiches produit et le pied de page
 
 ## Qualité & exploitation
 

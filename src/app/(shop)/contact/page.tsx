@@ -1,11 +1,11 @@
+import { getSiteSettings, telHref, waDigits } from "@/lib/settings";
+
 export const metadata = { title: "Contact" };
+export const dynamic = "force-dynamic";
 
-const PHONE = process.env.SITE_PHONE || "+226 00 00 00 00";
-const WHATSAPP = process.env.SITE_WHATSAPP || "22600000000";
-const EMAIL = process.env.SITE_EMAIL || "contact@tresorempire.com";
-const ADDRESS = process.env.SITE_ADDRESS || "Ouagadougou, Burkina Faso";
+export default async function ContactPage() {
+  const settings = await getSiteSettings();
 
-export default function ContactPage() {
   return (
     <div className="container" style={{ maxWidth: 760 }}>
       <h1 className="page-title">Nous contacter</h1>
@@ -14,16 +14,16 @@ export default function ContactPage() {
       </p>
 
       <div className="grid-2" style={{ marginTop: 18 }}>
-        <a className="panel" href={`https://wa.me/${WHATSAPP}`} target="_blank" rel="noreferrer">
+        <a className="panel" href={`https://wa.me/${waDigits(settings.whatsapp)}`} target="_blank" rel="noreferrer">
           <div style={{ fontSize: 26 }}>💬</div>
           <h3 style={{ margin: "8px 0 4px", fontSize: 16 }}>WhatsApp</h3>
-          <p className="muted small" style={{ margin: 0 }}>{PHONE}</p>
+          <p className="muted small" style={{ margin: 0 }}>{settings.whatsapp}</p>
           <p className="small" style={{ margin: "8px 0 0", color: "var(--brand)", fontWeight: 700 }}>Ouvrir la discussion →</p>
         </a>
-        <a className="panel" href={`tel:${PHONE.replace(/\s/g, "")}`}>
+        <a className="panel" href={telHref(settings.phone)}>
           <div style={{ fontSize: 26 }}>📞</div>
           <h3 style={{ margin: "8px 0 4px", fontSize: 16 }}>Téléphone</h3>
-          <p className="muted small" style={{ margin: 0 }}>{PHONE}</p>
+          <p className="muted small" style={{ margin: 0 }}>{settings.phone}</p>
           <p className="small" style={{ margin: "8px 0 0", color: "var(--brand)", fontWeight: 700 }}>Appeler →</p>
         </a>
       </div>
@@ -33,9 +33,9 @@ export default function ContactPage() {
         <p className="small" style={{ lineHeight: 1.8, margin: 0 }}>
           <b>Tresor Empire</b>
           <br />
-          {ADDRESS}
+          {settings.address}
           <br />
-          E-mail : {EMAIL}
+          E-mail : {settings.email}
           <br />
           Horaires : lundi – samedi, 8 h – 20 h
         </p>

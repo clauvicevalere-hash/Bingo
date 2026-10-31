@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { COUNTRIES } from "@/lib/site";
+import { getSiteSettings, telHref, waDigits } from "@/lib/settings";
 
-export function Footer() {
+export async function Footer() {
+  const settings = await getSiteSettings();
   return (
     <footer className="footer">
       <div className="container">
@@ -39,6 +41,10 @@ export function Footer() {
           <Link href="/retours">Retours &amp; garantie</Link>
           <Link href="/mentions">Mentions légales</Link>
           <Link href="/admin">Espace admin</Link>
+          <a href={`https://wa.me/${waDigits(settings.whatsapp)}`} target="_blank" rel="noreferrer">
+            WhatsApp {settings.whatsapp}
+          </a>
+          <a href={telHref(settings.phone)}>Appeler {settings.phone}</a>
         </div>
       </div>
       <div className="footer-bottom">
