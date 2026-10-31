@@ -16,3 +16,4 @@ prisma/*.db
 
 tools/
 dist/
+.venv/
