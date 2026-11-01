@@ -24,7 +24,13 @@ export default async function CategoryPage({
 
   const category = await db.category.findUnique({
     where: { slug },
-    include: { children: true, parent: true },
+    include: {
+      parent: true,
+      children: {
+        where: { products: { some: { active: true } } },
+        orderBy: { name: "asc" },
+      },
+    },
   });
   if (!category) notFound();
 

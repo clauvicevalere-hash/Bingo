@@ -268,6 +268,18 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             Commander sur WhatsApp
           </a>
 
+          <a
+            href={`https://wa.me/?text=${encodeURIComponent(
+              `${label} — ${money(product.price)} · ${siteBase}/p/${product.slug}`
+            )}`}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-block"
+            style={{ background: "#fff", border: "1px solid var(--line)", marginTop: 8 }}
+          >
+            Partager sur WhatsApp
+          </a>
+
           <div className="specs">
             <h3>À propos de ce produit</h3>
             {product.description ? (
