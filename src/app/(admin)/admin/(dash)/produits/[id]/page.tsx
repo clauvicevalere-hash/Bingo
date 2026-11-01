@@ -36,6 +36,20 @@ export default async function AdminProductEdit({
   ]);
   if (!product) notFound();
 
+  const landedCost = product.supplierPriceAed
+    ? computePrice({
+        costAed: product.supplierPriceAed,
+        logistics: product.logisticsCost,
+        mode: "percent",
+        value: 0,
+        minProfit: 0,
+        maxProfit: 0,
+        roundTo: 500,
+      }).landed
+    : null;
+  const marketMargin =
+    landedCost != null && product.marketPrice ? product.marketPrice - landedCost : null;
+
   async function save(formData: FormData) {
     "use server";
     const pid = Number(formData.get("id"));
@@ -43,6 +57,7 @@ export default async function AdminProductEdit({
 
     const pricingMode = formData.get("pricingMode") === "manual" ? "manual" : "auto";
     const supplierPriceAed = Number(formData.get("supplierPriceAed")) || 0;
+    const marketPrice = Math.round(Number(formData.get("marketPrice")) || 0) || null;
     const logisticsCost = Math.round(Number(formData.get("logisticsCost")) || 0);
     const profitModeRaw = String(formData.get("profitMode") || "percent");
     const profitMode: ProfitMode =
@@ -90,6 +105,7 @@ export default async function AdminProductEdit({
         showOldPrice,
         showDiscountBadge,
         supplierPriceAed: supplierPriceAed || null,
+        marketPrice,
         logisticsCost,
         profitMode,
         profitValue,
@@ -153,6 +169,10 @@ export default async function AdminProductEdit({
             <div className="field">
               <label>Prix fournisseur (AED)</label>
               <input name="supplierPriceAed" type="number" defaultValue={product.supplierPriceAed ?? ""} min={0} step="0.01" />
+            </div>
+            <div className="field">
+              <label>Prix du marché (FCFA, optionnel)</label>
+              <input name="marketPrice" type="number" defaultValue={product.marketPrice ?? ""} min={0} step={500} />
             </div>
             <div className="field">
               <label>Fret + douane (FCFA)</label>
@@ -230,6 +250,13 @@ export default async function AdminProductEdit({
             Le prix barré est purement marketing : il n&apos;entre pas dans le calcul du prix de
             vente. Prix barré actuel : <b>{product.oldPrice ? money(product.oldPrice) : "aucun"}</b>.
           </p>
+          {marketMargin != null ? (
+            <p className="small" style={{ margin: "0 0 8px", color: marketMargin < 0 ? "var(--danger)" : "var(--ok)" }}>
+              Marge au prix du marché ({money(product.marketPrice as number)}) :{" "}
+              <b>{money(marketMargin)}</b>
+              {marketMargin < 0 ? " — vous vendez à perte à ce prix." : ""}
+            </p>
+          ) : null}
           <div style={{ display: "flex", gap: 18, marginTop: 4 }}>
             <label className="small" style={{ display: "flex", gap: 7, alignItems: "center" }}>
               <input type="checkbox" name="active" defaultChecked={product.active} /> Visible en boutique

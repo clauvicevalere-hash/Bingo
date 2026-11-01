@@ -23,6 +23,7 @@ export function NewProductForm({
 
   const [categoryId, setCategoryId] = useState<number | "">("");
   const [supplierPriceAed, setSupplierPriceAed] = useState("");
+  const [marketPrice, setMarketPrice] = useState("");
   const [logisticsCost, setLogisticsCost] = useState("0");
   const [profitMode, setProfitMode] = useState<ProfitMode>("percent");
   const [profitValue, setProfitValue] = useState("0");
@@ -211,6 +212,19 @@ export function NewProductForm({
             />
           </div>
           <div className="field">
+            <label htmlFor="p-market">Prix du marché (FCFA, optionnel)</label>
+            <input
+              id="p-market"
+              name="marketPrice"
+              type="number"
+              min={0}
+              step={500}
+              value={marketPrice}
+              onChange={(e) => setMarketPrice(e.target.value)}
+              placeholder="Prix constaté chez la concurrence"
+            />
+          </div>
+          <div className="field">
             <label htmlFor="p-mode">Bénéfice</label>
             <select
               id="p-mode"
@@ -263,6 +277,15 @@ export function NewProductForm({
           <div className="notice" style={{ marginBottom: 12 }}>
             Coût rendu <b>{money(result.landed)}</b> · bénéfice <b>{money(result.profit)}</b> ·{" "}
             <b style={{ fontSize: 18 }}>prix conseillé {money(result.price)}</b>
+            {Number(marketPrice) > 0 ? (
+              <>
+                <br />
+                Marge au prix du marché ({money(Number(marketPrice))}) :{" "}
+                <b style={{ color: Number(marketPrice) - result.landed < 0 ? "var(--danger)" : "var(--ok)" }}>
+                  {money(Number(marketPrice) - result.landed)}
+                </b>
+              </>
+            ) : null}
           </div>
         ) : null}
 

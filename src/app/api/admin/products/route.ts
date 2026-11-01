@@ -61,6 +61,7 @@ export async function POST(req: Request) {
 
   const defaults = defaultsFor(category.parent?.slug ?? category.slug);
   const supplierPriceAed = Number(form.get("supplierPriceAed")) || 0;
+  const marketPrice = Math.round(Number(form.get("marketPrice")) || 0) || null;
   const logisticsCost = Math.round(Number(form.get("logisticsCost")) || defaults.logistics);
   const modeRaw = String(form.get("profitMode") || defaults.mode);
   const profitMode: ProfitMode =
@@ -122,6 +123,7 @@ export async function POST(req: Request) {
       showOldPrice,
       showDiscountBadge,
       supplierPriceAed: supplierPriceAed || null,
+      marketPrice,
       logisticsCost,
       profitMode,
       profitValue,

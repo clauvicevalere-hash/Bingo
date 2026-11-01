@@ -14,5 +14,13 @@
     { "src": "/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
     { "src": "/brand/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ],
+  "shortcuts": [
+    { "name": "Catalogue", "url": "/catalogue", "icons": [{ "src": "/brand/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Mon panier", "url": "/panier", "icons": [{ "src": "/brand/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Suivre ma commande", "url": "/suivi", "icons": [{ "src": "/brand/icon-192.png", "sizes": "192x192" }] }
+  ],
+  "screenshots": [
+    { "src": "/brand/pwa-home.png", "sizes": "500x1000", "type": "image/png", "form_factor": "narrow" }
+  ],
   "categories": ["shopping", "electronics"]
 }

@@ -69,6 +69,7 @@ model Product {
   active       Boolean        @default(true)
   views        Int            @default(0)
   supplierPriceAed Float?
+  marketPrice      Int?
   logisticsCost    Int      @default(0)
   profitMode       String   @default("percent")
   profitValue      Float    @default(0)
