@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
 import { money } from "@/lib/site";
 import { changeOrderStatus, OrderStatusError } from "@/lib/orders";
+import { baseUrl } from "@/lib/base-url";
 
 export const dynamic = "force-dynamic";
 
@@ -32,6 +33,13 @@ export default async function AdminOrders({
     take: 100,
   });
 
+  const productIds = [...new Set(orders.flatMap((o) => o.items.map((i) => i.productId)))];
+  const products = productIds.length
+    ? await db.product.findMany({ where: { id: { in: productIds } }, select: { id: true, slug: true } })
+    : [];
+  const slugById = new Map(products.map((p) => [p.id, p.slug]));
+  const base = (await baseUrl()).replace(/\/+$/, "");
+
   async function updateStatus(formData: FormData) {
     "use server";
     const id = Number(formData.get("id"));
@@ -58,8 +66,15 @@ export default async function AdminOrders({
 
   return (
     <div>
-      <h1 style={{ margin: "0 0 4px", fontSize: 26, letterSpacing: "-0.02em" }}>Commandes</h1>
-      <p className="muted small" style={{ marginTop: 0 }}>{orders.length} commande(s) affichée(s)</p>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "start", gap: 12 }}>
+        <div>
+          <h1 style={{ margin: "0 0 4px", fontSize: 26, letterSpacing: "-0.02em" }}>Commandes</h1>
+          <p className="muted small" style={{ marginTop: 0 }}>{orders.length} commande(s) affichée(s)</p>
+        </div>
+        <a className="btn" href="/api/admin/export?type=orders" style={{ height: 42 }}>
+          Exporter CSV
+        </a>
+      </div>
 
       {erreur === "annulee" ? (
         <div className="notice" style={{ marginBottom: 14 }}>
@@ -134,6 +149,23 @@ export default async function AdminOrders({
                   </select>
                   <button type="submit" className="tab">OK</button>
                 </form>
+                {o.status === "delivered" ? (
+                  <a
+                    href={`https://wa.me/${o.phone.replace(/\D/g, "")}?text=${encodeURIComponent(
+                      `Bonjour ${o.customerName}, merci pour votre commande ${o.number}. Votre avis nous aide beaucoup : ${
+                        slugById.get(o.items[0]?.productId)
+                          ? `${base}/p/${slugById.get(o.items[0].productId)}#avis`
+                          : `${base}/catalogue`
+                      }`
+                    )}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="tab"
+                    style={{ marginTop: 6, display: "inline-block", color: "var(--brand)", fontWeight: 700 }}
+                  >
+                    Demander un avis
+                  </a>
+                ) : null}
               </td>
             </tr>
           ))}

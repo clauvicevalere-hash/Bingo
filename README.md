@@ -112,6 +112,10 @@ puis déclarer le webhook `https://…/api/payments/orange/webhook` chez Orange.
 - **Statistiques** (`/admin/statistiques`) : visites, visiteurs uniques, vues produit, ajouts
   panier, commandes, chiffre d'affaires, taux de conversion, produits les plus consultés
 - **Sauvegarde** : téléchargement de la base depuis `/admin/parametres`
+- **Export CSV** des commandes et des produits (boutons dans l'admin)
+- **Favoris** et **produits récemment consultés** (stockés sur l'appareil du client)
+- **Demande d'avis WhatsApp** sur les commandes livrées
+- **Images optimisées** : formats AVIF/WebP via `next/image`
 - Stocks : quantités par variante et par pays, alertes stock faible
 - **Paramètres** (`/admin/parametres`) : numéro WhatsApp, numéro d'appel, e-mail et adresse
   utilisés sur la boutique, la page contact, les fiches produit et le pied de page

@@ -1,6 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { discountPercent, money } from "@/lib/site";
 import { categoryLabel, productLabel } from "@/lib/fr";
+import { WishlistButton } from "@/components/WishlistButton";
 
 export type CardProduct = {
   id: number;
@@ -27,9 +29,22 @@ export function ProductCard({ product }: { product: CardProduct }) {
   return (
     <Link href={`/p/${product.slug}`} className="card">
       <div className="card-media">
+        <div style={{ position: "absolute", top: 8, right: 8, zIndex: 2 }}>
+          <WishlistButton productId={product.id} />
+        </div>
         {off > 0 && <span className="tag">-{off}%</span>}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={img} alt={productLabel(product.name)} loading="lazy" />
+        {img.endsWith(".svg") ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={img} alt={productLabel(product.name)} loading="lazy" />
+        ) : (
+          <Image
+            src={img}
+            alt={productLabel(product.name)}
+            fill
+            sizes="(max-width: 640px) 50vw, 260px"
+            style={{ objectFit: "contain", padding: 10 }}
+          />
+        )}
       </div>
       <div className="card-body">
         <span className="card-cat">{categoryLabel(product.category?.slug, product.category?.name) || "High-tech"}</span>

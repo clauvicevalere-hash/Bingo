@@ -4,6 +4,7 @@ import { getCountryCode } from "@/lib/country";
 import { countryByCode } from "@/lib/site";
 import { GROUP_SLUGS } from "@/lib/groups";
 import { categoryLabel } from "@/lib/fr";
+import { WishlistLink } from "@/components/WishlistLink";
 import { CartBadge } from "./CartBadge";
 import { CountrySelect } from "./CountrySelect";
 
@@ -46,6 +47,7 @@ export async function Header() {
         </form>
         <div className="header-actions">
           <CountrySelect current={country} />
+          <WishlistLink />
           <CartBadge />
         </div>
       </div>

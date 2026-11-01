@@ -44,6 +44,9 @@ export default async function AdminProducts({
         <Link href="/admin/produits/nouveau" className="btn btn-primary" style={{ height: 42 }}>
           + Nouveau produit
         </Link>
+        <a className="btn" href="/api/admin/export?type=products" style={{ height: 42 }}>
+          Exporter CSV
+        </a>
         <Link href="/admin/categories" className="tab">Gérer les catégories</Link>
       </div>
 

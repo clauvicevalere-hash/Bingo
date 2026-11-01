@@ -6,6 +6,8 @@ import { getCountryCode } from "@/lib/country";
 import { countryByCode, discountPercent, money, stripHtml } from "@/lib/site";
 import { getSiteSettings, waDigits } from "@/lib/settings";
 import { ProductTracker } from "@/components/Tracker";
+import { WishlistButton } from "@/components/WishlistButton";
+import { RecentlyViewed } from "@/components/RecentlyViewed";
 import { categoryLabel, productLabel } from "@/lib/fr";
 import { baseUrl } from "@/lib/base-url";
 import { Gallery } from "@/components/Gallery";
@@ -34,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const description =
     stripHtml(product.description).slice(0, 155) ||
     `Achetez ${label} chez Tresor Empire. Livraison au Burkina Faso, Mali, Niger et Côte d'Ivoire, paiement à la livraison.`;
-  const image = product.images[0] ? `${base}${product.images[0].url}` : `${base}/icons/icon-512.png`;
+  const image = product.images[0] ? `${base}${product.images[0].url}` : `${base}/brand/icon-512.png`;
 
   return {
     title: label,
@@ -226,6 +228,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               <span className="old-price">{money(product.oldPrice as number)}</span>
             ) : null}
             {variants.length === 0 && off > 0 ? <span className="saving">-{off}%</span> : null}
+            <WishlistButton productId={product.id} large />
           </div>
           <p className="muted small" style={{ marginTop: 0 }}>
             Prix TTC, en FCFA. Livraison calculée à l&apos;étape suivante.
@@ -296,6 +299,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           </div>
         </div>
       </div>
+
+      <RecentlyViewed currentId={product.id} />
 
       <section className="section" id="avis">
         <div className="section-head">

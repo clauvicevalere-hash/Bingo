@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { db } from "@/lib/db";
 import { getCountryCode } from "@/lib/country";
 import { COUNTRIES, countryByCode } from "@/lib/site";
@@ -99,8 +100,12 @@ export default async function HomePage() {
             <Link key={c.id} href={`/c/${c.slug}`} className="cat">
               <span className="cat-img">
                 {c.image ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={c.image} alt="" />
+                  c.image.endsWith(".svg") ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={c.image} alt="" />
+                  ) : (
+                    <Image src={c.image} alt="" width={56} height={56} sizes="56px" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  )
                 ) : (
                   <span aria-hidden>{c.icon || "📦"}</span>
                 )}
